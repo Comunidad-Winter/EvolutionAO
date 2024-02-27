@@ -82,6 +82,22 @@
 
 # Imagenes:
 
+![image](https://github.com/Comunidad-Winter/EvolutionAO/assets/1338437/d12ab88e-0c2d-41f0-a183-2d642fb88f34)
+
+![image](https://github.com/Comunidad-Winter/EvolutionAO/assets/1338437/9470b39d-f4e6-420a-95d7-7edde38f70df)
+
+![image](https://github.com/Comunidad-Winter/EvolutionAO/assets/1338437/47e3c6a3-de14-4fdc-9678-e7318baee434)
+
+![image](https://github.com/Comunidad-Winter/EvolutionAO/assets/1338437/c08ce358-863a-491d-a9c2-8bcf2947bf9d)
+
+![image](https://github.com/Comunidad-Winter/EvolutionAO/assets/1338437/615311e0-6850-4dbc-9d34-12559d340ee3)
+
+![image](https://github.com/Comunidad-Winter/EvolutionAO/assets/1338437/08c6c4d7-5d91-4fc1-af44-9e93a3657e97)
+
+![image](https://github.com/Comunidad-Winter/EvolutionAO/assets/1338437/1517b7ee-e6a6-45e7-9e4c-fcb151afa2de)
+
+![image](https://github.com/Comunidad-Winter/EvolutionAO/assets/1338437/6965975b-a597-44ef-a6e9-0ccaa51d5a35)
+
 # Fuente:
 
 https://www.gs-zone.org/temas/liberacion-evolutionao-v1-0.100424/
