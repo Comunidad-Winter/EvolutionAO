@@ -1,0 +1,11 @@
+[HAPPYHOUR]
+Activado=0
+
+'## Formato: Hora-% (la hora es de 0 a 23hs) (el % es convertido x100, 2 el doble de exp) ##
+Lunes=9-2
+Martes=10-2
+Miercoles=14-2
+Jueves=16-2
+Viernes=18-2
+Sabado=23-2
+Domingo=23-2

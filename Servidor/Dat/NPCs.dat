@@ -1,0 +1,10388 @@
+##############################################
+############TIPOS NPC (NpcType)###############
+##############################################
+
+0 ====== NPCS COMUNES
+1 ====== PUEDE RESUCITARGorila Salvaje
+2 ====== GUARDIA
+3 ====== PUEDE ENTRENAR
+4 ====== BANQUEROS
+5 ====== NOBLES
+6 ====== DRAGONES
+7 ====== TIMBEROS
+8 ====== GUARDIAS DEL CAOS
+9 ====== PUEDE RESUCITAR SOLAMENTE A LOS NEWBIES
+
+##############################################
+##############Observaciones####################
+##############################################
+'LOS NPCs pretorianos se numeran del 900 a 904 (NO CAMBIAR)
+
+##############################################
+################INFO_INIT#####################
+##############################################
+[INIT]
+'aca va el número de NPC más alto, NO la cantidad de NPCs.
+'esto sirve para que los GMS puedan ver la lista completa de npcs a invocar en una ventanita.
+NumNPCs=1000
+
+##############################################################
+##############################################################
+##############################################################
+##############################################################
+##############################################################
+##############################################################
+##############################################################
+##############################################################
+
+
+
+
+##############################################################
+#######################PERSONAS#############################
+##############################################################
+
+[NPC1]
+Name=Aldeano
+NpcType=0
+Desc= ¡Buen día aventurero!, tú has visto que buenas tierras hay para sembrar??
+Head=0
+Heading=3
+Body=18
+Movement=2
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+
+[NPC10] 'npc adorno
+Name=Bardo
+NpcType=0
+Desc=¡¿Hola, os gustaria oír una hermosa melodía?!.
+Head=0
+Heading=3
+Body=17
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+
+[NPC11] 'npc adorno
+Name=Aldeana
+NpcType=0
+Desc=¡Hola aveturero!, vivir por acá no esta nada mal, que tengas un buen día!
+Head=0
+Heading=3
+Body=19
+Movement=2
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+
+[NPC5]
+Name=Sacerdote
+NpcType=1
+Desc=¡Hola, hijo mío!, siempre que necesites salvación ven a mí.
+Head=3
+Heading=3
+Body=49
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+
+[NPC35] 'Propiedades Artemís
+Name=Juan Zoliebre
+NpcType=0
+Desc=¿Ha descubierto que la ciudad de Artemís es la más hermosa de todo Evo Ao, verdad?  ¡Acércate que haremos negocios!, dame doble click o escribe /COMERCIAR.
+Head=35
+Heading=3
+Body=239
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+TipoItems=9
+NROITEMS=10
+Obj1=87-1
+Obj2=91-1
+Obj3=95-1
+Obj4=99-1
+Obj5=103-1
+Obj6=107-1
+Obj7=111-1
+Obj8=115-1
+Obj9=119-1
+obj10=140-1
+InvReSpawn=1
+BackUp=1
+
+#############################################
+
+[NPC119] 'sólo resucita newbies
+Name=Sacerdote
+NpcType=9
+Desc=¡Hola, hijo mío!, siempre que necesites salvación ven a mí.
+Head=3
+Heading=3
+Body=49
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+
+[NPC60] 'Entrenador
+Name= Entrenador de Artemís
+Desc=¡Hola amigo!,soy el encargado de entrenar aventureros, si deseas que traiga una criatura sólo debes pedírmelo. (Escribe /ENTRENAR)
+NpcType=3
+Head=6
+Heading=3
+Body=57
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+NroCriaturas=4
+CI1=566
+CI2=565
+CI3=564
+CI4=516
+CN1=Murciélago
+CN2=Serpiente
+CN3=Escorpión
+CN4=Goblin
+BackUp=0
+
+#############################################
+
+[NPC16] 'npc centinela
+Name=Centinela
+NpcType=0
+Head=0
+Heading=3
+Body=540
+Movement=1
+AguaValida=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+
+[NPC24]
+Name=Banquero
+NpcType=4
+Desc=Bienvenido a la cadena más grande de finanzas de EvolutionAo, puede confiarnos tus objetos y tu dinero que somos lo más seguro en estas tierras.
+Head=503
+Heading=3
+Body=201
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+ShowName=0
+BackUp=0
+
+#############################################
+
+[NPC104]
+Name=Timbero
+NpcType=7
+Desc=Buen día!, ¿te sientes con suerte hoy?, solo debes escribir /APOSTAR X
+Head=9
+Heading=3
+Body=47
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+
+[NPC14] 'Vende Pociones
+Name=Alquimista
+NpcType=0
+Desc=Hola, tengo las mejores Pociones de la Alquimia, dame doble click o escribe /COMERCIAR.
+Head=77
+Heading=3
+Body=200
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Comercia=1
+ShowName=0
+TipoItems=11
+NROITEMS=7
+Obj1=36-1000 'Poción Amarilla
+Obj2=37-1000 'Poción Azul
+Obj3=38-1000 'Poción Roja
+Obj4=39-1000 'Poción Verde
+Obj5=166-1000 'Poción Violeta
+Obj6=645-1000 'Poción Negra
+Obj7=1446-1000 'Poción de Energía
+BackUp=1
+
+#############################################
+
+[NPC33] 'Leñador
+Name=Leñador
+NpcType=0
+Desc=¡Hola muchacho!, si deseas vender o comprar objetos de leñador dame doble click o escribe /COMERCIAR.
+Head=4
+Heading=3
+Body=1
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Comercia=1
+ShowName=0
+TipoItems=14
+NROITEMS=2
+Obj1=127-1000 'Hacha de Leñador
+Obj2=1005-1000 'Hacha de leña Elfica
+BackUp=1
+
+#############################################
+
+[NPC44] 'Carpintero
+Name=Carpintero
+NpcType=0
+Desc=¡Hola muchacho!,  si deseas vender o comprar objetos de carpintero dame doble click o escribe /COMERCIAR.
+Head=2
+Heading=3
+Body=1
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=0
+TipoItems=20
+NROITEMS=7
+Obj1=163-1000 'Cuchara
+Obj2=167-1000 'Mueble Rústico
+Obj3=168-1000 'Silla
+Obj4=198-1000 'Serrucho
+Obj5=480-10000 ' Flecha
+Obj6=552-10000 ' Flecha +2
+Obj7=479-10000 ' Arco Compuesto
+BackUp=1
+
+#############################################
+
+[NPC41] 'Pescador Quieto
+Name=Pescador
+NpcType=0
+Desc=¡Bienvenido al gremio de pescadores!, si deseas vender o comprar objetos de pesca, dame doble click o escribe /COMERCIAR.
+Head=2
+Heading=3
+Body=3
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=0
+TipoItems=1
+NROITEMS=2
+Obj1=138-1000 'Caña de Pescar
+Obj2=139-1000 'Pescado
+BackUp=1
+
+#############################################
+
+[NPC58] 'Pescador Movil
+Name=Pescador
+NpcType=0
+Desc=¡Bienvenido al gremio de pescadores!, dame doble click o escribe /COMERCIAR.
+Head=101
+Heading=3
+Body=3
+Movement=2
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=0
+TipoItems=1
+NROITEMS=2
+Obj1=138-1000 'Caña de Pescar
+Obj2=139-1000 'Pescado
+BackUp=1
+
+#############################################
+
+[NPC48] 'Minero
+Name=Minero
+NpcType=0
+Desc=Tengo los mejores utensillos para mineros, si deseas vender o comprar objetos de minería dame doble click o escribe /COMERCIAR.
+Head=2
+Heading=3
+Body=1
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=0
+TipoItems=23
+NROITEMS=2
+Obj1=187-1000 'Piquete de Minero
+Obj2=389-1000 'Martillo de herrero
+BackUp=1
+
+#############################################
+
+[NPC80] 'Mercader
+Name=Mercader
+NpcType=0
+Desc=¡Buen día aventurero!, tengo objetos muy interesantes que podrían interesarte, dame doble click o escribe /COMERCIAR.
+Head=2
+Heading=3
+Body=3
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+TipoItems=1000
+ShowName=0
+NROITEMS=4
+Obj1=534-1000 'Odre Vacía
+Obj2=1419-10000 'Ropaje Invernal (Altos)
+Obj3=1420-10000 'Ropaje Invernal (Bajos)
+Obj4=1358-10000 ' Llamarada Volutio
+BackUp=1
+
+#############################################
+
+[NPC9] 'Provisiones Newbie Dungeon
+Name=Ralph
+NpcType=0
+Desc=¡Hola, pequeño aventurero, tengo aquí unas mercaderías para saciar tu hambre y sed!.
+Head=504
+Heading=3
+Body=202
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+TipoItems=1
+NROITEMS=3
+Obj1=1-1000 'Manzana Roja
+Obj2=158-1000 'Banana
+Obj3=43-1000 'Botella de Agua
+BackUp=1
+
+#############################################
+
+[NPC13] 'npc gobernador de Artemís
+Name=Gobernador Artemís
+NpcType=11
+Desc=¡Bienvenido a nuestra pequeña aldea! Escribe /Hogar para obtener la ciudadanía.
+Head=0
+Ciudad=1
+Heading=3
+Body=4
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+
+[NPC137] 'Mendigo
+Name=Manrique
+NpcType=0
+Desc=El Rey es avaro y sus terratenientes también, dame algo por favor, no seas como él...
+Head=0
+Body=411
+Heading=3
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+
+##############################################
+
+[NPC140] 'Borracho Frente 1
+Name=Borracho de taberna
+NpcType=0
+Desc=orcoszhh zson todsh orcshhh..hip..
+Head=0
+Body=412
+Heading=3
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+
+##############################################
+
+[NPC141] 'Borracho perfil izq 2
+Name=Borracho de taberna
+NpcType=0
+Desc=Podrash caminar de norte a shur, *hip* podrash encontrar sherveza de la mejor *hip* pero ninguna como la del meshon *hip* 
+Head=0
+Body=416
+Heading=3
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+
+##############################################
+
+[NPC142] 'Borracho perfil der 3
+Name=Borracho de taberna
+NpcType=0
+Desc=Déjenme tarnquilo... hip hip... descargaré lo que he... hip hip... bebido
+Head=0
+Body=424
+Heading=3
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+
+##############################################
+
+[NPC143] 'Bardo
+Name=Fethresor Bardo
+NpcType=0
+Desc=En las batallas más escalofriantes, más sangrientas... Un bardo siempre está presente.
+Head=0
+Body=418
+Heading=3
+Movement=0
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+
+##############################################
+
+[NPC144] 'Bardo
+Name=Whyx Bardo
+NpcType=0
+Desc=Mis melodías podrían hacer que hasta el más hábil guerrero, caiga a mis pies...
+Head=0
+Body=419
+Heading=3
+Movement=0
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+
+##############################################
+
+[NPC145] 'Bardo
+Name=Iklot Bardo
+NpcType=0
+Desc=Cuando te encuentres solo, perdido, sin saber para dónde correr... Respira profundo y susurra mi melodía.
+Head=0
+Body=420
+Heading=3
+Movement=0
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+
+##############################################
+
+[NPC8] 'Provisiones
+Name=Thorkis
+NpcType=0
+Desc=Hola jovencito, tengo las mejores provisiones de la zona, dame doble click o escribe /COMERCIAR.
+Head=504
+Heading=3
+Body=202
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=0
+TipoItems=1
+NROITEMS=16
+Obj1=1-1000 'Manzana
+Obj2=21-1000 'Porción de Tarta
+Obj3=23-1000 'Pan de Trigo
+Obj4=24-1000 'Pan de Maíz
+Obj5=25-1000 'Pastel
+Obj6=158-1000 'Pollo
+Obj7=29-1000 'Sandia
+Obj8=22-1000 'Frutas del bosque
+Obj9=43-1000 'Botella de Agua
+Obj10=160-1000 'Cerveza
+Obj11=161-1000 'Jugo de frutas
+Obj12=522-1000 'Hipocras
+Obj13=550-1000 'Porron de cerveza
+Obj14=557-1000 'Vino de canela
+Obj15=42-1000 'Vino
+Obj16=43-1000 'Agua
+BackUp=1
+
+#############################################
+
+[NPC7] 'Armero general
+Name=Armero
+NpcType=0
+Desc=Bienvenido, rata de alcantarilla, soy el herrero de este pueblo, tengo las mejores armas de éstas tierras, dame doble click o escribe /COMERCIAR.
+Head=505
+Heading=3
+Body=199
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=0
+TipoItems=1
+NROITEMS=19
+Obj1=15-1000 'Daga
+Obj2=619-1000 'Daga Envenenada
+Obj3=165-1000 'Daga +1
+Obj4=9-1000 'Horquilla
+Obj5=2-1000 'Espada Larga
+Obj6=123-1000 'Espada Vikinga
+Obj7=19-1000 'Espada Dos Manos
+Obj8=124-1000 'Katana
+Obj9=125-1000 'Sable
+Obj10=401-1000 'Martillo de Guerra
+Obj11=389-1000 'Martillo de Herrero
+Obj12=990-1000 'Mazo del Juicio
+Obj13=398-1000 'Garrote
+Obj14=3-1000 'Hacha
+Obj15=753-1000 'Maya Triple
+Obj16=1009-1000 'Cuchillas
+Obj17=873-1000 'Guantes de Hurto
+Obj18=1036-1000 'Guantes de Lucha
+Obj19=399-1000 'Cimitarra
+BackUp=1
+
+#############################################
+
+[NPC21] 'Sastre general (H)
+Name=Sastre
+NpcType=0
+Desc=¡Hola forastero! Me dedico a crear vestimentas de calidad, si estas interesado dame doble click o escribe /COMERCIAR.
+Head=7
+Heading=3
+Body=56
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=0
+TipoItems=3
+NROITEMS=18
+Obj1=31-1000 'Vestimentas comunes verde
+Obj2=32-1000 'Vestimentas comunes azul
+Obj3=35-1000 'Vestimenta comunes roja
+Obj4=135-1000 'Túnica Roja Burda
+Obj5=490-1000 'Ropa de Minero
+Obj6=196-1000 'Túnica de Mago
+Obj7=238-1000 'Túnica Azul
+Obj8=239-1000 'Túnica Roja
+Obj9=501-1000 'Ropa de Campesino
+Obj10=357-1000 'Túnica de Monje
+Obj11=381-1000 'Túnica Antigua
+Obj12=515-1000 'Ropa Legendaria
+Obj13=641-1000 'Ropa de Pordiosero
+Obj14=650-1000 'Túnica Pretoriana
+Obj15=986-1000 'Túnica de Druida
+Obj16=947-1000 'Hábito Liviano de Ritual
+Obj17=946-1000 'Vestimentas de poblador
+Obj18=954-1000 'Hábito de Ritual de Hombre
+BackUp=1
+
+#############################################
+
+[NPC22] 'Sastre general (Mujeres)
+Name=Modista
+NpcType=0
+Desc=¡Bienvenida Viajera! ¡Tengo las mejores prendas de estas zonas!, si estas interesada dame doble click o escribe /COMERCIAR.
+Head=71
+Heading=3
+Body=80
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=0
+TipoItems=3
+NROITEMS=20
+Obj1=170-1000 'Vestimenta de Mujer (H/E/EO-M)
+Obj2=382-1000 'Vestido Azul (H/E/EO-M)
+Obj3=504-1000 'Atuendo Combinado
+Obj4=505-1000 'Atuendo Azul (H/E/EO-M)
+Obj5=506-1000 'Atuendo Rosa (H/E/EO-M)
+Obj6=508-1000 'Ropa Estuaria (H/E/EO-M)
+Obj7=510-1000 'Vestido Indulgente (H/E/EO-M)
+Obj8=511-1000 'Vestido de Novia Sensual (H/E/EO-M)
+Obj9=513-1000 'Vestido de Bruja (H/E/EO-M)
+Obj10=514-1000 'Vestido de Bruja Especial (H/E/EO-M)
+Obj11=488-1000 'Vestido de Bruja Especial (H/E/EO-M)
+Obj12=503-1000 'Trampa Visual
+Obj13=949-1000 'Hábito Liviano de Ritual
+Obj14=951-1000 'Prenda de la naturaleza
+Obj15=877-1000 'Túnica de gran hechicera
+Obj16=955-1000 'Hábito de Ritual Femenino
+Obj17=945-1000 'Vestido de gala alcarinqua
+Obj18=953-1000 'Manto Élfico Púrpura
+Obj19=948-1000 'Vestido Bordado de Elite
+Obj20=880-1000 'Túnica del oráculo
+BackUp=1
+
+#############################################
+
+[NPC23] 'Sastre (enanos)
+Name=Sastre gn
+NpcType=0
+Desc=¡Acérquese! Tengo pequeñas prendas que serán de su agrado, si te interesa dame doble click o escribe /COMERCIAR.
+Head=404
+Heading=3
+Body=180
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=0
+TipoItems=3
+NROITEMS=20
+Obj1=240-1000 'Ropa de Enano (E/G)
+Obj2=486-1000 'Ropa de Estilo (E/G)
+Obj3=502-1000 'Ropa de Campesino (E/G)
+Obj4=507-1000 'Ropa Violeta (E/G)
+Obj5=512-1000 'Vestido Calipso (E/G-M)
+Obj6=527-1000 'Ropa de Enana (E/G-M)
+Obj7=656-1000 'Túnica Pretoriana (E/G)
+Obj8=670-1000 'Túnica de Mago (E/G)
+Obj9=671-1000 'Túnica de Monje (E/G)
+Obj10=707-1000 'Vestimenta de Noble (E/G)
+Obj11=950-1000 'Sirica Elfica
+Obj12=877-1000 'Túnica de Gran Hechicero
+Obj13=878-1000 'Túnica de Gran Hechicera
+Obj14=957-1000 'Vestido de Enana
+Obj15=962-1000 'Túnica Elegante
+Obj16=909-1000 'Vestido de novia
+Obj17=918-1000 'Gaban de cuero pequeño
+Obj18=916-1000 'Vestimenta Elegante
+Obj19=923-1000 'Traje de noble
+Obj20=888-1000 'Brial del bosque
+BackUp=1
+
+#############################################
+
+[NPC70] 'Armaduras escudos y cascos Artemís
+Name=Herrero
+Desc=Acércate, tengo algunos objetos de defensa personal que podrían interesarte!, dame doble click o escribe /COMERCIAR.
+Head=6
+Body=93
+Heading=4
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=0
+TipoItems=3
+NROITEMS=20
+Obj1=30-1000 'Armadura de cuero
+Obj2=359-1000 'Cotas de Malla
+Obj3=484-1000 'Manto de Noble
+Obj4=45-1000 'Ropa de clan blanca
+Obj5=80-1000 'Ropa de clan gris oscura
+Obj6=499-1000 'Cota de Mallas (H/E/EO-M)
+Obj7=529-1000 'Armadura de Cuero (H/E/EO-M)
+Obj8=667-1000 'Cota de Mallas (E/G)
+Obj9=668-1000 'Armadura de Cuero (E/G)
+Obj10=404-1000 'Escudo de Tortuga
+Obj11=128-1000 'Escudo de hierro
+Obj12=132-1000 'Casco de hierro
+Obj13=370-1000 'Capucha de cazador
+Obj14=1001-1000 'Casco de Águila
+Obj15=1002-1000 'Casco de Lobo
+Obj16=1003-1000 'Casco de Oso
+Obj17=1004-1000 'Casco de Tigre
+Obj18=360-1000 'Armadura de Cazador
+Obj19=648-1000 'Armadura de Cazador (E/G)
+Obj20=963-1000 'ropa minero luchador
+BackUp=1
+
+#############################################
+
+[NPC154] 'Vende Pociones newbie
+Name=Lilith
+NpcType=0
+Desc=Hola, tengo las mejores Pociones de la Alquimia para principiantes.
+Head=77
+Heading=3
+Body=200
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Comercia=1
+TipoItems=11
+NROITEMS=5
+Obj1=855-1000 'Poción Amarilla (newbie)
+Obj2=856-1000 'Poción Azul (newbie)
+Obj3=857-1000 'Poción Roja (newbie)
+Obj4=858-1000 'Poción Verde (newbie)
+Obj5=166-1000 'Poción Violeta
+BackUp=1
+
+#############################################
+
+[NPC155] 'Vende Armaduras newbie
+Name=Armaduras Newbie
+NpcType=0
+Desc=Si estás buscando túnicas y armaduras para principiantes, has llegado al lugar indicado.
+Head=6
+Heading=3
+Body=93
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Comercia=1
+TipoItems=3
+NROITEMS=7
+Obj1=1044-1000 'Túnica (Newbie) (H/E/EO)
+Obj2=1045-1000 'Túnica (Newbie) (E/G)
+Obj3=1046-1000 'Armadura de Cuero (Newbie) (H/E/EO)
+Obj4=1047-1000 'Armadura de Cuero (Newbie) (E/G)
+Obj5=1048-1000 'Escudo (Newbie)
+Obj6=1051-1000 'Casco Simple (Newbie)
+Obj7=1052-1000 'Capucha de Cazador (Newbie)
+BackUp=1
+
+#############################################
+
+[NPC156] 'Vende Armas newbie
+Name=Armas Newbie
+NpcType=0
+Desc=Hola novato, tengo algunas armas que pueden ayudarte en tus aventuras.
+Head=505
+Heading=3
+Body=199
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Comercia=1
+TipoItems=2
+NROITEMS=8
+Obj1=861-1000 'Espada (Newbie)
+Obj2=859-1000 'Arco (Newbie)
+Obj3=860-1000 'Flecha (Newbie)
+Obj4=564-1000 'Serrucho (Newbie)
+Obj5=565-1000 'Martillo de Herrero (Newbie)
+Obj6=562-1000 'Piquete de minero (Newbie)
+Obj7=561-1000 'Hacha de Leñador (Newbie)
+Obj8=563-1000 'Caña de PEscar (Newbie)
+BackUp=1
+
+#############################################
+
+[NPC157] 'Vende Magia newbie
+Name=Magia Newbie
+NpcType=0
+Desc=Bienvenido a mi pequeña tienda. Tengo algunos hechizos que podrían interesarte.
+Head=110
+Heading=3
+Body=46
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Comercia=1
+TipoItems=24
+NROITEMS=12
+Obj1=199-1000 'Dardo Magico
+Obj2=197-1000 'Flecha Magica
+Obj3=204-1000 'Flecha Electrica
+Obj4=205-1000 'Proyectil magico
+Obj5=202-1000 'Toxina
+Obj6=200-1000 'Antidoto magico
+Obj7=201-1000 'Curar heridas leves
+Obj8=363-1000 'Ataque de hambre
+Obj9=364-1000 'Terrible Hambre de Igor
+Obj10=862-1000 'Baston de mago (Newbie)
+Obj11=863-1000 ' Flauta Magica (Newbie)
+Obj12=864-1000 ' Laud magico (Newbie)
+BackUp=1 
+
+##############################################################
+#################ANIMALES NO HOSTILES########################
+##############################################################
+
+[NPC67] 'No atacable
+Name=Vaca Domestico
+NpcType=0
+Head=0
+Heading=3
+Body=7
+Movement=2
+AguaValida=0
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+GiveEXP=10
+GiveGLD=0
+MinHP=45
+MaxHP=45
+MaxHIT=3
+MinHIT=1
+DEF=2
+PoderAtaque=5
+PoderEvasion=5
+BackUp=0
+
+#############################################
+
+[NPC65] 'No atacable
+Name=Gallo Domestico
+NpcType=0
+Head=0
+Heading=3
+Body=5
+Movement=2
+AguaValida=0
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+GiveEXP=10
+GiveGLD=0
+MinHP=15
+MaxHP=15
+MaxHIT=1
+MinHIT=1
+DEF=0
+PoderAtaque=5
+PoderEvasion=5
+BackUp=0
+
+#############################################
+
+[NPC66] 'No atacable
+Name=Cerdo Domestico
+NpcType=0
+Head=0
+Heading=3
+Body=6
+Movement=2
+AguaValida=0
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+GiveEXP=15
+GiveGLD=0
+MinHP=35
+MaxHP=35
+MaxHIT=2
+MinHIT=1
+DEF=0
+PoderAtaque=5
+PoderEvasion=5
+BackUp=0
+
+#############################################
+
+[NPC45] 'No atacable
+Name=Espíritu
+NpcType=0
+Desc=¡Huye de aquí mientras puedas!
+Head=514
+Heading=3
+Body=8
+Movement=2
+AguaValida=0
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+ReSpawn=0
+BackUp=0
+
+#############################################
+
+[NPC88] 'No atacable
+Name=Ely
+NpcType=0
+Head=0
+Heading=3
+Body=143
+Movement=2
+AguaValida=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=0
+MaxHP=0
+MaxHIT=1
+MinHIT=1
+DEF=0
+PoderAtaque=0
+PoderEvasion=0
+LanzaSpells=1
+Sp1=5
+BackUp=0
+
+##############################################################
+####################ANIMALES HOSTILES########################
+##############################################################
+
+[NPC89] 
+Name=Fuego Fatuo
+NpcType=0
+Head=0
+Heading=3
+Body=144
+Movement=2
+AguaValida=1
+Attackable=1
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+GiveEXP=358
+GiveGLD=1350
+MinHP=890
+MaxHP=890
+MaxHIT=100
+MinHIT=100
+DEF=0
+PoderAtaque=1000
+PoderEvasion=500
+LanzaSpells=2
+Sp1=24
+Sp2=23
+BackUp=0
+
+#############################################
+
+[NPC2]
+Name=Gallo
+NpcType=0
+Head=0
+Heading=3
+Body=5
+Movement=2
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=0
+Domable=450
+Alineacion=0
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=15
+MaxHP=15
+MaxHIT=1
+MinHIT=1
+DEF=0
+PoderAtaque=5
+PoderEvasion=5
+BackUp=0
+
+#############################################
+
+[NPC3]
+Name=Cerdo
+NpcType=0
+Head=0
+Heading=3
+Body=6
+Movement=2
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=0
+Domable=500
+Alineacion=0
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=35
+MaxHP=35
+MaxHIT=2
+MinHIT=1
+DEF=0
+PoderAtaque=10
+PoderEvasion=15
+Snd2=4
+BackUp=0
+
+#############################################
+
+[NPC4]
+Name=Vaca
+NpcType=0
+Head=0
+Heading=3
+Body=7
+Movement=2
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=0
+Domable=810
+Alineacion=0
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=65
+MaxHP=65
+MaxHIT=5
+MinHIT=2
+DEF=2
+PoderAtaque=25
+PoderEvasion=15
+Snd2=8
+BackUp=0
+
+#############################################
+
+[NPC17]
+Name=Conejo
+NpcType=0
+Head=0
+Heading=3
+Body=11
+Movement=2
+AguaValida=0
+Attackable=1
+ReSpawn=1
+Hostile=0
+Domable=450
+Alineacion=0
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=15
+MaxHP=15
+MaxHIT=1
+MinHIT=1
+DEF=0
+PoderAtaque=5
+PoderEvasion=5
+BackUp=0
+
+#############################################
+
+[NPC18]
+Name=Pavo Real
+NpcType=0
+Head=0
+Heading=3
+Body=20
+Movement=2
+AguaValida=0
+Attackable=1
+ReSpawn=1
+Hostile=0
+Domable=450
+Alineacion=0
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=15
+MaxHP=15
+MaxHIT=1
+MinHIT=1
+DEF=0
+PoderAtaque=5
+PoderEvasion=5
+BackUp=0
+
+#############################################
+
+[NPC95]
+Name=Jabalí
+NpcType=0
+Head=0
+Heading=3
+Body=150
+Movement=2
+AguaValida=0
+Attackable=1
+ReSpawn=1
+Hostile=0
+Domable=2010
+Alineacion=0
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=515
+MaxHP=515
+MaxHIT=100
+MinHIT=65
+DEF=0
+PoderAtaque=130
+PoderEvasion=70
+BackUp=0
+
+#############################################
+
+[NPC96]
+Name=Tigre de Bengala
+NpcType=0
+Head=0
+Heading=3
+Body=147
+Movement=2
+AguaValida=0
+Attackable=1
+ReSpawn=1
+Hostile=0
+Domable=2010
+Alineacion=0
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=800
+MaxHP=800
+MaxHIT=70
+MinHIT=30
+DEF=0
+PoderAtaque=700
+PoderEvasion=45
+BackUp=0
+
+#############################################
+
+[NPC97]
+Name=Pato
+NpcType=0
+Head=0
+Heading=3
+Body=88
+Movement=2
+AguaValida=0
+Attackable=1
+ReSpawn=1
+Hostile=0
+Domable=660
+Alineacion=0
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=30
+MaxHP=30
+MaxHIT=5
+MinHIT=3
+DEF=0
+PoderAtaque=10
+PoderEvasion=10
+Snd3=96
+BackUp=0
+
+#############################################
+
+[NPC75]
+Name=Cuervo
+NpcType=0
+Head=0
+Heading=3
+Body=68
+Movement=2
+AguaValida=1
+Attackable=1
+ReSpawn=1
+Hostile=0
+Domable=1100
+Alineacion=0
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=30
+MaxHP=30
+MaxHIT=10
+MinHIT=4
+DEF=0
+PoderAtaque=25
+PoderEvasion=50
+BackUp=0
+
+#############################################
+
+[NPC76]
+Name=Hormiga
+NpcType=0
+Head=0
+Heading=3
+Body=70
+Movement=2
+AguaValida=0
+Attackable=1
+ReSpawn=1
+Hostile=0
+Domable=425
+Alineacion=0
+Comercia=0
+GiveEXP=8
+GiveGLD=0
+MinHP=15
+MaxHP=15
+MaxHIT=1
+MinHIT=1
+DEF=0
+PoderAtaque=5
+PoderEvasion=3
+BackUp=0
+
+#############################################
+
+[NPC77]
+Name=Rata
+NpcType=0
+Head=0
+Heading=3
+Body=71
+Movement=2
+AguaValida=0
+Attackable=1
+ReSpawn=1
+Hostile=0
+Domable=700
+Alineacion=0
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=20
+MaxHP=20
+MaxHIT=4
+MinHIT=2
+DEF=0
+PoderAtaque=10
+PoderEvasion=20
+Snd1=47
+Snd2=47
+BackUp=0
+
+#############################################
+
+[NPC78]
+Name=Oso Pardo Domesticado
+NpcType=0
+Head=0
+Heading=3
+Body=73
+Movement=2
+AguaValida=0
+Attackable=1
+ReSpawn=1
+Hostile=0
+Domable=2010
+Alineacion=0
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=600
+MaxHP=600
+MaxHIT=100
+MinHIT=65
+DEF=0
+PoderAtaque=250
+PoderEvasion=65
+BackUp=0
+
+#############################################
+
+[NPC79]
+Name=Tortuga de Mar
+NpcType=0
+Head=0
+Heading=3
+Body=74
+Movement=2
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=0
+Domable=2010
+Alineacion=0
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=315
+MaxHP=315
+MaxHIT=50
+MinHIT=35
+DEF=0
+PoderAtaque=100
+PoderEvasion=45
+BackUp=0
+
+#############################################
+
+[NPC91]
+Name=Gran Águila
+NpcType=0
+Head=0
+Heading=3
+Body=59
+Movement=2
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=0
+Domable=1200
+Alineacion=0
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=40
+MaxHP=40
+MaxHIT=15
+MinHIT=4
+DEF=0
+PoderAtaque=25
+PoderEvasion=160
+BackUp=0
+
+##############################################################
+########################GUARDIAS#############################
+##############################################################
+
+[NPC72]
+Name=Tancredo de Hauteville, soberano de Banderbill
+NpcType=5
+Desc=Saludos ciudadano, soy Tancredo de Hauteville, nuevo soberano de Banderbill. Mi deber es mantener el nuevo orden del Imperio. Si deseas unirte a mis filas y ayudarme di /ENLISTAR.
+Head=510
+Heading=3
+Body=409
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+
+[NPC6] 'Guardia Armada (Común quieto)
+Name=Guardia Imperial
+NpcType=2
+Desc=¡Daré cárcel a todos los criminales!
+Head=0
+Heading=3
+Body=15
+Movement=5
+PosOrig=1
+GuardiaPersigue=0
+Attackable=1
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=1000
+MaxHP=1000
+MaxHIT=250
+MinHIT=115
+DEF=30
+PoderAtaque=400
+PoderEvasion=190
+BackUp=0
+
+#############################################
+
+[NPC114] 'Sastre Armada Real. NO CAMBIAR EL NAME=SR
+Name=Sastre real
+NpcType=0
+Desc=Bienvenido a la Sastrería Real.
+Head=171
+Heading=3
+Body=174
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=1
+TipoItems=3
+NROITEMS=20
+Obj1=675-1000 'Vestimenta Imperial
+Obj2=676-1000 'Vestimenta Imperial (E/G)
+Obj3=516-1000 'Túnica de Maga del Imperio (H/E/EO-M)
+Obj4=517-1000 'Túnica de Mago del Imperio
+Obj5=521-1000 'Armadura Real
+Obj6=372-1000 'Manto de Sacerdote del Imperio
+Obj7=1039-1000 'Manto de Sacerdote del Imperio (E/G)
+Obj8=492-1000 'Armadura Real (E/G)
+Obj9=549-1000 'Túnica de Mago del Imperio (E/G)
+Obj10=679-1000 'Túnica Conspicua de Mago Imperial
+Obj11=629-1000 'Armadura Nobilísima
+Obj12=680-1000 'Armadura de Gran Sacerdote Imperial
+Obj13=1040-1000 'Armadura de Gran Sacerdote Imperial (E/G)
+Obj14=520-1000 'Armadura de Gran Sacerdotisa Imperial (H/E/EO-M)
+Obj15=521-1000 'Armadura Real
+Obj16=681-1000 'Armadura Nobilísima (E/G)
+Obj17=682-1000 'Túnica Conspicua de Mago Imperial (E/G)
+Obj18=687-1000 'Túnica Palatina
+Obj19=1038-1000 'Escudo Real
+Obj20=688-1000 'Pequeña Túnica Palatina (E/G)
+'Obj20=691-1000 'Armadura de Ilustre Caballero
+'Obj21=693-1000 'Armadura Magna (H/E/EO-M)
+'Obj22=694-1000 'Armadura de Ilustre Caballero (E/G)
+BackUp=1
+
+
+#############################################
+
+[NPC100] 'Guardia Armada (Común II)
+Name=Guardia Imperial
+NpcType=2
+Desc=¡Daré cárcel a todos los criminales y los perseguiré hasta el fin!
+Head=0
+Heading=3
+Body=15
+Movement=5
+PosOrig=1
+attackable=1
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=1000
+MaxHP=1000
+MaxHIT=250
+MinHIT=115
+DEF=30
+PoderAtaque=400
+PoderEvasion=190
+BackUp=0
+
+#############################################
+
+[NPC49] 'Guardia Armada (Movimiento random)
+Name=Guardia Imperial
+NpcType=2
+Desc=¡Daré cárcel a todos los criminales!
+Head=0
+Heading=3
+Body=15
+Movement=2
+PosOrig=1
+Attackable=1
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=1000
+MaxHP=1000
+MaxHIT=250
+MinHIT=115
+GolpeExacto=1
+DEF=30
+PoderAtaque=400
+PoderEvasion=190
+BackUp=0
+
+#############################################
+
+[NPC102] 'Guardia Armada WACHO
+Name=Guardia Imperial
+NpcType=2
+Desc=¡Daré cárcel a todos los criminales!
+Head=0
+Heading=3
+Body=15
+Movement=11
+PosOrig=1
+Attackable=1
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=1000
+MaxHP=1000
+MaxHIT=250
+MinHIT=115
+DEF=30
+PoderAtaque=400
+PoderEvasion=190
+GuardiaPersigue=1
+BackUp=0
+
+#############################################
+
+[NPC106] 'Guardia Armada (Arquera)
+Name=Arquera Real
+NpcType=2
+Desc=Ningún criminal escapará de mi puntería.
+Head=172
+Heading=3
+Body=131
+Movement=5
+PosOrig=1
+Attackable=1
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=3500
+MaxHP=3500
+MaxHIT=50
+MinHIT=30
+DEF=10
+PoderAtaque=1500
+PoderEvasion=190
+LanzaSpells=1
+Sp1=35
+NROITEMS=1
+Obj1=551-10 'Flecha +1
+BackUp=0
+
+#############################################
+
+[NPC81] 'Guardia Armada (Sacerdote)
+Name=Sacerdote Imperial
+NpcType=2
+Desc=Ohhh hijo mío!! que la llama de la virtud arda en tu corazón!!!
+Head=4
+Heading=3
+Body=101
+Movement=5
+PosOrig=1
+Attackable=1
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=9550
+MaxHP=9550
+MaxHIT=100
+MinHIT=100
+DEF=10
+PoderAtaque=1500
+PoderEvasion=190
+LanzaSpells=2
+Sp1=25
+Sp2=9
+BackUp=0
+
+#############################################
+
+[NPC82] 'Guardia Armada (Sacerdote II)
+Name=Sacerdote Imperial
+NpcType=2
+Desc=Ohhh hijo mío!! que la llama de la virtud arda en tu corazón!!!
+Head=5
+Heading=3
+Body=101
+Movement=5
+PosOrig=1
+Attackable=1
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=9550
+MaxHP=9550
+MaxHIT=100
+MinHIT=100
+DEF=10
+PoderAtaque=1500
+PoderEvasion=190
+LanzaSpells=2
+Sp1=25
+Sp2=9
+BackUp=0
+
+#############################################
+
+[NPC83] 'Guardia Armada (Druida)
+Name=Druida Imperial
+NpcType=2
+Desc=Ohhh hijo mío!! que la llama de la virtud arda en tu corazón!!!
+Head=101
+Heading=3
+Body=56
+Movement=5
+PosOrig=1
+Attackable=1
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=9550
+MaxHP=9550
+MaxHIT=100
+MinHIT=100
+DEF=10
+PoderAtaque=1500
+PoderEvasion=190
+Domable=0
+LanzaSpells=2
+Sp1=24
+Sp2=23
+BackUp=0
+
+#############################################
+
+[NPC84] 'Guardia Armada (Druida II)
+Name=Druida Imperial
+NpcType=2
+Desc=Ohhh hijo mío!! que la llama de la virtud arda en tu corazón!!!
+Head=102
+Heading=3
+Body=56
+Movement=2
+PosOrig=1
+Attackable=1
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=9550
+MaxHP=9550
+MaxHIT=100
+MinHIT=100
+DEF=10
+PoderAtaque=1500
+PoderEvasion=190
+Domable=0
+LanzaSpells=2
+Sp1=24
+Sp2=23
+BackUp=0
+
+#############################################
+
+[NPC85] 'Guardia Armada (Druida III)
+Name=Druida Imperial
+NpcType=2
+Desc=Ohhh hijo mío!! que la llama de la virtud arda en tu corazón!!!
+Head=103
+Heading=3
+Body=56
+Movement=2
+PosOrig=1
+Attackable=1
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=9550
+MaxHP=9550
+MaxHIT=100
+MinHIT=100
+DEF=10
+PoderAtaque=1500
+PoderEvasion=190
+Domable=0
+LanzaSpells=2
+Sp1=24
+Sp2=23
+BackUp=0
+
+#############################################
+
+[NPC86] 'Guardia Armada (Mago)
+Name=Mago Imperial
+NpcType=2
+Desc=Ohhh hijo mío!! que la llama de la virtud arda en tu corazón!!!
+Head=6
+Heading=3
+Body=130
+Movement=2
+PosOrig=1
+Attackable=1
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=9550
+MaxHP=9550
+MaxHIT=100
+MinHIT=100
+DEF=10
+PoderAtaque=1500
+PoderEvasion=190
+LanzaSpells=2
+Sp1=24
+Sp2=23
+BackUp=0
+
+#############################################
+
+[NPC87] 'guardia armada
+Name=Mago Imperial
+NpcType=2
+Desc=Ohhh hijo mío!! que la llama de la virtud arda en tu corazón!!!
+Head=6
+Heading=3
+Body=128
+Movement=2
+PosOrig=1
+Attackable=1
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=9550
+MaxHP=9550
+MaxHIT=100
+MinHIT=100
+DEF=10
+PoderAtaque=1500
+PoderEvasion=190
+LanzaSpells=2
+Sp1=24
+Sp2=23
+BackUp=0
+
+#############################################
+
+[NPC148] 'Guardia Armada en micro ao
+Name=Guardia Imperial
+NpcType=0
+Desc=¡Atención! Si eres criminal e ingresas aquí seras atacado por los guardias reales.
+Head=0
+Heading=3
+Body=15
+Movement=1
+PosOrig=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=1000
+MaxHP=1000
+MaxHIT=0
+MinHIT=0
+DEF=30
+PoderAtaque=400
+PoderEvasion=190
+BackUp=0
+
+##############################################################
+#######################LEGIONARIOS###########################
+##############################################################
+
+[NPC98]
+Name=Demonio Legionario
+NpcType=5
+Desc=Si deseas unirte a la Legión Oscura escribe /ENLISTAR
+Head=0
+Heading=3
+Body=405
+Movement=1
+AguaValida=0
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+Faccion=1
+BackUp=0
+
+#############################################
+
+[NPC115] 'Sastre Legión Oscura. NO CAMBIAR EL NAME=SC
+Name=Sastre legion
+NpcType=0
+Desc=¡AQUÍ OBTENDRÁS TU ARMADURA LEGIONARIA!
+Head=0
+Heading=3
+Body=69
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=1
+TipoItems=3
+NROITEMS=20
+Obj1=677-1000 'Vestimenta Legionaria
+Obj2=678-1000 'Vestimenta Legionaria (E/G)
+Obj3=509-1000 'Túnica de Maga Oscura (H/E/EO-M)
+Obj4=518-1000 'Túnica de Mago Oscuro
+Obj5=369-1000 'Armadura Legionaria
+Obj6=523-1000 'Manto de Sacerdote Demoníaco
+Obj7=1041-1000 'Manto de Sacerdote Demoníaco (E/G)
+Obj8=379-1000 'Armadura Legionaria (E/G)
+Obj9=558-1000 'Túnica de Mago Oscuro (E/G)
+Obj10=634-1000 'Túnica Egregia de Mago Oscuro
+Obj11=635-1000 'Armadura Lóbrega (H/E/EO-M)
+Obj12=683-1000 'Armadura Lóbrega
+Obj13=684-1000 'Armadura de Gran Sacerdote Demoníaco
+Obj14=1042-1000 'Armadura de Gran Sacerdote Demoníaco (E/G)
+Obj15=685-1000 'Armadura Lóbrega (E/G)
+Obj16=686-1000 'Túnica Egregia de Mago Oscuro (E/G)
+Obj17=689-1000 'Túnica Avernal
+Obj18=690-1000 'Pequeña Túnica Avernal (E/G)
+Obj19=1037-1000 'Escudo Legionario
+Obj20=701-1000 'Armadura Infame
+'Obj20=695-1000 'Armadura de Pequeño Pandemonium (E/G)
+BackUp=1
+
+#############################################
+
+[NPC127] 'Guardia Legión (Común)
+Name=Guardia Infernal
+NpcType=8
+Desc=¡Por el Señor Oscuro, aniquilaré a quienes lo deshonran!
+Head=201
+Heading=3
+Body=170
+Movement=2
+PosOrig=1
+GuardiaPersigue=0
+Attackable=1
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=1000
+MaxHP=1000
+MaxHIT=250
+MinHIT=115
+DEF=30
+PoderAtaque=400
+PoderEvasion=190
+BackUp=0
+
+#############################################
+
+[NPC105] 'Guardia Legión (con Magia)
+Name=Mago del Caos
+NpcType=8
+Desc=¡El mal prevalecerá sobre estas tierras!
+Head=202
+Heading=3
+Body=129
+Movement=2
+PosOrig=1
+Attackable=1
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=9550
+MaxHP=9550
+MaxHIT=100
+MinHIT=100
+DEF=10
+PoderAtaque=1500
+PoderEvasion=190
+LanzaSpells=2
+Sp1=24
+Sp2=23
+BackUp=0
+
+#############################################
+
+[NPC107] 'Guardia Legión (Golem)
+Name=Golem Oscuro
+NpcType=8
+Head=0
+Heading=3
+Body=141
+Movement=2
+Attackable=1
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=49000
+MaxHP=49000
+MaxHIT=450
+MinHIT=300
+DEF=30
+PoderAtaque=400
+PoderEvasion=50
+AfectaParalisis=1
+BackUp=0
+
+
+#############################################
+
+
+[NPC149] 'Guardia Legión En micro ao
+Name=Guardia Infernal
+NpcType=0
+Desc=¡Atención! Si eres ciudadano e ingresas aquí seras atacado por los guardias de la Legión.
+Head=201
+Heading=3
+Body=170
+Movement=1
+PosOrig=1
+GuardiaPersigue=0
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=1000
+MaxHP=1000
+MaxHIT=0
+MinHIT=0
+DEF=30
+PoderAtaque=400
+PoderEvasion=190
+BackUp=0
+
+##############################################################
+#######################IMVOCACIÓN###########################
+##############################################################
+
+[NPC92] 'NO RESPAWN (para el hechizo Invocación)
+Name=Elemental de Agua
+NpcType=0
+Head=0
+Heading=3
+Body=541
+Movement=2
+AguaValida=1
+Attackable=1
+ReSpawn=1
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=400
+MaxHP=400
+MaxHIT=120
+MinHIT=100
+DEF=0
+PoderAtaque=150
+PoderEvasion=200
+BackUp=0
+
+#############################################
+
+[NPC93] 'NO RESPAWN (para el hechizo Invocación)
+Name=Elemental de Fuego
+NpcType=0
+Head=0
+Heading=3
+Body=153
+Movement=2
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=200
+MaxHP=200
+MaxHIT=120
+MinHIT=100
+DEF=0
+PoderAtaque=100
+PoderEvasion=100
+LanzaSpells=1
+Sp1=15
+BackUp=0
+
+#############################################
+
+[NPC94] 'NO RESPAWN (para el hechizo Invocación)
+Name=Elemental de Tierra
+NpcType=0
+Head=0
+Heading=3
+Body=543
+Movement=2
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=200
+MaxHP=200
+MaxHIT=120
+MinHIT=100
+DEF=0
+PoderAtaque=150
+PoderEvasion=100
+LanzaSpells=1
+Sp1=9
+BackUp=0
+
+##############################################################
+#######################NPCS HOSTILES#########################
+##############################################################
+
+[NPC500]
+Name=Murciélago
+NpcType=0
+Head=0
+Heading=3
+Body=9
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=400
+Alineacion=2
+Comercia=0
+GiveEXP=4
+MinHP=30
+MaxHP=30
+MaxHIT=4
+MinHIT=1
+DEF=0
+DefM=3
+PoderAtaque=30
+PoderEvasion=10
+BackUp=0
+NROITEMS=5
+Drop1=12-65  ' Oro
+Drop2=12-155  ' Oro
+Drop4=12-190 ' Oro
+Drop5=12-500 ' Oro
+
+############################################
+
+[NPC501]
+Name=Lobo
+NpcType=0
+Head=0
+Heading=3
+Body=10
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=1250
+Alineacion=2
+Comercia=0
+GiveEXP=27
+MinHP=120
+MaxHP=120
+MaxHIT=18
+MinHIT=1
+DEF=8
+PoderAtaque=80
+PoderEvasion=25
+Snd1=35
+Snd2=9
+BackUp=0
+NROITEMS=5
+Drop1=414-1 'Piel de Lobo
+Drop2=27-3 'Chuleta
+Drop3=1002-1 'Casco de Lobo
+Drop4=394-1 'Llamado a la Naturaleza.
+
+############################################
+
+[NPC502]
+Name=Zombie
+NpcType=0
+Head=507
+Heading=3
+Body=196
+Movement=3
+AguaValida=0
+Attackable=1
+Respawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=49
+MinHP=220
+MaxHP=220
+MaxHIT=12
+MinHIT=4
+DEF=20
+PoderAtaque=100
+PoderEvasion=20
+Snd2=33
+Snd3=164
+BackUp=0
+NROITEMS=5
+Drop1=12-450 'Oro
+Drop2=45-1 'Ropa de Clan
+Drop3=12-50 'Oro
+Drop4=38-30 'Pociones Rojas
+
+############################################
+
+[NPC503]
+Name=Esqueleto
+NpcType=0
+Head=0
+Heading=3
+Body=12
+Movement=3
+AguaValida=0
+Attackable=1
+Respawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=36
+MinHP=160
+MaxHP=160
+MaxHIT=8
+MinHIT=1
+DEF=10
+PoderAtaque=30
+PoderEvasion=30
+BackUp=0
+NROITEMS=5
+Drop1=12-360 'Oro
+Drop2=12-230 'Oro
+Drop3=363-1 'Ataque de Hambre
+Drop4=2-2 ' Espada larga
+Drop5=197-1 'Flecha magica
+
+############################################
+
+[NPC504]
+Name=Serpiente
+NpcType=0
+Head=0
+Heading=3
+Body=13
+Movement=3
+AguaValida=0
+Attackable=1
+Respawn=0
+Hostile=1
+Domable=400
+Alineacion=2
+Comercia=0
+GiveEXP=5
+MinHP=35
+MaxHP=35
+MaxHIT=1
+MinHIT=1
+DEF=0
+PoderAtaque=10
+PoderEvasion=0
+SND2=103
+BackUp=0
+NROITEMS=5
+Drop1=12-75 'Oro
+Drop4=200-1 'Antídoto Mágico
+Drop5=202-1 'Toxina
+
+############################################
+
+[NPC505]
+Name=Goblin
+NpcType=0
+Head=0
+Heading=3
+Body=14
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=1500
+Alineacion=2
+Comercia=0
+GiveEXP=24
+MinHP=110
+MaxHP=110
+MaxHIT=15
+MinHIT=5
+DEF=15
+PoderAtaque=60
+PoderEvasion=40
+Snd3=142
+BackUp=0
+NROITEMS=5
+Drop1=12-220 'Oro
+Drop2=12-225 'Oro
+Drop3=15-3 'Daga
+Drop4=132-2 'Casco de Hierro
+Drop5=39-30 'Pociones Verdes
+
+############################################
+
+[NPC506]
+Name=Gallo Salvaje
+NpcType=0
+Head=0
+Heading=3
+Body=5
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=450
+Alineacion=2
+Comercia=0
+GiveEXP=9
+MinHP=60
+MaxHP=60
+MaxHIT=1
+MinHIT=1
+DEF=0
+PoderAtaque=5
+PoderEvasion=5
+SND3=67
+BackUp=0
+NROITEMS=5
+Drop1=26-1 'Pollo
+Drop2=12-25 'Oro
+Drop3=12-50 'Oro
+
+############################################
+
+[NPC507]
+Name=Lord Zombie
+NpcType=0
+Head=508
+Heading=3
+Body=197
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=248
+MinHP=850
+MaxHP=850
+MaxHIT=25
+MinHIT=10
+DEF=34
+PoderAtaque=150
+PoderEvasion=35
+SND2=33
+Snd3=164
+BackUp=0
+NROITEMS=5
+Drop1=12-2620 'Oro
+Drop2=38-7 'Pociones Rojas
+Drop3=37-5 'Pociones Azules
+Drop5=395-1 'Llamado Nigromante
+
+############################################
+
+[NPC508]
+Name=Esqueleto Guerrero
+NpcType=0
+Head=0
+Heading=3
+Body=393
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=277
+MinHP=950
+MaxHP=950
+MaxHIT=18
+MinHIT=8
+DEF=19
+PoderAtaque=60
+PoderEvasion=50
+BackUp=0
+NROITEMS=5
+Drop1=12-2820 'Oro
+Drop3=132-1 'Casco de Hierro
+Drop4=126-1 'Hacha Larga de Guerra
+Drop5=380-1 'Invocación de Ultratumba
+
+############################################
+
+[NPC509]
+Name=Dragón Rojo
+NpcType=0
+Head=0
+Heading=3
+Body=41
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=2822
+MinHP=8700
+MaxHP=8700
+MaxHIT=300
+MinHIT=250
+GolpeExacto=1
+DEF=50
+PoderAtaque=380
+PoderEvasion=250
+Snd3=160
+BackUp=0
+NROITEMS=5
+Drop1=12-21200 'Oro
+Drop2=239-15 'Túnica Roja
+Drop3=12-32700 'Oro
+Drop4=981-2 'Piwafwi de Fuego
+Drop5=481-1 'Armadura de Dragón
+
+############################################
+
+[NPC510]
+Name=Araña Gigante
+NpcType=0
+Head=0
+Heading=3
+Body=42
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=364
+MinHP=1250
+MaxHP=1250
+MaxHIT=100
+MinHIT=75
+DEF=0
+PoderAtaque=150
+PoderEvasion=70
+Veneno=1
+BackUp=0
+NROITEMS=1
+Drop1=12-3550 'Oro
+############################################
+
+[NPC511]
+Name=Ogro Esclavo
+NpcType=0
+Head=0
+Heading=3
+Body=205
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=335
+MinHP=1550
+MaxHP=1550
+MaxHIT=150
+MinHIT=70
+DEF=10
+DEFm=15
+PoderAtaque=100
+PoderEvasion=100
+snd2=78
+BackUp=0
+NROITEMS=5
+Drop1=12-3350 'Oro
+Drop2=37-2300'Pociones Azul
+Drop3=401-2 'Martillo de Guerra
+Drop5=697-2 'Anillo Mágico
+
+############################################
+
+[NPC512] 'NO RESPAWN (para el hechizo Invocar Lobos)
+Name=Lobo
+NpcType=0
+Head=0
+Heading=3
+Body=10
+Movement=3
+AguaValida=0
+Attackable=1
+Respawn=1
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=75
+MaxHP=75
+MaxHIT=20
+MinHIT=10
+DEF=8
+PoderAtaque=80
+PoderEvasion=25
+Snd1=35
+Snd2=9
+BackUp=0
+
+############################################
+
+[NPC513]
+Name=Cíclope Guardián
+NpcType=0
+Head=0
+Heading=3
+Body=206
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=7015
+MinHP=11600
+MaxHP=11600
+MaxHIT=160
+MinHIT=80
+DEF=30
+DEFm=10
+PoderAtaque=130
+PoderEvasion=70
+snd2=78
+BackUp=0
+NROITEMS=5
+Drop1=12-27500 'Oro
+Drop2=37-500 'Poción Azul
+Drop3=990-7 'Mazo de Juicio
+Drop4=698-2 'Anillo de Resitencia Mágica
+Drop5=359-7 'Cotas de Mallas
+
+############################################
+
+[NPC514]
+Name=Serpiente de Anthares
+NpcType=0
+Head=0
+Heading=3
+Body=207
+Movement=3
+AguaValida=0
+Attackable=1
+Respawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=181
+MinHP=700
+MaxHP=700
+MaxHIT=45
+MinHIT=10
+DEF=0
+DEFm=50
+PoderAtaque=300
+PoderEvasion=150
+SND2=103
+BackUp=0
+NROITEMS=5
+Drop1=12-1420 'Oro
+Drop2=697-1 'Anillo Mágico
+Drop3=698-1 'Anillo de Resistencia Mágica
+Drop4=699-1 'Anillo de Disolución Mágica
+Drop5=503-2 'Trampa Visual
+
+############################################
+
+[NPC515]
+Name=Gorila Salvaje
+NpcType=0
+Head=0
+Heading=3
+Body=213
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=423
+MinHP=1450
+MaxHP=1450
+MaxHIT=130
+MinHIT=90
+DEF=10
+DEFm=10
+PoderAtaque=160
+PoderEvasion=70
+BackUp=0
+NROITEMS=1
+Drop1=12-4100 'Oro
+############################################
+
+[NPC516] 'NO RESPAWN (npc para entrenador)
+Name=Goblin
+NpcType=0
+Head=0
+Heading=3
+Body=14
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=1
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=1
+GiveGLD=0
+MinHP=90
+MaxHP=90
+MaxHIT=12
+MinHIT=4
+DEF=15
+PoderAtaque=50
+PoderEvasion=40
+BackUp=0
+
+############################################
+
+[NPC517]
+Name=Djinn de Viento
+NpcType=0
+Heading=3
+Body=215
+Movement=3
+AguaValida=1
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=7000
+MinHP=4200
+MaxHP=4200
+MaxHIT=140
+MinHIT=75
+DEF=45
+PoderAtaque=200
+PoderEvasion=250
+LanzaSpells=2
+Sp1=9
+Sp2=23
+BackUp=0
+NROITEMS=5
+Drop1=12-1200 'Oro
+Drop2=12-1550 'Oro
+Drop3=37-175 'Pociones Azules
+Drop4=206-1 'Paralizar
+Drop5=531-1 'Descarga Eléctrica
+
+############################################
+
+[NPC518]
+Name=Dragón de las Profundidades
+NpcType=0
+Head=0
+Heading=3
+Body=218
+Movement=3
+AguaValida=1
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=2100
+MinHP=2000
+MaxHP=2000
+MaxHIT=150
+MinHIT=90
+DEF=50
+PoderAtaque=300
+PoderEvasion=250
+LanzaSpells=2
+Sp1=9
+Sp2=15
+Snd3=89
+BackUp=0
+NROITEMS=5
+Drop1=12-150 'Oro
+Drop3=37-120 'Pociones Azules
+Drop4=361-1 'Tormenta de Fuego
+Drop5=206-1 'Paralizar
+
+############################################
+[NPC519]
+Name=Gusano de Arena
+NpcType=0
+Head=0
+Heading=3
+Body=216
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=394
+MinHP=1350
+MaxHP=1350
+MaxHIT=100
+MinHIT=75
+DEF=0
+PoderAtaque=150
+PoderEvasion=70
+Veneno=1
+BackUp=0
+NROITEMS=5
+Drop1=12-3460 'Oro
+Drop2=38-30 'Poción Roja
+Drop3=36-10 'Poción Amarilla
+Drop4=480-365 'Flechas
+
+############################################
+
+[NPC520] 'NO RESPAWN (para el hechizo Invocación de Ultratumba)
+Name=Esqueleto Guerrero
+NpcType=0
+Head=0
+Heading=3
+Body=393
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=1
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=320
+MaxHP=320
+MaxHIT=94
+MinHIT=55
+DEF=25
+PoderAtaque=130
+PoderEvasion=100
+BackUp=0
+
+############################################
+
+[NPC521]
+Name=Tigre Salvaje
+NpcType=0
+Head=0
+Heading=3
+Body=147
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=2010
+Alineacion=2
+Comercia=0
+GiveEXP=79
+MinHP=350
+MaxHP=350
+MaxHIT=70
+MinHIT=30
+DEF=0
+PoderAtaque=700
+PoderEvasion=45
+BackUp=0
+NROITEMS=5
+Drop1=414-20 'Piel de Tigre (le pongo de lobo mientras, cambiar!!)
+Drop3=27-23 'Chuleta
+Drop4=30-1 'Armadura de Cuero
+Drop5=1004-1 'Casco de Tigre
+
+############################################
+
+[NPC522] 
+Name=Orco
+NpcType=0
+Head=0
+Heading=3
+Body=185
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=1792
+MinHP=350
+MaxHP=350
+MaxHIT=120
+MinHIT=60
+DEF=30
+PoderAtaque=100
+PoderEvasion=67
+BackUp=0
+NROITEMS=5
+Drop1=12-1520 'Oro
+Drop2=3-1 'Hacha
+Drop3=39-10 'Poción Verde
+Drop4=990-2 'Mazos de Juicio
+Drop5=359-2 'Cotas de Malla
+
+############################################
+
+[NPC523]
+Name=Orco (NO USAR).
+NpcType=0
+Head=0
+Heading=3
+Body=185
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=250000
+GiveGLD=1200
+MinHP=4300
+MaxHP=4300
+MaxHIT=35
+MinHIT=5
+DEF=30
+PoderAtaque=100
+PoderEvasion=75
+NROITEMS=1
+Drop1=3-1
+BackUp=0
+
+############################################
+
+[NPC524] 'NO RESPAWN (tira llave fuerte orco)
+Name=Jefe Orco
+NpcType=0
+Head=0
+Heading=3
+Body=43
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=30720
+MinHP=1000
+MaxHP=1000
+MaxHIT=400
+MinHIT=75
+DEF=30
+PoderAtaque=250
+PoderEvasion=200
+Nroitems=1
+BackUp=0
+NROITEMS=6
+Drop1=12-12245 'Oro
+Drop2=183-1 'Llave Fuerte
+Drop3=183-1 'Llave Fuerte
+Drop4=183-1 'Llave Fuerte
+Drop5=183-1 'Llave Fuerte
+Drop6=183-1 'Llave Fuerte
+
+############################################
+
+[NPC525]
+Name=Águila
+NpcType=0
+Head=0
+Heading=3
+Body=59
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=1200
+Alineacion=2
+Comercia=0
+GiveEXP=34
+MinHP=150
+MaxHP=150
+MaxHIT=15
+MinHIT=4
+DEF=0
+PoderAtaque=25
+PoderEvasion=70
+SND3=62
+BackUp=0
+NROITEMS=5
+Drop2=139-1 'Pescado
+Drop3=544-5 'Pez Dorado
+
+############################################
+
+[NPC526] 'NO RESPAWN (tira llave dungeon malaheing)
+Name=Araña Malaheing
+NpcType=0
+Head=0
+Heading=3
+Body=42
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=1
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=1450
+MinHP=3000
+MaxHP=3000
+MaxHIT=100
+MinHIT=75
+DEF=10
+PoderAtaque=200
+PoderEvasion=150
+Nroitems=1
+Veneno=1
+BackUp=0
+NROITEMS=5
+Drop1=174-1 'Llave Catacumbas de Ulla
+Drop2=174-1 'Llave Catacumbas de Ulla
+Drop3=174-1 'Llave Catacumbas de Ulla
+Drop4=174-1 'Llave Catacumbas de Ulla
+Drop5=174-1 'Llave Catacumbas de Ulla
+
+############################################
+
+[NPC527] 'NO RESPAWN (tira llave dungeon malaheing)
+Name=Dragón Rojo
+NpcType=0
+Head=0
+Heading=3
+Body=41
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=1
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=2262
+MinHP=5000
+MaxHP=5000
+MaxHIT=300
+MinHIT=250
+DEF=20
+PoderAtaque=300
+PoderEvasion=250
+Nroitems=1
+BackUp=0
+NROITEMS=5
+Drop1=178-1 'Llave Dungeon Malaheing
+Drop2=178-1 'Llave Dungeon Malaheing
+Drop3=178-1 'Llave Dungeon Malaheing
+Drop4=178-1 'Llave Dungeon Malaheing
+Drop5=178-1 'Llave Dungeon Malaheing
+
+############################################
+
+[NPC528]
+Name=Anfisbena
+NpcType=0
+Head=0
+Heading=3
+Body=203
+Movement=3
+AguaValida=0
+Attackable=1
+Respawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=51
+MinHP=75
+MaxHP=75
+MaxHIT=5
+MinHIT=5
+DEF=0
+PoderAtaque=30
+PoderEvasion=0
+SND2=103
+BackUp=0
+NROITEMS=5
+Drop1=12-5 'Oro
+Drop2=12-10 'Oro
+Drop3=12-50 'Oro
+
+############################################
+
+[NPC529]
+Name=Escorpión
+NpcType=0
+Head=0
+Heading=3
+Body=51
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=600
+Alineacion=2
+Comercia=0
+GiveEXP=8
+MinHP=50
+MaxHP=50
+MaxHIT=3
+MinHIT=1
+DEF=0
+DefM=3
+PoderAtaque=30
+PoderEvasion=10
+Veneno=1
+BackUp=0
+NROITEMS=5
+Drop1=12-120   ' Oro
+Drop3=12-250  ' Oro
+Drop4=2-2    ' Espada larga
+Drop5=164-3  ' Espada corta
+
+############################################
+
+[NPC530]
+Name=Bandido
+NpcType=0
+Head=2
+Heading=3
+Body=47
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=147
+MinHP=650
+MaxHP=650
+MaxHIT=39
+MinHIT=15
+DEF=0
+PoderAtaque=70
+PoderEvasion=50
+Snd3=157
+BackUp=0
+NROITEMS=5
+Drop1=12-1220 'Oro
+Drop2=641-1 'Ropa Pordiosero
+Drop3=38-10 'Pociones Rojas
+Drop4=873-1 'Guantes de Hurto
+
+############################################
+
+[NPC531]
+Name=Asesino
+NpcType=0
+Head=201
+Heading=3
+Body=48
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=215
+MinHP=950
+MaxHP=950
+MaxHIT=139
+MinHIT=15
+DEF=0
+PoderAtaque=200
+PoderEvasion=200
+Snd3=155
+BackUp=0
+NROITEMS=5
+Drop1=12-2500 'Oro
+Drop2=38-10 'Pociones Rojas
+Drop3=366-1 'Daga +3
+Drop4=367-1 'Daga +4
+Drop5=356-1 'Armadura de las Sombras
+
+############################################
+
+[NPC532]
+Name=Osezno
+NpcType=0
+Head=0
+Heading=3
+Body=236
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=72
+MinHP=400
+MaxHP=400
+MaxHIT=70
+MinHIT=55
+DEF=0
+PoderAtaque=230
+PoderEvasion=60
+BackUp=0
+NROITEMS=5
+Drop1=415-1 'Piel de Oso Pardo
+Drop3=38-10 'Pociones Rojas
+Drop4=480-50 'Flechas
+
+############################################
+
+[NPC533]
+Name=Cuervo Salvaje
+NpcType=0
+Head=0
+Heading=3
+Body=68
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=1100
+Alineacion=2
+Comercia=0
+GiveEXP=9
+MinHP=60
+MaxHP=60
+MaxHIT=6
+MinHIT=1
+DEF=2
+DEFm=3
+PoderAtaque=20
+PoderEvasion=25
+SND3=63
+BackUp=0
+NROITEMS=5
+Drop1=12-134   ' Oro
+Drop3=12-53   ' Oro
+Drop4=12-250  ' Oro
+Drop5=12-1000 ' Oro
+
+############################################
+
+[NPC534]
+Name=Hormiga Gigante
+NpcType=0
+Head=0
+Heading=3
+Body=69
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=2010
+Alineacion=2
+Comercia=0
+GiveEXP=500
+MinHP=400
+MaxHP=400
+MaxHIT=100
+MinHIT=50
+DEF=5
+PoderAtaque=150
+PoderEvasion=100
+BackUp=0
+NROITEMS=5
+Drop1=12-100 'Oro
+Drop2=478-1 'Arco Simple
+Drop3=479-1 'Arco Compuesto
+Drop4=38-15 'Pociones Rojas
+Drop5=480-500 ' Flechas
+
+############################################
+
+[NPC535]
+Name=Hormiga Marabunta
+NpcType=0
+Head=0
+Heading=3
+Body=70
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=425
+Alineacion=2
+Comercia=0
+GiveEXP=6
+MinHP=40
+MaxHP=40
+MaxHIT=1
+MinHIT=1
+DEF=0
+PoderAtaque=5
+PoderEvasion=3
+BackUp=0
+NROITEMS=5
+Drop1=12-55 'Oro
+Drop3=12-30 'Oro
+Drop5=12-150 'Oro
+
+############################################
+
+[NPC536]
+Name=Rata Salvaje
+NpcType=0
+Head=0
+Heading=3
+Body=71
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=700
+Alineacion=2
+Comercia=0
+GiveEXP=6
+MinHP=40
+MaxHP=40
+MaxHIT=4
+MinHIT=2
+DEF=0
+PoderAtaque=10
+PoderEvasion=20
+NROEXP=2
+EXP1=Crick Crick
+EXP2=Clir chuik
+BackUp=0
+NROITEMS=5
+Drop1=12-85 'Oro
+Drop3=28-10 'Queso de Cabra
+Drop4=534-10 'Odre Vacía
+Drop5=12-100 'Oro
+
+############################################
+
+[NPC537]
+Name=Beholder
+NpcType=0
+Head=0
+Heading=3
+Body=72
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=2500
+MinHP=1400
+MaxHP=1400
+MaxHIT=300
+MinHIT=45
+DEF=0
+PoderAtaque=350
+PoderEvasion=200
+BackUp=0
+NROITEMS=5
+Drop1=12-360 'Oro
+Drop2=12-500 'Oro
+Drop3=37-100 'Pociones Azules
+Drop4=205-1 'Proyectil Etereo
+Drop5=12-10000 'Oro
+
+############################################
+
+[NPC538]
+Name=Oso Pardo
+NpcType=0
+Head=0
+Heading=3
+Body=73
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=2010
+Alineacion=2
+Comercia=0
+GiveEXP=193
+MinHP=850
+MaxHP=850
+MaxHIT=100
+MinHIT=65
+DEF=0
+PoderAtaque=250
+PoderEvasion=65
+BackUp=0
+NROITEMS=5
+Drop1=415-1 'Piel Oso Pardo
+Drop2=12-26 'Oro
+Drop3=480-50 'Flechas
+Drop4=479-1 'Arco Compuesto
+Drop5=38-100 'Pociones Rojas
+
+############################################
+
+[NPC539]
+Name=Tortuga Gigante
+NpcType=0
+Head=0
+Heading=3
+Body=74
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=2010
+Alineacion=2
+Comercia=0
+GiveEXP=79
+MinHP=350
+MaxHP=350
+MaxHIT=50
+MinHIT=35
+DEF=0
+PoderAtaque=100
+PoderEvasion=45
+BackUp=0
+NROITEMS=5
+Drop1=404-1 'Escudo de Tortuga
+Drop2=12-5900 'Oro
+Drop3=38-200 'Pociones Rojas
+Drop4=203-2 'Aura Sanadora Avanzada
+
+############################################
+
+[NPC540]
+Name=Duende
+NpcType=0
+Head=0
+Heading=3
+Body=75
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=1700
+Alineacion=2
+Comercia=0
+GiveEXP=22
+MinHP=100
+MaxHP=100
+MaxHIT=32
+MinHIT=8
+DEF=0
+PoderAtaque=80
+PoderEvasion=60
+Snd3=161
+BackUp=0
+NROITEMS=5
+Drop1=12-223 'Oro
+Drop3=12-150 'Oro
+Drop4=197-1 'Flecha Mágica
+Drop5=204-1 'Flecha Eléctrica
+
+############################################
+
+[NPC541]
+Name=Ogro
+NpcType=0
+Head=0
+Heading=3
+Body=76
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=3494
+MinHP=6500
+MaxHP=6500
+MaxHIT=232
+MinHIT=88
+DEF=10
+PoderAtaque=160
+PoderEvasion=60
+snd2=78
+BackUp=0
+NROITEMS=4
+Drop1=12-21200'Oro
+Drop2=398-17'Garrote
+Drop3=38-1450'Pociones Rojas
+Drop4=37-1650'Pociones Azules
+
+############################################
+
+[NPC542]
+Name=Gran Dragón Rojo
+NpcType=6
+Head=0
+Heading=3
+Body=82
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=265000
+MinHP=200000
+MaxHP=200000
+MaxHIT=5000
+MinHIT=1000
+DEF=0
+PoderAtaque=400
+PoderEvasion=320
+LanzaSpells=2
+Sp1=15
+Sp2=25
+SND1=30
+SND2=31
+SND3=32
+AfectaParalisis=1
+BackUp=0
+NROITEMS=5
+Drop1=12-65000 'Oro
+Drop2= 194-5000 'Minerales de Oro
+Drop3=402-1 'Espada Mata Dragones
+Drop4=532-1 'Apocalipsis
+Drop5=481-3 'Armaduras de Dragón
+
+############################################
+
+[NPC543]
+Name=Demonio Demond
+NpcType=0
+Head=0
+Heading=3
+Body=83
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=1476
+MinHP=4500
+MaxHP=4500
+MaxHIT=120
+MinHIT=100
+DEF=0
+PoderAtaque=160
+PoderEvasion=80
+Snd3=159
+BackUp=0
+NROITEMS=5
+Drop1=12-13500 'Oro
+Drop2=12-8255 'Oro
+Drop3=126-1 'Hacha Larga de Guerra
+Drop4=129-3 'Hacha Doble Filo
+Drop5=495-1 'Armadura Escarlata.
+
+############################################
+
+[NPC544]
+Name=Unicornio
+NpcType=0
+Head=0
+Heading=3
+Body=183
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=156
+MinHP=690
+MaxHP=690
+MaxHIT=7
+MinHIT=5
+DEF=0
+PoderAtaque=10
+PoderEvasion=10
+BackUp=0
+NROITEMS=5
+Drop1=12-1320 'Oro
+Drop2=12-7680 'Oro
+Drop3=12-19150 'Oro
+Drop4=37-50 'Poción Azul
+Drop5=12-105000 'Oro
+
+############################################
+
+[NPC545]
+Name=Licántropo
+NpcType=0
+Head=0
+Heading=3
+Body=212
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=5451
+MinHP=2100
+MaxHP=2100
+MaxHIT=100
+MinHIT=65
+DEF=0
+PoderAtaque=250
+PoderEvasion=65
+BackUp=0 
+NROITEMS=5
+Drop1=12-100 'Oro
+Drop2=38-10 'Poción Roja
+Drop3=414-30 'Piel de Lobo
+Drop4=1002-1 'Casco de Lobo
+Drop5=394-1 'Llamado a la Naturaleza.
+
+############################################
+
+[NPC546] 'NO RESPAWN (para el hechizo Invocar Zombies)
+Name=Zombie
+NpcType=0
+Head=507
+Heading=3
+Body=196
+Movement=3
+AguaValida=0
+Attackable=1
+Respawn=1
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=0
+GiveGLD=0
+MinHP=250
+MaxHP=250
+MaxHIT=50
+MinHIT=23
+DEF=20
+PoderAtaque=100
+PoderEvasion=20
+SND2=33
+BackUp=0
+
+############################################
+
+[NPC547]
+Name=Tarántula
+NpcType=0
+Head=0
+Heading=3
+Body=36
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=430
+MinHP=1600
+MaxHP=1600
+MaxHIT=100
+MinHIT=75
+DEF=0
+PoderAtaque=150
+PoderEvasion=70
+Veneno=1
+BackUp=0
+NROITEMS=5
+Drop1=12-5200 'Oro
+Drop2=38-250 'Pociones Rojas
+Drop3=36-150 'Poción Amarilla
+Drop4=39-200 'Poción Verde
+Drop5=159-25 'Hachas de Bárbaro
+
+############################################
+
+[NPC548]
+Name=Leviathan
+NpcType=0
+Head=0
+Heading=3
+Body=99
+Movement=3
+AguaValida=1
+TierraInvalida=1
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=6988
+MinHP=13000
+MaxHP=13000
+MaxHIT=210
+MinHIT=60
+DEF=0
+PoderAtaque=220
+PoderEvasion=140
+Snd2=59
+BackUp=0
+NROITEMS=5
+Drop1=12-28250 'Oro
+Drop2=36-30 'Poción Amarilla
+Drop3=39-30 'Poción Verde
+Drop4=537-1 'Invocar Elemental de Agua
+Drop5=496-1 'Armadura de las Ciénagas
+
+############################################
+
+[NPC549]
+Name=Orco Brujo
+NpcType=0
+Head=0
+Heading=3
+Body=186
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=2250
+Alineacion=2
+Comercia=0
+GiveEXP=5888
+MinHP=1150
+MaxHP=1150
+MaxHIT=120
+MinHIT=75
+DEF=30
+PoderAtaque=150
+PoderEvasion=120
+LanzaSpells=1
+Sp1=8
+Snd3=171
+BackUp=0
+NROITEMS=5
+Drop1=12-4160 'Oro
+Drop2=12-7900 'Oro
+Drop3=205-1 'Proyectil Etéreo
+Drop4=38-300 'Poción Roja
+Drop5=37-500 'Poción Azul
+
+############################################
+
+[NPC550]
+Name=Bruja
+NpcType=0
+Head=271
+Heading=3
+Body=125
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=8533
+MinHP=1250
+MaxHP=1250
+MaxHIT=140
+MinHIT=75
+DEF=30
+PoderAtaque=200
+PoderEvasion=120
+snd2=118
+snd3=158
+LanzaSpells=3
+Sp1=8
+Sp2=9
+Sp3=15
+BackUp=0
+NROITEMS=5
+Drop1=12-5560 'Oro
+Drop2=659-1 'Baston Nudoso
+Drop3=514-1 'Vestido de Bruja Especial
+Drop4=12-5000 'Oro
+Drop5=12-15000 'Oro
+
+############################################
+
+[NPC551]
+Name=Mago Malvado
+NpcType=0
+Head=401
+Heading=3
+Body=135
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=611
+MinHP=2625
+MaxHP=2625
+MaxHIT=126
+MinHIT=75
+DEF=30
+PoderAtaque=200
+PoderEvasion=150
+LanzaSpells=3
+Sp1=8
+Sp2=9
+Sp3=15
+BackUp=0
+NROITEMS=5
+Drop1=12-4260 'Oro
+Drop2=12-3500 'Oro
+Drop3=524-2 'Túnica Roja Especial (E/G)
+Drop4=206-1 'Paralizar
+Drop5=660-5 'Báculos Engarzados
+
+############################################
+
+[NPC552]
+Name=Golem de Veraz
+NpcType=0
+Head=0
+Heading=3
+Body=141
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=268800
+MinHP=31500
+MaxHP=31500
+MaxHIT=250
+MinHIT=100
+DEF=30
+PoderAtaque=100
+PoderEvasion=50
+BackUp=0
+NROITEMS=1
+Drop1=12-85352 'Oro
+
+############################################
+
+[NPC553]
+Name=Medusa
+NpcType=0
+Head=0
+Heading=3
+Body=151
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=55466
+MinHP=6500
+MaxHP=6500
+MaxHIT=185
+MinHIT=125
+DEF=20
+PoderAtaque=220
+PoderEvasion=160
+Snd3=169
+LanzaSpells=3
+Sp1=15
+Sp2=23
+Sp3=9
+BackUp=0
+NROITEMS=5
+Drop1=12-34500 'Oro
+Drop2=38-100 'Pociones Rojas
+Drop3=12-17500 'Oro
+Drop4=206-1 'Paralizar
+Drop5=531-1 'Descarga Eléctrica
+
+############################################
+
+[NPC554]
+Name=Liche
+NpcType=0
+Head=0
+Heading=3
+Body=149
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=713
+MinHP=2200
+MaxHP=2200
+MaxHIT=150
+MinHIT=100
+DEF=30
+PoderAtaque=150
+PoderEvasion=80
+Snd3=168
+BackUp=0
+NROITEMS=5
+Drop1=12-6800 'Oro
+Drop2=12-6980 'Oro
+Drop3=196-5 'Túnica de Mago
+Drop4=380-1 'Invocación de Ultratumba
+Drop5=660-5 'Báculos Engarzados
+
+############################################
+
+[NPC555]
+Name=Lord Orco
+NpcType=0
+Head=0
+Heading=3
+Body=187
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=23552
+MinHP=3450
+MaxHP=3450
+MaxHIT=200
+MinHIT=200
+DEF=30
+PoderAtaque=170
+PoderEvasion=60
+BackUp=0
+NROITEMS=5
+Drop1=12-8520 'Oro
+Drop2=38-9500 'Pociones Rojas
+Drop3=132-2 'Casco de Hierro
+Drop4=126-5 'Hacha Larga de Guerra
+Drop5=130-3 'Escudo de Plata
+
+############################################
+
+[NPC556]
+Name=Quark
+NpcType=0
+Head=0
+Heading=3
+Body=146
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=800
+Alineacion=2
+Comercia=0
+GiveEXP=9
+MinHP=50
+MaxHP=50
+MaxHIT=10
+MinHIT=5
+DEF=5
+PoderAtaque=45
+PoderEvasion=50
+BackUp=0
+NROITEMS=5
+Drop1=12-15  'Oro
+Drop2=12-20  'Oro
+Drop3=12-100 'Oro
+Drop3=12-250 'Oro
+Drop3=12-750 'Oro
+
+############################################
+
+[NPC557]
+Name=Jabalí Salvaje
+NpcType=0
+Head=0
+Heading=3
+Body=150
+Movement=2
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=2010
+Alineacion=2
+Comercia=0
+GiveEXP=56
+MinHP=250
+MaxHP=250
+MaxHIT=100
+MinHIT=65
+DEF=0
+PoderAtaque=130
+PoderEvasion=70
+Snd2=98
+BackUp=0
+NROITEMS=5
+Drop1=27-15 'Chuleta
+Drop2=12-50 'Oro
+Drop3=38-20 'Pociones Rojas
+
+############################################
+
+[NPC558]
+Name=Dark mOrGoLoCk
+NpcType=0
+Head=101
+Heading=3
+Body=56
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=45000
+GiveGLD=25000
+MinHP=45000
+MaxHP=45000
+MaxHIT=400
+MinHIT=50
+DEF=10
+PoderAtaque=350
+PoderEvasion=300
+BackUp=0
+
+############################################
+
+[NPC559]
+Name=Dark NuKeR
+NpcType=0
+Head=102
+Heading=3
+Body=93
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=45000
+GiveGLD=25000
+MinHP=45000
+MaxHP=45000
+MaxHIT=400
+MinHIT=50
+DEF=10
+PoderAtaque=350
+PoderEvasion=300
+BackUp=0
+
+############################################
+
+[NPC560]
+Name=Dark Valkira
+NpcType=0
+Head=72
+Heading=3
+Body=104
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=45000
+GiveGLD=25000
+MinHP=45000
+MaxHP=45000
+MaxHIT=400
+MinHIT=50
+DEF=10
+PoderAtaque=350
+PoderEvasion=300
+BackUp=0
+
+############################################
+
+[NPC561]
+Name=Dark Chatillon
+NpcType=0
+Head=9
+Heading=3
+Body=140
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=45000
+GiveGLD=25000
+MinHP=45000
+MaxHP=45000
+MaxHIT=400
+MinHIT=50
+DEF=10
+PoderAtaque=350
+PoderEvasion=300
+BackUp=0
+
+############################################
+
+[NPC562]
+Name=Dark Jennifer
+NpcType=0
+Head=72
+Heading=3
+Body=64
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=45000
+GiveGLD=25000
+MinHP=45000
+MaxHP=45000
+MaxHIT=400
+MinHIT=50
+DEF=10
+PoderAtaque=350
+PoderEvasion=300
+BackUp=0
+
+############################################
+
+[NPC564] 'NO RESPAWN (npc para entrenador)
+Name=Escorpión
+NpcType=0
+Head=0
+Heading=3
+Body=51
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=1
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=32
+GiveGLD=0
+MinHP=32
+MaxHP=32
+MaxHIT=3
+MinHIT=1
+DEF=0
+PoderAtaque=30
+PoderEvasion=10
+Veneno=1
+BackUp=0
+
+############################################
+
+[NPC565] 'NO RESPAWN (npc para entrenador)
+Name=Serpiente
+NpcType=0
+Head=0
+Heading=3
+Body=13
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=1
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=15
+GiveGLD=0
+MinHP=22
+MaxHP=22
+MaxHIT=1
+MinHIT=1
+DEF=0
+PoderAtaque=10
+PoderEvasion=0
+SND2=103
+BackUp=0
+
+
+############################################
+
+[NPC566] 'NO RESPAWN (npc para entrenador)
+Name=Murciélago
+NpcType=0
+Head=0
+Heading=3
+Body=9
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=1
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=12
+GiveGLD=0
+MinHP=10
+MaxHP=10
+MaxHIT=1
+MinHIT=1
+DEF=0
+PoderAtaque=15
+PoderEvasion=10
+BackUp=0
+
+#############################################
+
+[NPC567]
+Name=Duende Mágico
+NpcType=0
+Head=0
+Heading=3
+Body=75
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=51
+MinHP=225
+MaxHP=225
+MaxHIT=10
+MinHIT=2
+DEF=0
+PoderAtaque=10
+PoderEvasion=60
+LanzaSpells=1
+Sp1=2
+BackUp=0
+NROITEMS=5
+Drop1=12-450 'Oro
+Drop2=12-75 'Oro
+Drop3=12-150' Oro
+Drop4=199-5 'Dardo Mágico
+
+############################################
+
+[NPC568]
+Name=Galeón Pirata
+NpcType=0
+Head=0
+Heading=3
+Body=86
+Movement=3
+AguaValida=1
+TierraInvalida=1
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=1293
+MinHP=3560
+MaxHP=3560
+MaxHIT=210
+MinHIT=100
+DEF=0
+PoderAtaque=200
+PoderEvasion=150
+Snd3=172
+BackUp=0
+NROITEMS=5
+Drop2=12-9250 'Oro (Poner alforja despues)
+Drop3=474-1 'Barca
+Drop4=475-1 'Galera
+Drop5=476-1 'Galeón
+
+############################################
+
+[NPC569]
+Name=Galeón Fantasmal
+NpcType=0
+Head=0
+Heading=3
+Body=487
+Movement=3
+AguaValida=1
+TierraInvalida=1
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=1011
+MinHP=2159
+MaxHP=2150
+MaxHIT=350
+MinHIT=150
+DEF=50
+PoderAtaque=300
+PoderEvasion=450
+LanzaSpells=1
+Sp1=15
+BackUp=0
+NROITEMS=5
+Drop2=12-6450 'Oro (Poner Mochila de Viajero despues)
+Drop3=474-1 'Barca
+Drop4=475-1 'Galera
+
+############################################
+
+[NPC573]
+Name=Árbol Encantado
+NpcType=0
+Desc=¡Odio los leñadores!
+Head=0
+Heading=4
+Body=25
+Movement=2
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=100
+MinHP=10
+MaxHP=10
+MaxHIT=2
+MinHIT=1
+DEF=0
+PoderAtaque=500
+PoderEvasion=10
+Veneno=1
+BackUp=0
+NROITEMS=5
+Drop2=58-15 'Leña
+
+############################################
+
+[NPC574] 'Ent Movimiento normal
+Name=Ucorno
+NpcType=0
+Head=0
+Heading=3
+Body=25
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=900
+MinHP=1500
+MaxHP=1500
+MaxHIT=90
+MinHIT=85
+DEF=0
+PoderAtaque=100
+PoderEvasion=100
+Snd1=13
+Snd2=13
+Veneno=1
+BackUp=0
+NROITEMS=5
+Drop1=58-50 'Leña
+Drop2=58-100 'Leña
+Drop3=58-500 'Leña
+Drop4=58-3000 'Leña
+Drop5=58-10000 'Leña
+
+############################################
+
+[NPC575] 'Ent de movimiento camuflado
+Name=Árbol de Jungla
+NpcType=0
+Head=0
+Heading=3
+Body=25
+Movement=2
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=100
+MinHP=1500
+MaxHP=1500
+MaxHIT=250
+MinHIT=150
+DEF=0
+PoderAtaque=100
+PoderEvasion=100
+Snd1=13
+Snd2=13
+Veneno=1
+BackUp=0
+NROITEMS=5
+Drop1=58-10 'Leña
+Drop2=208-1 'Flauta Mágica
+Drop3=696-5 'Laúd Mágico
+
+############################################
+
+[NPC576]
+Name=Árbol de Jungla
+NpcType=0
+Head=0
+Heading=4
+Body=25
+Movement=1
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=100
+MinHP=10
+MaxHP=10
+MaxHIT=2
+MinHIT=1
+DEF=0
+PoderAtaque=500
+PoderEvasion=10
+Veneno=1
+BackUp=0
+NROITEMS=5
+Drop2=58-15 'Leña
+
+############################################
+
+[NPC577]
+Name=Alma Putrefacta
+NpcType=0
+Desc=Soy un esclavo del mi señor del mal
+Head=514
+Heading=3
+Body=145
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=500
+MinHP=700
+MaxHP=700
+MaxHIT=100
+MinHIT=90
+DEF=0
+PoderAtaque=200
+PoderEvasion=140
+SND1=30
+SND2=31
+SND3=32
+BackUp=0
+NROITEMS=5
+Drop1=12-50 'Oro
+Drop2=12-100 'Oro
+Drop3=645-1 'Poción Negra
+
+############################################
+
+[NPC578]
+Name=Cerdo Salvaje
+NpcType=0
+Desc=Oink Oink
+Head=0
+Heading=3
+Body=6
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=500
+Alineacion=2
+Comercia=0
+GiveEXP=22
+MinHP=140
+MaxHP=140
+MaxHIT=2
+MinHIT=1
+DEF=0
+PoderAtaque=10
+PoderEvasion=15
+BackUp=0
+NROITEMS=2
+Drop1=27-5 'Chuleta
+Drop2=12-100 'Oro
+
+############################################
+
+[NPC579]
+Name=Vaca Salvaje
+NpcType=0
+Desc=Muuuuu
+Head=0
+Heading=3
+Body=7
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=810
+Alineacion=2
+Comercia=0
+GiveEXP=68
+MinHP=420
+MaxHP=420
+MaxHIT=5
+MinHIT=2
+DEF=2
+PoderAtaque=25
+PoderEvasion=15
+Snd2=8
+BackUp=0
+NROITEMS=5
+Drop1=27-5 'Chuleta
+Drop2=12-50 'Oro
+
+############################################
+
+[NPC582]
+Name=Enano de las Profundidades
+NpcType=0
+Head=304
+Heading=3
+Body=54
+Movement=10
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=1102
+MinHP=3400
+MaxHP=3400
+MaxHIT=165
+MinHIT=93
+DEF=30
+PoderAtaque=150
+PoderEvasion=60
+AfectaParalisis=1
+BackUp=0
+NROITEMS=5
+Drop1=12-8800 'Oro
+Drop2=38-450 'Pociones Rojas
+Drop3=159-5 'Hacha de Bárbaro
+Drop4=243-2 'Armadura de Placas Completas (E/G)
+Drop5=393-3 'Armadura de Placas Completas + 2 (E/G)
+
+############################################
+
+[NPC583]
+Name=Liche Infernal
+NpcType=0
+Head=0
+Heading=3
+Body=149
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=10000
+MinHP=10000
+MaxHP=10000
+MaxHIT=250
+MinHIT=120
+DEF=30
+PoderAtaque=220
+PoderEvasion=190
+LanzaSpells=3
+Sp1=9
+Sp2=23
+Sp3=15
+AfectaParalisis=1
+BackUp=0
+NROITEMS=5
+Drop1=12-10000 'Oro
+Drop2=12-15000 'Oro
+Drop3=361-2 'Tormentas de Fuego
+Drop4=206-3 'Paralizar
+Drop5=400-3 'Varas de Mago
+
+############################################
+
+[NPC584]
+Name=Demonio Infernal
+NpcType=0
+Head=0
+Heading=3
+Body=83
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=173076
+MinHP=15000
+MaxHP=15000
+MaxHIT=350
+MinHIT=75
+DEF=0
+PoderAtaque=230
+PoderEvasion=220
+Snd3=100
+BackUp=0
+NROITEMS=5
+Drop1=12-21000 'Oro
+Drop2=12-21000 'Oro
+Drop3=126-3 'Hacha Larga de Guerra
+Drop4=129-5 'Hachas Doble Filo
+Drop5=495-2 'Armaduras Escarlata
+
+############################################
+
+[NPC585]
+Name=Dragón Rojo Infernal
+NpcType=0
+Head=0
+Heading=3
+Body=41
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=90000
+MinHP=7800
+MaxHP=7800
+MaxHIT=250
+MinHIT=200
+GolpeExacto=1
+DEF=50
+PoderAtaque=380
+PoderEvasion=250
+BackUp=0
+NROITEMS=5
+Drop1=12-23500 'Oro
+Drop2=12-23500 'Oro
+Drop3=12-33500 'Oro
+Drop4=12-53500 'Oro
+Drop5=402-1 'Espada Mata Dragones
+
+############################################
+
+[NPC586]
+Name=Golem Infernal
+NpcType=0
+Head=0
+Heading=3
+Body=181
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=615384
+MinHP=40000
+MaxHP=40000
+MaxHIT=250
+MinHIT=200
+DEF=20
+PoderAtaque=250
+PoderEvasion=50
+Snd2=79
+Snd3=89
+BackUp=0
+NROITEMS=3
+Drop1=710-10 'Copa de oro
+Drop2=12-85000 'Oro
+Drop3=485-1 'Armaduras Legendarias
+
+############################################
+
+[NPC587]
+Name=Astaroth
+NpcType=0
+Head=0
+Heading=3
+Body=204
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=21153
+MinHP=2200
+MaxHP=2200
+MaxHIT=126
+MinHIT=75
+DEF=30
+PoderAtaque=200
+PoderEvasion=120
+LanzaSpells=3
+Sp1=8
+Sp2=9
+Sp3=15
+Snd3=156
+BackUp=0
+NROITEMS=5
+Drop1=12-7500 'Oro
+Drop2=37-600 'Pociones Azules
+Drop3=361-1 'Tormentas de Fuego
+Drop4=530-2 'Inmovilizar
+Drop5=699-3 'Anillo de Disolución Mágica
+############################################
+
+[NPC588]
+Name=Elemental de Fuego
+NpcType=0
+Head=0
+Heading=3
+Body=153
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=721153
+MinHP=75000
+MaxHP=75000
+MaxHIT=190
+MinHIT=101
+DEF=20
+PoderAtaque=150
+PoderEvasion=40
+LanzaSpells=1
+Sp1=8
+BackUp=0
+NROITEMS=4
+Drop1=12-155650 'Oro
+Drop2=38-100 'Pociones Rojas
+Drop3=239-1 'Túnica Roja
+Drop4=205-1 'Proyectil Etéreo
+
+############################################
+
+[NPC589]
+Name=Elemental de Fuego Anciano
+NpcType=0
+Head=0
+Heading=3
+Body=394
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=1000
+MinHP=7000
+MaxHP=7000
+MaxHIT=140
+MinHIT=75
+DEF=30
+PoderAtaque=250
+PoderEvasion=250
+AfectaParalisis=1
+snd2=118
+snd3=1
+LanzaSpells=2
+Sp1=15
+Sp2=25
+BackUp=0
+NROITEMS=5
+Drop1=12-10000 'Oro
+Drop2=12-15000 'Oro
+Drop3=361-2 'Tormentas de Fuego
+Drop4=536-1 'Invocar Elemental de Fuego
+Drop5=532-1 'Apocalipsis
+
+############################################
+
+[NPC590]
+Name=Blattodea
+NpcType=0
+Head=0
+Heading=3
+Body=231
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=455
+MinHP=435
+MaxHP=435
+MaxHIT=90
+MinHIT=50
+DEF=10
+PoderAtaque=150
+PoderEvasion=50
+BackUp=0
+NROITEMS=5
+Drop1=12-100 'Oro
+Drop2=12-150 'Oro
+Drop3=12-300 'Oro
+Drop4=12-600 'Oro
+Drop5=12-1200 'Oro
+
+############################################
+
+[NPC591]
+Name=Artopleura
+NpcType=0
+Head=0
+Heading=3
+Body=229
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=110
+MinHP=700
+MaxHP=700
+MaxHIT=100
+MinHIT=65
+DEF=10
+PoderAtaque=200
+PoderEvasion=80
+BackUp=0
+NROITEMS=5
+Drop1=12-125 'Oro
+Drop2=12-200 'Oro
+Drop3=12-300 'Oro
+Drop4=12-500 'Oro
+Drop5=12-1500 'Oro
+
+############################################
+
+[NPC592]
+Name=Araña de los Rincones
+NpcType=0
+Head=0
+Heading=3
+Body=230
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=700
+MinHP=650
+MaxHP=650
+MaxHIT=75
+MinHIT=35
+DEF=0
+PoderAtaque=110
+PoderEvasion=70
+BackUp=0
+NROITEMS=5
+Drop1=12-75 'Oro
+Drop2=619-1 'Daga Envenenada
+Drop4=202-1 'Toxina
+
+############################################
+
+[NPC593]
+Name=Pirata
+NpcType=0
+Head=509
+Heading=3
+Body=386
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=682
+MinHP=1450
+MaxHP=1450
+MaxHIT=100
+MinHIT=65
+DEF=0
+PoderAtaque=150
+PoderEvasion=85
+BackUp=0
+NROITEMS=5
+Drop1=12-6240 'Oro
+Drop3=19-1 'Espada Dos manos
+Drop4=125-1 'Sable
+Drop5=873-1 'Guantes de Hurto
+
+############################################
+
+[NPC594]
+Name=Escarabajo Gigante
+NpcType=0
+Head=0
+Heading=3
+Body=391
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=500
+MinHP=550
+MaxHP=550
+MaxHIT=80
+MinHIT=35
+DEF=0
+PoderAtaque=100
+PoderEvasion=45
+BackUp=0
+NROITEMS=5
+Drop1=12-150 'Oro
+Drop2=12-200 'Oro
+Drop3=12-600 'Oro
+
+############################################
+
+[NPC595]
+Name=Tentáculo Putrefacto
+NpcType=0
+Head=0
+Heading=3
+Body=392
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=705
+MinHP=1500
+MaxHP=1500
+MaxHIT=80
+MinHIT=35
+DEF=0
+PoderAtaque=80
+PoderEvasion=100
+BackUp=0
+NROITEMS=5
+Drop1=12-3955 'Oro
+Drop2=12-7180 'Oro
+Drop3=12-12180' Oro
+
+############################################
+
+[NPC596]
+Name=Espíritu chocarrero de Westler
+NpcType=0
+Head=0
+Heading=3
+Body=219
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=2352
+MinHP=3500
+MaxHP=3500
+MaxHIT=130
+MinHIT=50
+DEF=5
+PoderAtaque=150
+PoderEvasion=150
+Snd3=163
+BackUp=0
+NROITEMS=2
+Drop1=12-9350 'Oro
+Drop2=38-10 'Pociones Rojas
+
+############################################
+
+[NPC597]
+Name=Protector de los muertos
+NpcType=0
+Head=0
+Heading=3
+Body=426
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=1751
+MinHP=2750
+MaxHP=2750
+MaxHIT=90
+MinHIT=50
+DEF=10
+PoderAtaque=150
+PoderEvasion=50
+BackUp=0
+NROITEMS=5
+Drop1=12-3200 'Oro
+Drop2=12-6800 'Oro
+Drop5=380-1
+
+############################################
+
+[NPC598]
+Name=Hada Oscura
+NpcType=0
+Head=511
+Heading=3
+Body=427
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=7644
+MinHP=2650
+MaxHP=2650
+MaxHIT=75
+MinHIT=35
+DEF=0
+PoderAtaque=110
+PoderEvasion=70
+Snd3=166
+BackUp=0
+NROITEMS=5
+Drop1=12-9200 'Oro
+Drop2=978-2 'Harapos de la Cueva
+Drop4=697-2 'Anillos Mágicos
+Drop5=531-1 'Vestido de Bruja
+
+############################################
+
+[NPC599]
+Name=Engendro de Westler
+NpcType=0
+Head=0
+Heading=3
+Body=387
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=1330
+MinHP=2200
+MaxHP=2200
+MaxHIT=80
+MinHIT=35
+DEF=0
+PoderAtaque=100
+PoderEvasion=45
+Snd3=162
+BackUp=0
+NROITEMS=4
+Drop1=12-6500 'Oro
+Drop2=38-12 'Pociones Rojas
+Drop3=398-4 'Garrotes
+Drop4=30-1 'Armaduras de Cuero
+
+############################################
+
+[NPC600]
+Name=Ave de las profundidades
+NpcType=0
+Head=0
+Heading=3
+Body=425
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=776
+MinHP=1650
+MaxHP=1650
+MaxHIT=100
+MinHIT=65
+DEF=10
+PoderAtaque=200
+PoderEvasion=80
+BackUp=0
+NROITEMS=5
+Drop1=12-4500 'Oro
+Drop2=551-50 'Flechas +1
+Drop3=552-50 'Flechas +2
+
+############################################
+
+[NPC601]
+Name=Licántropo
+NpcType=0
+Head=0
+Heading=3
+Body=212
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=5461
+MinHP=600
+MaxHP=600
+MaxHIT=100
+MinHIT=65
+DEF=10
+PoderAtaque=250
+PoderEvasion=65
+Snd3=167
+BackUp=0
+NROITEMS=5
+Drop1=12-100 'Oro
+Drop2=414-20 'Pieles de Lobo
+Drop5=1002-5 'Cascos de Lobo
+
+############################################
+
+[NPC602]
+Name=Piraña 
+NpcType=0
+Head=0
+Heading=3
+Body=433
+Movement=3
+AguaValida=1
+TierraInvalida=1
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=38
+MinHP=170
+MaxHP=170
+MaxHIT=110
+MinHIT=75
+DEF=15
+PoderAtaque=200
+PoderEvasion=70
+BackUp=0
+NROITEMS=5
+Drop1=12-170 'Oro
+Drop2=12-240'Oro
+Drop3=36-150 'Pociones Amarillas
+
+############################################
+
+[NPC603]
+Name=Sirena
+NpcType=0
+Head=0
+Heading=3
+Body=434
+Movement=3
+AguaValida=1
+TierraInvalida=1
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=588
+MinHP=1250
+MaxHP=1250
+MaxHIT=110
+MinHIT=85
+DEF=25
+DEFm=15
+PoderAtaque=150
+PoderEvasion=70
+AtacaDoble=1
+LanzaSpells=1
+Sp1=9
+BackUp=0
+NROITEMS=5
+Drop1=12-5490 'Oro
+Drop3=208-2 'Flauta Mágica
+Drop5=542-1 'Turbación
+
+############################################
+
+[NPC604]
+Name=Manta raya 
+NpcType=0
+Head=0
+Heading=3
+Body=407
+Movement=3
+AguaValida=1
+TierraInvalida=1
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=1058
+MinHP=2250
+MaxHP=2250
+MaxHIT=55
+MinHIT=45
+DEF=15
+PoderAtaque=120
+PoderEvasion=45
+BackUp=0
+NROITEMS=5
+Drop1=12-5250 'Oro
+Drop2=38-20 'Pociones Rojas
+Drop3=36-4 'Pociones Amarillas
+
+############################################
+
+[NPC605]
+Name=Lutra 
+NpcType=0
+Head=0
+Heading=3
+Body=435
+Movement=3
+AguaValida=1
+TierraInvalida=1
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=446
+MinHP=950
+MaxHP=950
+MaxHIT=115
+MinHIT=60
+DEF=20
+DEFm=10
+PoderAtaque=150
+PoderEvasion=150
+BackUp=0
+NROITEMS=5
+Drop1=12-3150 'Oro
+Drop2=36-15 'Pociones Amarillas
+Drop3=39-15 'Pociones Verdes
+Drop4=12-13500 'Oro
+
+############################################
+
+[NPC606]
+Name=Tiburón  
+NpcType=0
+Head=0
+Heading=3
+Body=436
+Movement=3
+AguaValida=1
+TierraInvalida=1
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=635
+MinHP=1250
+MaxHP=1250
+MaxHIT=175
+MinHIT=100
+DEF=15
+DEFm=5
+PoderAtaque=120
+PoderEvasion=70
+BackUp=0
+NROITEMS=5
+Drop1=12-4450 'Oro
+Drop2=38-25 'Pociones Rojas
+Drop3=39-5 'Pociones Verdes
+Drop4=12-6100 'Oro
+
+############################################
+
+[NPC607]
+Name=Capitán Pirata 
+NpcType=0
+Head=512
+Heading=3
+Body=428
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=2284
+MinHP=4250
+MaxHP=4250
+MaxHIT=180
+MinHIT=110
+DEF=35
+DEFm=10
+PoderAtaque=110
+PoderEvasion=120
+BackUp=0
+NROITEMS=4
+Drop1=12-11500 'Oro
+Drop2=12-12080 'Oro
+Drop3=125-2 'Sables
+Drop4=474-1 'Barca
+
+############################################
+
+[NPC608]
+Name=Guardián de las Profundidades 
+NpcType=0
+Head=0
+Heading=3
+Body=218
+Movement=3
+AguaValida=1
+TierraInvalida=1
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=1646
+MinHP=3500
+MaxHP=3500
+MaxHIT=300
+MinHIT=100
+DEF=15
+PoderAtaque=350
+PoderEvasion=210
+BackUp=0
+snd3=210
+NROITEMS=5
+Drop1=12-8500 'Oro
+Drop2=37-50 'Pociones Azules
+Drop3=38-130 'Pociones Rojas
+Drop4=361-1 'Tormenta de Fuego
+
+############################################
+
+[NPC609]
+Name=Elemental de Agua Anciano 
+NpcType=0
+Head=0
+Heading=3
+Body=542
+Movement=3
+AguaValida=1
+TierraInvalida=1
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=3692
+MinHP=7850
+MaxHP=7850
+MaxHIT=250
+MinHIT=150
+DEF=30
+DEFm=10
+PoderAtaque=250
+PoderEvasion=250
+LanzaSpells=1
+Sp1=31
+AtacaDoble=1
+AfectaParalisis=1
+BackUp=0
+NROITEMS=5
+Drop1=12-26450 'Oro
+Drop2=12-36450 'Oro
+Drop3=537-1 'Invocar Elemental de Agua
+
+############################################
+
+[NPC610]
+Name=Kraken de Klain
+NpcType=0
+Head=0
+Heading=3
+Body=408
+Movement=3
+AguaValida=1
+TierraInvalida=1
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=4368
+MinHP=6500
+MaxHP=6500
+MaxHIT=220
+MinHIT=95
+DEF=15
+PoderAtaque=190
+PoderEvasion=160
+SND2=174
+SND3=175
+LanzaSpells=1
+Sp1=9
+BackUp=0
+NROITEMS=1
+Drop1=12-18500 'Oro
+
+############################################
+
+[NPC611]
+Name=Fango 
+NpcType=0
+Head=0
+Heading=3
+Body=403
+Movement=3
+AguaValida=0
+TierraInvalida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=800
+MinHP=750
+MaxHP=750
+MaxHIT=110
+MinHIT=50
+DEF=0
+PoderAtaque=200
+PoderEvasion=70
+BackUp=0
+NROITEMS=5
+Drop1=12-100 'Oro
+Drop2=38-18 'Pociones Rojas
+Drop3=37-30 'Pociones Azules
+Drop4=36-10 'Pociones Amarillas
+Drop5=39-10 'Pociones Verdes
+
+############################################
+
+[NPC612]
+Name=Cocodrilo
+NpcType=0
+Head=0
+Heading=3
+Body=208
+Movement=3
+AguaValida=0
+TierraInvalida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=111
+MinHP=490
+MaxHP=490
+MaxHIT=100
+MinHIT=75
+DEF=10
+DEFm=5
+PoderAtaque=220
+PoderEvasion=60
+BackUp=0
+NROITEMS=5
+Drop4=619- 1'Daga Envenenada
+Drop5=365- 1 'Daga +2
+
+
+############################################
+
+[NPC613]
+Name=Unicornio
+NpcType=0
+Head=0
+Heading=3
+Body=183
+Movement=3
+AguaValida=0
+TierraInvalida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=156
+MinHP=690
+MaxHP=690
+MaxHIT=115
+MinHIT=60
+DEF=5
+DEFm=10
+PoderAtaque=150
+PoderEvasion=70
+BackUp=0
+NROITEMS=5
+Drop1=12-1320 'Oro
+Drop2=37-23 'Pociones Azules
+Drop3=658-1 'Vara de Frezno
+Drop4=697-1 'Anillo Mágico
+Drop5=698-1 'Anillo de Resistencia Mágica
+
+
+############################################
+
+[NPC614]
+Name=Elfo Guardián
+NpcType=0
+Head=0
+Heading=3
+Body=402
+Movement=3
+AguaValida=0
+TierraInvalida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=272
+MinHP=1500
+MaxHP=1500
+MaxHIT=115
+MinHIT=60
+DEF=15
+DEFm=0
+PoderAtaque=135
+PoderEvasion=150
+LanzaSpells=1
+Sp1=44
+BackUp=0
+NROITEMS=5
+Drop1=12-500 'Oro
+Drop2=480-115 'Flechas
+Drop3=479-3 'Arcos Compuestos
+Drop4=551-200 'Flechas +1
+Drop5=665-6 'Arcos de Cazador
+
+############################################
+
+[NPC615]
+Name=Árbol capturador de Almas
+NpcType=0
+Head=0
+Heading=3
+Body=401
+Movement=3
+AguaValida=0
+TierraInvalida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=454
+MinHP=2500
+MaxHP=2500
+MaxHIT=150
+MinHIT=100
+DEF=15
+DEFm=0
+PoderAtaque=150
+PoderEvasion=60
+LanzaSpells=2
+Sp1=24
+Sp2=45
+Snd3=173
+AfectaParalisis=1
+BackUp=0
+NROITEMS=5
+Drop1=12-1000 'Oro
+Drop2=1005-2 'Hachas de Madera Élfia
+Drop3=38-300 'Pociones Rojas
+Drop4=203-1 'Aura Sanadora Avanzada
+
+############################################
+
+[NPC616]
+Name=Sapo
+NpcType=0
+Head=0
+Heading=3
+Body=432
+Movement=3
+AguaValida=0
+TierraInvalida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=900
+Alineacion=2
+Comercia=0
+GiveEXP=1
+MinHP=30
+MaxHP=30
+MaxHIT=7
+MinHIT=2
+DEF=0
+DEFm=0
+PoderAtaque=40
+PoderEvasion=35
+BackUp=0
+NROITEMS=5
+Drop3=12-25 'Oro
+Drop4=12-80 'Oro
+Drop5=12-500 'Oro
+
+############################################
+
+[NPC617]
+Name=Pequeño Escarabajo
+NpcType=0
+Head=0
+Heading=3
+Body=533
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=6
+MinHP=40
+MaxHP=40
+MaxHIT=14
+MinHIT=1
+DEF=5
+DefM=5
+PoderAtaque=75
+PoderEvasion=25
+BackUp=0
+NROITEMS=5
+Drop1=12-85  ' Oro
+Drop2=855-10 ' Poción amarilla (newbie)
+Drop3=858-20 ' Poción verde(newbie)
+Drop5=126-1  ' Hacha larga de guerra
+
+############################################
+
+[NPC618]
+Name=Pequeño Duende
+NpcType=0
+Head=0
+Heading=3
+Body=75
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=8
+MinHP=50
+MaxHP=50
+MaxHIT=17
+MinHIT=10
+DEF=8
+PoderAtaque=90
+PoderEvasion=100
+BackUp=0
+NROITEMS=5
+Drop1=12-145  ' Oro
+Drop2=856-24 ' Poción Azul (newbie)
+Drop4=208-1  ' Flauta Magica
+Drop5=696-1  ' Laud Magico
+
+############################################
+
+[NPC619]
+Name=Hada del Bosque
+NpcType=0
+Head=0
+Heading=3
+Body=532
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=383
+MinHP=950
+MaxHP=950
+MaxHIT=23
+MinHIT=15
+DEF=5
+PoderAtaque=150
+PoderEvasion=150
+Snd3=166
+BackUp=0
+NROITEMS=5 
+Drop1=12-3350  ' Oro
+Drop2=12-4225  ' Oro
+Drop3=857-20 ' Poción roja (newbie)
+Drop4=658-1  ' Vara de fresno
+Drop5=205-1  ' Misil Magico
+
+############################################
+
+[NPC620]
+Name=Pequeña Araña
+NpcType=0
+Head=0
+Heading=3
+Body=534
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=2
+MinHP=40
+MaxHP=40
+MaxHIT=8
+MinHIT=3
+DEF=4
+DefM=5
+PoderAtaque=50
+PoderEvasion=20
+BackUp=0
+NROITEMS=5
+Drop1=12-62  ' Oro
+Drop3=12-210 ' Oro
+Drop4=366-1  ' Daga +3
+Drop5=30-1   ' Armadura de cuero
+
+############################################
+
+[NPC621]
+Name=Piraña 
+NpcType=0
+Head=0
+Heading=3
+Body=433
+Movement=3
+AguaValida=1
+TierraInvalida=1
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=60
+MinHP=110
+MaxHP=110
+MaxHIT=16
+MinHIT=10
+DEF=4
+DefM=5
+PoderAtaque=75
+PoderEvasion=25
+BackUp=0
+NROITEMS=5
+Drop1=12-35   ' Oro
+Drop2=480-15  ' Flechas 
+Drop3=855-30  ' Poción amarilla (newbie)
+Drop4=1009-20 ' cuchillas
+
+############################################
+
+[NPC622]
+Name=Pequeño Dragón Mágico
+NpcType=0
+Head=0
+Heading=3
+Body=537
+Movement=3
+AguaValida=1
+TierraInvalida=1
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=682
+MinHP=1450
+MaxHP=1450
+MaxHIT=17
+MinHIT=5
+DEF=5
+DefM=10
+PoderAtaque=84
+PoderEvasion=27
+Snd3=89
+BackUp=0
+NROITEMS=5
+Drop1=12-5350   ' Oro 
+Drop2=480-25  ' Flechas
+Drop3=480-150 ' Flechas
+Drop4=664-1   ' Arco compuesto reforzado
+Drop5=665-1   ' Arco de Cazador
+
+############################################
+
+[NPC623]
+Name=Mini Elemental de Fuego
+NpcType=0
+Head=0
+Heading=3
+Body=535
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=120
+MinHP=210
+MaxHP=210
+MaxHIT=13
+MinHIT=5
+DEF=3
+DefM=2
+PoderAtaque=45
+PoderEvasion=30
+BackUp=0
+NROITEMS=5
+Drop1=12-50 ' Oro 
+Drop2=12-75 ' Oro 
+Drop4=205-1 ' Proyectil Mágico
+Drop5=123-3 ' Espada Vikinga
+
+############################################
+
+[NPC624]
+Name=Pequeño Dragón Rojo
+NpcType=0
+Head=0
+Heading=3
+Body=536
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=500
+MinHP=300
+MaxHP=300
+MaxHIT=13
+MinHIT=2
+DEF=7
+PoderAtaque=40
+PoderEvasion=50
+Snd3=160
+BackUp=0
+NROITEMS=5
+Drop1=12-25 ' Oro
+Drop2=12-25 ' Oro
+Drop4=204-1 ' Flecha Eléctrica
+Drop5=990-3 ' Mazo del juicio
+
+############################################
+
+[NPC625]
+Name=Víbora
+NpcType=0
+Head=0
+Heading=3
+Body=13
+Movement=3
+AguaValida=0
+Attackable=1
+Respawn=0
+Hostile=1
+Alineacion=2
+Comercia=0
+GiveEXP=30
+MinHP=22
+MaxHP=22
+MaxHIT=6
+MinHIT=2
+DEF=3
+PoderAtaque=35
+PoderEvasion=20
+SND2=103
+BackUp=0
+NROITEMS=5
+Drop3=38-10 ' Pocion roja
+Drop4=200-1 ' Antidoto magico
+Drop5=202-1 ' Toxina
+
+############################################
+
+[NPC626]
+Name=Goblin Travieso
+NpcType=0
+Head=0
+Heading=3
+Body=14
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Alineacion=2
+Comercia=0
+GiveEXP=63
+MinHP=280
+MaxHP=280
+MaxHIT=9
+MinHIT=2
+DEF=2
+DefM=4
+PoderAtaque=58
+PoderEvasion=15
+Snd3=142
+BackUp=0
+NROITEMS=5
+Drop1=12-525  ' Oro
+Drop3=480-10 ' Flechas
+Drop4=479-1  ' Arco compuesto
+
+############################################
+
+[NPC627]
+Name=Protector de almas
+NpcType=0
+Head=0
+Heading=3
+Body=426
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=2250
+MinHP=1950
+MaxHP=1950
+MaxHIT=23
+MinHIT=15
+DEF=10
+Defm=5
+PoderAtaque=69
+PoderEvasion=55
+BackUp=0
+NROITEMS=5
+Drop1=12-2140 ' Oro
+Drop2=12-4900 ' Oro
+Drop3=364-1 ' Terrible hambre de Igôr
+Drop4=19-2  ' Espada dos manos
+Drop5=470-1 ' Fuerza
+
+############################################
+
+[NPC628]
+Name=Tarántula venenosa
+NpcType=0
+Head=0
+Heading=3
+Body=538
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=155
+MinHP=600
+MaxHP=600
+MaxHIT=95
+MinHIT=60
+DEF=2
+PoderAtaque=63
+PoderEvasion=32
+Veneno=1
+BackUp=0
+NROITEMS=5
+Drop1=166-35 ' Pocion violeta
+Drop3=201-3 ' Curar heridas leves
+Drop4=396-6 ' Celeridad
+
+############################################
+############################################
+############################################
+############################################
+############################################
+#############NPCS RUNAS####################
+
+[NPC629] 'Runas
+Name=Runas
+NpcType=0
+Desc=Bienvenido aventurero, tengo unas runas de teletransportacion que te podrian interesar, también tengo la runa de la Ciudad Real!, dame doble click o escribe /COMERCIAR.
+Head=28
+Heading=3
+Body=243
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=0
+TipoItems=3
+NROITEMS=5
+Obj1=1369-10000 'Runa Ciudad Real
+Obj2=1409-10000 'Arena
+Obj3=1379-10000 'Runa Sala Canjes
+Obj4=1371-10000 'Runa Zona GMS
+Obj5=1447-10000 'Runa Comercio Seguro
+BackUp=0
+##############################################
+[NPC630] 'Runas
+Name=Runas
+NpcType=0
+Desc=Bienvenido aventurero, tengo unas runas de teletransportacion que te podrian interesar, también tengo la runa de la Ciudad Caótica!, dame doble click o escribe /COMERCIAR.
+Head=28
+Heading=3
+Body=243
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=0
+TipoItems=3
+NROITEMS=5
+Obj1=1370-10000 'Runa Ciudad Caos
+Obj2=1409-10000 'Arena
+Obj3=1379-10000 'Runa Sala Canjes
+Obj4=1371-10000 'Runa Zona GMS
+Obj5=1447-10000 'Runa Comercio Seguro
+BackUp=0
+##############################################
+[NPC631] 'Runas
+Name=Runas
+NpcType=0
+Desc=Bienvenido aventurero, tengo unas runas de teletransportacion que te podrian interesar, también tengo la runa hacia Radiant!, dame doble click o escribe /COMERCIAR.
+Head=28
+Heading=3
+Body=243
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=0
+TipoItems=3
+NROITEMS=5
+Obj1=1368-10000 'Runa Pueblo Radiant
+Obj2=1409-10000 'Arena 2
+Obj3=1379-10000 'Runa Sala Canjes
+Obj4=1371-10000 'Runa Zona GMS
+Obj5=1447-10000 'Runa Comercio Seguro
+BackUp=0
+
+##############################################
+[NPC632] 'Runas
+Name=Runas
+NpcType=0
+Desc=Bienvenido aventurero, tengo unas runas de teletransportacion que te podrian interesar, también tengo la runa hacia Amarú!, dame doble click o escribe /COMERCIAR.
+Head=28
+Heading=3
+Body=243
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=0
+TipoItems=3
+NROITEMS=5
+Obj1=1366-10000 'Runa Pueblo Amaru
+Obj2=1409-10000 'Arena
+Obj3=1379-10000 'Runa Sala Canjes
+Obj4=1371-10000 'Runa Zona GMS
+Obj5=1447-10000 'Runa Comercio Seguro
+BackUp=0
+##############################################
+[NPC633] 'Runas
+Name=Runas
+NpcType=0
+Desc=Bienvenido aventurero, tengo unas runas de teletransportacion que te podrian interesar, también tengo la runa hacia Hervas!, dame doble click o escribe /COMERCIAR.
+Head=28
+Heading=3
+Body=243
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=0
+TipoItems=3
+NROITEMS=5
+Obj1=1365-10000 'Runa Pueblo Hervas
+Obj2=1409-10000 'Arena 2
+Obj3=1379-10000 'Runa Sala Canjes
+Obj4=1371-10000 'Runa Zona GMS
+Obj5=1447-10000 'Runa Comercio Seguro
+BackUp=0
+##############################################
+[NPC634] 'Runas
+Name=Runas
+NpcType=0
+Desc=Bienvenido aventurero, tengo unas runas de teletransportacion que te podrian interesar, también tengo la runa hacia Jorshin!, dame doble click o escribe /COMERCIAR.
+Head=28
+Heading=3
+Body=243
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=0
+TipoItems=3
+NROITEMS=5
+Obj1=1364-10000 'Runa Pueblo Jorshin
+Obj2=1409-10000 'Arena
+Obj3=1379-10000 'Runa Sala Canjes
+Obj4=1371-10000 'Runa Zona GMS
+Obj5=1447-10000 'Runa Comercio Seguro
+BackUp=0
+##############################################
+[NPC635] 'Runas
+Name=Runas
+NpcType=0
+Desc=Bienvenido aventurero, tengo unas runas de teletransportacion que te podrian interesar, también tengo la runa hacia Cilicius!, dame doble click o escribe /COMERCIAR.
+Head=28
+Heading=3
+Body=243
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=0
+TipoItems=3
+NROITEMS=5
+Obj1=1363-10000 'Runa Pueblo Cilicius
+Obj2=1409-10000 'Arena 2
+Obj3=1379-10000 'Runa Sala Canjes
+Obj4=1371-10000 'Runa Zona GMS
+Obj5=1447-10000 'Runa Comercio Seguro
+BackUp=0
+##############################################
+[NPC636] 'Runas
+Name=Runas
+NpcType=0
+Desc=Bienvenido aventurero, tengo unas runas de teletransportacion que te podrian interesar, también tengo la runa hacia Belsa!, dame doble click o escribe /COMERCIAR.
+Head=28
+Heading=3
+Body=243
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=0
+TipoItems=3
+NROITEMS=5
+Obj1=1362-10000 'Runa Pueblo Belsa
+Obj2=1409-10000 'Arena 2
+Obj3=1379-10000 'Runa Sala Canjes
+Obj4=1371-10000 'Runa Zona GMS
+Obj5=1447-10000 'Runa Comercio Seguro
+BackUp=0
+
+##############################################
+[NPC637] 'Runas
+Name=Runas
+NpcType=0
+Desc=Bienvenido aventurero, tengo unas runas de teletransportacion que te podrian interesar, también tengo la runa hacia éste pueblo escondido!, dame doble click o escribe /COMERCIAR.
+Head=28
+Heading=3
+Body=243
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=0
+TipoItems=3
+NROITEMS=5
+Obj1=1413-10000 'Runa Pueblo Escondido Veraz
+Obj2=1409-10000 'Arena
+Obj3=1379-10000 'Runa Sala Canjes
+Obj4=1371-10000 'Runa Zona GMS
+Obj5=1447-10000 'Runa Comercio Seguro
+BackUp=0
+##############################################
+[NPC638] 'Runas
+Name=Runas
+NpcType=0
+Desc=Bienvenido aventurero, tengo runas interesantes que te podrían interesar, incluso para mi ubicación!, dame doble click o escribe /COMERCIAR.
+Head=28
+Heading=3
+Body=243
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=0
+TipoItems=3
+NROITEMS=5
+Obj1=1372-10000 'Runa Dungeon Zilug
+Obj2=1409-10000 'Arena
+Obj3=1379-10000 'Runa Sala Canjes
+Obj4=1371-10000 'Runa Zona GMS
+Obj5=1447-10000 'Runa Comercio Seguro
+BackUp=0
+##############################################
+[NPC639] 'Runas
+Name=Runas
+NpcType=0
+Desc=Bienvenido aventurero, tengo runas interesantes que te podrían interesar, incluso para mi ubicación!, dame doble click o escribe /COMERCIAR.
+Head=28
+Heading=3
+Body=243
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=0
+TipoItems=3
+NROITEMS=5
+Obj1=1373-10000 'Runa Dungeon Veraz
+Obj2=1409-10000 'Arena
+Obj3=1379-10000 'Runa Sala Canjes
+Obj4=1371-10000 'Runa Zona GMS
+Obj5=1447-10000 'Runa Comercio Seguro
+BackUp=0
+##############################################
+[NPC640] 'Runas
+Name=Runas
+NpcType=0
+Desc=Bienvenido aventurero, tengo runas interesantes que te podrían interesar, incluso para mi ubicación!, dame doble click o escribe /COMERCIAR.
+Head=28
+Heading=3
+Body=243
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=0
+TipoItems=3
+NROITEMS=5
+Obj1=1374-10000 'Runa Dungeon Klain
+Obj2=1409-10000 'Arena 2
+Obj3=1379-10000 'Runa Sala Canjes
+Obj4=1371-10000 'Runa Zona GMS
+Obj5=1447-10000 'Runa Comercio Seguro
+BackUp=1
+##############################################
+[NPC641] 'Runas
+Name=Runas
+NpcType=0
+Desc=Bienvenido aventurero, tengo runas interesantes que te podrían interesar, incluso para mi ubicación!, dame doble click o escribe /COMERCIAR.
+Head=28
+Heading=3
+Body=243
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=0
+TipoItems=3
+NROITEMS=5
+Obj1=1375-10000 'Runa Dungeon Westler
+Obj2=1409-10000 'Arena 2
+Obj3=1379-10000 'Runa Sala Canjes
+Obj4=1371-10000 'Runa Zona GMS
+Obj5=1447-10000 'Runa Comercio Seguro
+BackUp=1
+##############################################
+[NPC642] 'Runas
+Name=Runas
+NpcType=0
+Desc=Bienvenido aventurero, tengo runas interesantes que te podrían interesar, incluso para mi ubicación!, dame doble click o escribe /COMERCIAR.
+Head=28
+Heading=3
+Body=243
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=0
+TipoItems=3
+NROITEMS=5
+Obj1=1376-10000 'Runa Piramide de Annk
+Obj2=1409-10000 'Arena 2
+Obj3=1379-10000 'Runa Sala Canjes
+Obj4=1371-10000 'Runa Zona GMS
+Obj5=1447-10000 'Runa Comercio Seguro
+BackUp=1
+##############################################
+[NPC643] 'Runas
+Name=Runas
+NpcType=0
+Desc=Bienvenido aventurero, tengo runas interesantes que te podrían interesar, incluso para mi ubicación!, dame doble click o escribe /COMERCIAR.
+Head=28
+Heading=3
+Body=243
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=0
+TipoItems=3
+NROITEMS=5
+Obj1=1377-10000 'Runa Montaña
+Obj2=1409-10000 'Arena 2
+Obj3=1379-10000 'Runa Sala Canjes
+Obj4=1371-10000 'Runa Zona GMS
+Obj5=1447-10000 'Runa Comercio Seguro
+BackUp=1
+##############################################
+[NPC644] 'Runas
+Name=Runas
+NpcType=0
+Desc=Bienvenido aventurero, tengo runas interesantes que te podrían interesar, incluso para mi ubicación!, dame doble click o escribe /COMERCIAR.
+Head=28
+Heading=3
+Body=243
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=0
+TipoItems=3
+NROITEMS=5
+Obj1=1336-10000 'Runa Demond
+Obj2=1409-10000 'Arena 2
+Obj3=1379-10000 'Runa Sala Canjes
+Obj4=1371-10000 'Runa Zona GMS
+Obj5=1447-10000 'Runa Comercio Seguro
+BackUp=1
+##############################################
+[NPC645] 'Zona testers
+Name=Runas
+NpcType=0
+Desc=Bienvenido aventurero, tengo runas interesantes que te podrían interesar, solo para éste sitio de testers, haceme doble click!, dame doble click o escribe /COMERCIAR.
+Head=28
+Heading=3
+Body=243
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=0
+TipoItems=3
+NROITEMS=5
+Obj1=1367-10000 'Pueblo principal
+Obj2=1447-10000 'Runa Comercio Seguro
+Obj3=1337-10000 'Runa Sala GM'S
+Obj4=1379-10000 'Runa Sala de canjes
+Obj5=1380-10000 'Runa Zona de eventos
+BackUp=1
+############################################
+############################################
+############################################
+############################################
+############################################
+#############NPCS NUEVOS####################
+
+[NPC656] 'FALTA DATEAR
+Name=Gran Dragón Blanco
+NpcType=6
+Head=0
+Heading=3
+Body=638
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=265000
+MinHP=200000
+MaxHP=200000
+MaxHIT=5000
+MinHIT=1000
+DEF=0
+PoderAtaque=400
+PoderEvasion=320
+LanzaSpells=2
+Sp1=15
+Sp2=25
+SND1=30
+SND2=31
+SND3=32
+AfectaParalisis=1
+BackUp=0
+
+[NPC657]
+Name=Elemental corruptor de MDS
+NpcType=0
+Head=0
+Heading=3
+Body=394
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=850
+MinHP=95000
+MaxHP=95000
+MaxHIT=180
+MinHIT=100
+DEF=20
+PoderAtaque=150
+PoderEvasion=160
+AfectaParalisis=1
+snd2=118
+snd3=1
+LanzaSpells=2
+Sp1=15
+Sp2=25
+NROITEMS=1
+Drop1=402-1 'MD
+BackUp=0
+
+[NPC658]
+Name=Yeti
+NpcType=0
+Head=0
+Heading=3
+Body=564
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=23333
+MinHP=12500
+MaxHP=12500
+MaxHIT=210
+MinHIT=130
+DEF=7
+PoderAtaque=160
+PoderEvasion=80
+Snd3=159
+NROITEMS=2
+Drop1=12-45000 'Oro
+Drop2=12-75000 'Oro
+BackUp=0
+
+[NPC659]
+Name=Golem Dorado
+NpcType=0
+Head=0
+Heading=3
+Body=565
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=923076
+MinHP=60000
+MaxHP=60000
+MaxHIT=240
+MinHIT=170
+DEF=5
+PoderAtaque=210
+PoderEvasion=50
+Snd2=79
+Snd3=89
+NROITEMS=1
+Drop1=710-20 'Copa de oro
+BackUp=0
+
+[NPC660]
+Name=Gran dragón verde
+NpcType=0
+Head=0
+Heading=3
+Body=566
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=500
+MinHP=300
+MaxHP=300
+MaxHIT=13
+MinHIT=2
+DEF=7
+PoderAtaque=40
+PoderEvasion=50
+BackUp=0
+
+[NPC661]
+Name=Fénix
+NpcType=0
+Head=0
+Heading=3
+Body=567
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=2042
+MinHP=3800
+MaxHP=3800
+MaxHIT=95
+MinHIT=190
+DEF=5
+PoderAtaque=160
+PoderEvasion=70
+BackUp=0
+NROITEMS=1
+Drop1=12-9350'Oro
+
+[NPC662]
+Name=Serpiente egipcia
+NpcType=0
+Head=0
+Heading=3
+Body=568
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=1081
+MinHP=2300
+MaxHP=2300
+MaxHIT=200
+MinHIT=100
+DEF=7
+PoderAtaque=140
+PoderEvasion=50
+BackUp=0
+NROITEMS=5
+Drop1=12-6450 'Oro
+Drop2=37-500 'Poción Azul
+Drop3=990-7 'Mazo de Juicio
+Drop4=698-2 'Anillo de Resitencia Mágica
+Drop5=359-7 'Cotas de Mallas
+
+[NPC663]
+Name=Plumífero imperial de Annk
+NpcType=0
+Head=0
+Heading=3
+Body=569
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=4368
+MinHP=6500
+MaxHP=6500
+MaxHIT=250
+MinHIT=50
+DEF=7
+PoderAtaque=40
+PoderEvasion=30
+BackUp=0
+NROITEMS=1
+Drop1=12-7440'Oro
+
+[NPC664]
+Name=Mole mecánica
+NpcType=0
+Head=0
+Heading=3
+Body=570
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=500
+MinHP=300
+MaxHP=300
+MaxHIT=13
+MinHIT=2
+DEF=7
+PoderAtaque=40
+PoderEvasion=50
+BackUp=0
+
+[NPC665]
+Name=Mago heredero
+NpcType=0
+Head=0
+Heading=3
+Body=571
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=157013
+MinHP=23000
+MaxHP=23000
+MaxHIT=135
+MinHIT=90
+DEF=10
+PoderAtaque=110
+PoderEvasion=60
+LanzaSpells=3
+Sp1=8
+Sp2=9
+Sp3=15
+BackUp=0
+NROITEMS=5
+Drop1=12-67500 'Oro
+Drop2=12-42000 'Oro
+Drop3=524-10 'Túnica Roja Especial (E/G)
+Drop4=206-3 'Paralizar
+Drop5=660-15 'Báculos Engarzados
+
+[NPC666]
+Name=Golem helado
+NpcType=0
+Head=0
+Heading=3
+Body=572
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=136533
+MinHP=20000
+MaxHP=20000
+MaxHIT=220
+MinHIT=165
+DEF=7
+PoderAtaque=160
+PoderEvasion=90
+Snd2=79
+Snd3=89
+BackUp=0
+NROITEMS=1
+Drop1=12-32500 'Oro
+
+[NPC667]
+Name=Dragón de fuego fatuo
+NpcType=0
+Head=0
+Heading=3
+Body=573
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=500
+MinHP=300
+MaxHP=300
+MaxHIT=13
+MinHIT=2
+DEF=7
+PoderAtaque=40
+PoderEvasion=50
+BackUp=0
+
+[NPC668]
+Name=Señor del inframundo
+NpcType=0
+Head=0
+Heading=3
+Body=574
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=423076
+MinHP=22000
+MaxHP=22000
+MaxHIT=200
+MinHIT=110
+DEF=7
+PoderAtaque=80
+PoderEvasion=80
+BackUp=0
+NROITEMS=1
+Drop1=710-6 'Copas de oro
+
+[NPC669]
+Name=Golem del pantano
+NpcType=0
+Head=0
+Heading=3
+Body=575
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=1026000
+MinHP=35000
+MaxHP=35000
+MaxHIT=190
+MinHIT=130
+DEF=7
+PoderAtaque=110
+PoderEvasion=60
+BackUp=0
+NROITEMS=1
+Drop1=710-1 'Copa de oro
+
+[NPC670]
+Name=Licántropo enardecido
+NpcType=0
+Head=0
+Heading=3
+Body=576
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=500
+MinHP=300
+MaxHP=300
+MaxHIT=13
+MinHIT=2
+DEF=7
+PoderAtaque=40
+PoderEvasion=50
+BackUp=0
+
+[NPC671]
+Name=Glaciaske gelido
+NpcType=0
+Head=0
+Heading=3
+Body=577
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=7526
+MinHP=14000
+MaxHP=14000
+MaxHIT=280
+MinHIT=210
+DEF=7
+PoderAtaque=80
+PoderEvasion=50
+NROITEMS=1
+Drop1=12-37560 'Oro
+BackUp=0
+
+[NPC672]
+Name=Golem de fuego
+NpcType=0
+Head=0
+Heading=3
+Body=578
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=384615
+MinHP=25000
+MaxHP=25000
+MaxHIT=230
+MinHIT=190
+DEF=10
+PoderAtaque=60
+PoderEvasion=40
+BackUp=0
+NROITEMS=1
+Drop1=710-3 'Copa de oro
+
+[NPC673]
+Name=Mago ancestral
+NpcType=0
+Head=0
+Heading=3
+Body=579
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=157013
+MinHP=75000
+MaxHP=75000
+MaxHIT=200
+MinHIT=150
+DEF=30
+PoderAtaque=180
+PoderEvasion=150
+LanzaSpells=2
+Sp1=15
+Sp2=25
+BackUp=0
+NROITEMS=1
+Drop1=406-2 'Pergamino de Clan
+
+[NPC674]
+Name=Momia gigante
+NpcType=0
+Head=0
+Heading=3
+Body=580
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=1317
+MinHP=2800
+MaxHP=2800
+MaxHIT=150
+MinHIT=130
+DEF=7
+PoderAtaque=140
+PoderEvasion=90
+NROITEMS=1
+Drop1=12-6650 'Oro
+BackUp=0
+
+[NPC675]
+Name=Acromántula azabache
+NpcType=0
+Head=0
+Heading=3
+Body=581
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=9799
+MinHP=7500
+MaxHP=7500
+MaxHIT=160
+MinHIT=100
+DEF=0
+PoderAtaque=150
+PoderEvasion=70
+NROITEMS=1
+Drop1=12-35500 'Oro
+BackUp=0
+
+[NPC676]
+Name=Cazador de la tundra
+NpcType=0
+Head=0
+Heading=3
+Body=582
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=964
+MinHP=2050
+MaxHP=2050
+MaxHIT=185
+MinHIT=110
+DEF=2
+PoderAtaque=40
+PoderEvasion=50
+LanzaSpells=3
+Sp1=8
+Sp2=9
+Sp3=15
+NROITEMS=1
+Drop1=12-5230 'Oro
+BackUp=0
+
+[NPC677]
+Name=Dragón azul perla
+NpcType=0
+Head=0
+Heading=3
+Body=583
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=500
+MinHP=300
+MaxHP=300
+MaxHIT=13
+MinHIT=2
+DEF=7
+PoderAtaque=40
+PoderEvasion=50
+BackUp=0
+
+[NPC678]
+Name=Lobo del ártico
+NpcType=0
+Head=0
+Heading=3
+Body=584
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=1088
+MinHP=2700
+MaxHP=2700
+MaxHIT=115
+MinHIT=47
+DEF=7
+PoderAtaque=20
+PoderEvasion=50
+BackUp=0
+NROITEMS=1
+Drop1=12-5650 'Oro
+
+[NPC679]
+Name=Gran oso pardo
+NpcType=0
+Head=0
+Heading=3
+Body=585
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=500
+MinHP=300
+MaxHP=300
+MaxHIT=13
+MinHIT=2
+DEF=7
+PoderAtaque=40
+PoderEvasion=50
+BackUp=0
+
+[NPC680]
+Name=Bálrog
+NpcType=0
+Head=0
+Heading=3
+Body=588
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=500
+MinHP=300
+MaxHP=300
+MaxHIT=13
+MinHIT=2
+DEF=7
+PoderAtaque=40
+PoderEvasion=50
+BackUp=0
+
+[NPC681] 'TESTERS
+Name=Bálrog helado
+NpcType=0
+Head=0
+Heading=3
+Body=589
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=0
+MinHP=88500
+MaxHP=88500
+MaxHIT=225
+MinHIT=150
+DEF=12
+PoderAtaque=70
+PoderEvasion=80
+BackUp=0
+NROITEMS=1
+Drop1=710-2 'Copas de Oro
+
+[NPC682]
+Name=Bálrog antiguo
+NpcType=0
+Head=0
+Heading=3
+Body=590
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=500
+MinHP=300
+MaxHP=300
+MaxHIT=13
+MinHIT=2
+DEF=7
+PoderAtaque=40
+PoderEvasion=50
+BackUp=0
+
+[NPC683]
+Name=Gigante ígneo
+NpcType=0
+Head=0
+Heading=3
+Body=591
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=500
+MinHP=300
+MaxHP=300
+MaxHIT=13
+MinHIT=2
+DEF=7
+PoderAtaque=40
+PoderEvasion=50
+BackUp=0
+
+[NPC684]
+Name=Tarántula gigante
+NpcType=0
+Head=0
+Heading=3
+Body=592
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=809
+MinHP=2300
+MaxHP=2300
+MaxHIT=120
+MinHIT=20
+DEF=5
+PoderAtaque=40
+PoderEvasion=90
+BackUp=0
+NROITEMS=1
+Drop1=12-1200 'Oro
+
+[NPC685]
+Name=Ent ancestral
+NpcType=0
+Head=0
+Heading=3
+Body=593
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=500
+MinHP=300
+MaxHP=300
+MaxHIT=13
+MinHIT=2
+DEF=7
+PoderAtaque=40
+PoderEvasion=50
+BackUp=0
+
+[NPC686]
+Name=Gigante gelido del Zilug
+NpcType=0
+Head=0
+Heading=3
+Body=594
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=102400
+MinHP=12000
+MaxHP=12000
+MaxHIT=260
+MinHIT=190
+DEF=7
+PoderAtaque=70
+PoderEvasion=60
+NROITEMS=1
+Drop1=12-32500 'Oro
+BackUp=0
+
+[NPC687]
+Name=Gigante de piedra (Tester)
+NpcType=0
+Head=0
+Heading=3
+Body=595
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=9999999
+MinHP=250
+MaxHP=250
+MaxHIT=110
+MinHIT=85
+DEF=5
+PoderAtaque=70
+PoderEvasion=50
+NROITEMS=1
+Drop1=12-150000 'Oro
+BackUp=0
+
+[NPC688]
+Name=Corruptor perdido
+NpcType=0
+Head=0
+Heading=3
+Body=596
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=4368
+MinHP=6500
+MaxHP=6500
+MaxHIT=210
+MinHIT=130
+DEF=0
+PoderAtaque=170
+PoderEvasion=90
+BackUp=0
+NROITEMS=1
+Drop1=12-18650 'Oro
+
+[NPC689]
+Name=Gront el furioso
+NpcType=0
+Head=0
+Heading=3
+Body=597
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=500
+MinHP=300
+MaxHP=300
+MaxHIT=13
+MinHIT=2
+DEF=7
+PoderAtaque=40
+PoderEvasion=50
+BackUp=0
+
+[NPC690]
+Name=Asmodeus
+NpcType=0
+Head=0
+Heading=3
+Body=598
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=10000
+MinHP=8500
+MaxHP=8500
+MaxHIT=170
+MinHIT=100
+DEF=10
+PoderAtaque=110
+PoderEvasion=70
+NROITEMS=1
+Drop1=406-2 'Pergamino de Clan
+BackUp=0
+
+[NPC691]
+Name=Tiburón Furioso
+NpcType=0
+Head=0
+Heading=3
+Body=599
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=635
+MinHP=1350
+MaxHP=1350
+MaxHIT=130
+MinHIT=70
+DEF=7
+PoderAtaque=70
+PoderEvasion=70
+NROITEMS=1
+Drop1=12-5250 'Oro
+BackUp=0
+
+[NPC692]
+Name=Caminante perturbado
+NpcType=0
+Head=0
+Heading=3
+Body=600
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=778
+MinHP=2400
+MaxHP=2400
+MaxHIT=160
+MinHIT=100
+DEF=5
+PoderAtaque=40
+PoderEvasion=40
+BackUp=0
+NROITEMS=5
+Drop1=12-6800 'Oro
+Drop2=37-500 'Poción Azul
+Drop3=990-7 'Mazo de Juicio
+Drop4=698-2 'Anillo de Resitencia Mágica
+Drop5=359-7 'Cotas de Mallas
+
+[NPC693]
+Name=Dragon jefe de Veraz
+NpcType=0
+Head=0
+Heading=3
+Body=601
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=1000000
+MinHP=52000
+MaxHP=52000
+MaxHIT=240
+MinHIT=200
+DEF=9
+PoderAtaque=110
+PoderEvasion=70
+BackUp=0
+NROITEMS=1
+Drop1=12-103571 'Oro
+
+[NPC694]
+Name=Oso Polar
+NpcType=0
+Head=0
+Heading=3
+Body=184
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=2010
+Alineacion=2
+Comercia=0
+GiveEXP=1999
+MinHP=4250
+MaxHP=4250
+MaxHIT=160
+MinHIT=110
+DEF=7
+PoderAtaque=250
+PoderEvasion=65
+BackUp=0
+NROITEMS=1
+Drop1=12500-26 'Oro
+Drop2=480-50 'Flechas
+Drop3=479-1 'Arco Compuesto
+Drop4=38-100 'Pociones Rojas
+
+[NPC695]
+Name=Gorila de las Nieves
+NpcType=0
+Head=0
+Heading=3
+Body=214
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=3057
+MinHP=6500
+MaxHP=6500
+MaxHIT=210
+MinHIT=170
+DEF=10
+DEFm=10
+PoderAtaque=160
+PoderEvasion=70
+BackUp=0
+NROITEMS=1
+Drop1=12-16523 'Oro
+
+[NPC696]
+Name=Goblin Peligroso
+NpcType=0
+Head=0
+Heading=3
+Body=148
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Alineacion=2
+Comercia=0
+GiveEXP=0
+MinHP=3500
+MaxHP=3500
+MaxHIT=170
+MinHIT=140
+DEF=7
+DefM=5
+PoderAtaque=120
+PoderEvasion=65
+Snd3=142
+BackUp=0
+NROITEMS=5
+Drop1=12-8500  ' Oro
+Drop3=480-100 ' Flechas
+Drop4=479-1  ' Arco compuesto
+
+[NPC697]
+Name=La Parca
+NpcType=0
+Head=0
+Heading=3
+Body=217
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=0
+MinHP=2750
+MaxHP=2750
+MaxHIT=90
+MinHIT=50
+DEF=10
+PoderAtaque=150
+PoderEvasion=50
+BackUp=0
+NROITEMS=5
+Drop1=12-3200 'Oro
+Drop2=12-6800 'Oro
+Drop5=380-1
+
+[NPC698]
+Name=Mercader Viajero
+NpcType=0
+Desc=¡Buen día aventurero!, traigo objetos muy raros de otras tierras, dame doble click o escribe /COMERCIAR.
+Head=7
+Heading=3
+Body=492
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+TipoItems=1000
+ShowName=0
+NROITEMS=6
+Obj1=1448-10000 ' Túnica Ganíca
+Obj2=1449-10000 ' Túnica Legendaria
+Obj3=1450-10000 ' Túnica  roja (G)
+Obj4=1451-10000 'Túnica  marron (G)
+Obj5=1452-10000 'Túnica  verde (G)
+Obj6=1453-10000 ' Túnica de druida (M)
+BackUp=1
+
+##############################################
+[NPC699] 'Nivel 1 Tutorial
+Name=Mefisto
+NpcType=0
+Desc=¡Bienvenido aventurero!, las Runas de teletransportación son tu mejor herramienta para moverte en éste mundo, has doble click seguido sobre mi, luego compra la runa y utilizala con la tecla "U".
+Head=28
+Heading=3
+Body=243
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=1
+TipoItems=3
+NROITEMS=1
+Obj1=1455-10000 'Runa hacia pasajes
+BackUp=1
+
+#############################################
+
+[NPC700] 'Nivel 1 Tutorial
+Name=Golaf
+NpcType=0
+Desc= Ve hacia Rodolfo y compra la runa para avanzar al siguiente nivel
+Head=0
+Heading=3
+Body=540
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+
+[NPC701] 'Primeros pasos
+Name=Frodo
+Desc=¡Hola aventurero/a!, traéme 500 monedas de oro y sube al nivel 5, luego clickéame 2 veces seguidas y compra el pasaje que te ofrezco.
+NpcType=12
+Head=305
+Heading=3
+Body=389
+Attackable=0
+ShowName=1
+Ciudades=9
+
+#############################################
+
+[NPC702] 'Primeros pasos
+Name=Jeralf
+Desc=¡Bienvenido a EvolutionAo!
+NpcType=12
+Head=305
+Heading=3
+Body=389
+ShowName=1
+Ciudades=9
+
+#############################################
+
+[NPC703] 'Centinela - vigilante
+Name=Centinela
+NpcType=0
+Desc=Estoy vigilando que todo esté en orden por aquí.
+Head=0
+Body=540
+Heading=3
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+
+#############################################
+
+[NPC704] 'Borracho perfil der 3
+Name=Borracho de taberna
+NpcType=0
+Desc=Déjenme tarnquilo... hip hip... descargaré lo que he... hip hip... bebido
+Head=0
+Body=413
+Heading=3
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+
+#############################################
+
+[NPC705] 'Borracho perfil der 3
+Name=Borracho de taberna
+NpcType=0
+Desc=Déjenme tarnquilo... hip hip... descargaré lo que he... hip hip... bebido
+Head=0
+Body=414
+Heading=3
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+
+#############################################
+
+[NPC706] 'Borracho perfil der 3
+Name=Borracho de taberna
+NpcType=0
+Desc=Déjenme tarnquilo... hip hip... descargaré lo que he... hip hip... bebido
+Head=0
+Body=415
+Heading=3
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+
+#############################################
+
+[NPC707] 'Borracho perfil der 3
+Name=Borracho de taberna
+NpcType=0
+Desc=Déjenme tarnquilo... hip hip... descargaré lo que he... hip hip... bebido
+Head=0
+Body=417
+Heading=3
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+
+#############################################
+
+[NPC708] 'Borracho perfil der 3
+Name=Borracho de taberna
+NpcType=0
+Desc=Déjenme tarnquilo... hip hip... descargaré lo que he... hip hip... bebido
+Head=0
+Body=422
+Heading=3
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+
+#############################################
+
+[NPC709] 'Borracho perfil der 3
+Name=Borracho de taberna
+NpcType=0
+Desc=Déjenme tarnquilo... hip hip... descargaré lo que he... hip hip... bebido
+Head=0
+Body=423
+Heading=3
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+
+#############################################
+
+[NPC710] 'Provisiones
+Name=Glesh
+NpcType=0
+Desc=¡Hola aventurero!, te invito a ver unas bebidas dignas del sitio, has doble click sobre mi!
+Head=0
+Heading=3
+Body=33
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=1
+TipoItems=1
+NROITEMS=5
+Obj1=160-1000 'Cerveza
+Obj2=522-1000 'Hipocras
+Obj3=550-1000 'Porron de cerveza
+Obj4=557-1000 'Vino de canela
+Obj5=42-1000 'Vino
+BackUp=1
+##############################################################
+##############################################################
+##############################################################
+##############################################################
+##############################################################
+##############################################################
+##############################################################
+##############################################################
+##############################################################
+#####################NPCS PRETORIANOS#########################
+##############################################################
+###############no cambiar los índices asignados###############
+
+[NPC900]
+Name=Sacerdote Pretoriano
+NpcType=10
+Head=74
+Heading=3
+Body=38
+Movement=20
+AguaValida=0
+Attackable=1
+ReSpawn=1
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=10000
+GiveGLD=5000
+MinHP=8000
+MaxHP=8000
+MaxHIT=140
+MinHIT=70
+DEF=10
+PoderAtaque=100
+PoderEvasion=120
+LanzaSpells=5
+Sp1=9
+Sp2=10
+Sp3=39
+Sp4=5
+Sp5=36
+NROITEMS=4
+Obj1=986-1
+Obj2=37-300
+Obj3=38-300
+Obj4=361-1
+BackUp=0
+
+############################################
+
+[NPC901]
+Name=Guerrero Pretoriano
+NpcType=10
+Head=7
+Heading=3
+Body=45
+Movement=21
+AguaValida=0
+Attackable=1
+ReSpawn=1
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=5000
+GiveGLD=5000
+MinHP=15000
+MaxHP=15000
+MaxHIT=200
+MinHIT=180
+DEF=20
+PoderAtaque=600
+PoderEvasion=250
+LanzaSpells=0
+NROITEMS=7
+Obj1=129-1
+Obj2=195-1
+Obj3=131-1
+Obj4=128-1
+Obj5=36-30
+Obj6=39-30
+Obj7=38-300
+BackUp=0
+
+############################################
+
+[NPC902]
+Name=Mago Pretoriano
+NpcType=10
+Head=104
+Heading=3
+Body=49
+Movement=22
+AguaValida=0
+Attackable=1
+ReSpawn=1
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=10000
+GiveGLD=10000
+MinHP=5000
+MaxHP=5000
+MaxHIT=60
+MinHIT=30
+DEF=10
+PoderAtaque=100
+PoderEvasion=80
+LanzaSpells=2
+Sp1=25
+Sp2=38
+NROITEMS=4
+Obj1=238-1
+Obj2=37-400
+Obj3=660-1
+Obj4=662-1
+BackUp=0
+
+############################################
+
+[NPC903]
+Name=Cazador Pretoriano
+NpcType=10
+Head=301
+Heading=3
+Body=110
+Movement=23
+AguaValida=0
+Attackable=1
+ReSpawn=1
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=5000
+GiveGLD=5000
+MinHP=10000
+MaxHP=10000
+MaxHIT=150
+MinHIT=100
+DEF=10
+PoderAtaque=350
+PoderEvasion=220
+LanzaSpells=1
+Sp1=37
+NROITEMS=7
+Obj1=665-1
+Obj2=553-125
+Obj3=648-1
+Obj4=131-1
+Obj5=128-1
+Obj6=36-20
+Obj7=39-20
+BackUp=0
+
+############################################
+
+[NPC904]
+Name=Rey Pretoriano
+NpcType=10
+Head=14
+Heading=3
+Body=63
+Movement=24
+AguaValida=0
+Attackable=1
+ReSpawn=1
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=35000
+GiveGLD=30000
+MinHP=12000
+MaxHP=12000
+MaxHIT=50
+MinHIT=30
+DEF=30
+PoderAtaque=1000
+PoderEvasion=270
+LanzaSpells=5
+Sp1=3
+Sp2=10
+Sp3=30
+Sp4=31
+Sp5=1
+NROITEMS=2
+Obj1=646-1
+Obj2=403-1
+AfectaParalisis=1
+BackUp=0
+
+############################################
+
+[NPC905] ' Bardo Alto
+Name=Bardo Pretoriano 
+NpcType=10
+Head=74
+Heading=3
+Body=38
+Movement=20
+AguaValida=0
+Attackable=1
+ReSpawn=1
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=10000
+GiveGLD=5000
+MinHP=8000
+MaxHP=8000
+MaxHIT=140
+MinHIT=70
+DEF=10
+PoderAtaque=100
+PoderEvasion=120
+LanzaSpells=5
+Sp1=9
+Sp2=10
+Sp3=39
+Sp4=5
+Sp5=36
+NROITEMS=5
+Obj1=519-1  ' Túnica Legendaria
+Obj2=132-1  ' Casco de Hierro
+Obj3=37-300 ' Poción Azul
+Obj4=38-300 ' Poción Roja
+Obj5=696-3  ' Laúd Mágico
+BackUp=0
+
+############################################
+
+[NPC905] ' Bardo Bajo
+Name=Bardo Pretoriano 
+NpcType=10
+Head=74
+Heading=3
+Body=38      '*************** Cambiar por body enano
+Movement=20
+AguaValida=0
+Attackable=1
+ReSpawn=1
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=10000
+GiveGLD=5000
+MinHP=8000
+MaxHP=8000
+MaxHIT=140
+MinHIT=70
+DEF=10
+PoderAtaque=100
+PoderEvasion=120
+LanzaSpells=5
+Sp1=9
+Sp2=10
+Sp3=39
+Sp4=5
+Sp5=36
+NROITEMS=5
+Obj1=525-1  ' Túnica Combinada (E/G)
+Obj2=132-1  ' Casco de Hierro
+Obj3=37-300 ' Poción Azul
+Obj4=38-300 ' Poción Roja
+Obj5=696-3  ' Laúd Mágico
+BackUp=0
+
+############################################
+
+[NPC906] ' Sacerdote Bajo
+Name=Sacerdote Pretoriano
+NpcType=10
+Head=74
+Heading=3
+Body=38
+Movement=20
+AguaValida=0
+Attackable=1
+ReSpawn=1
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=10000
+GiveGLD=5000
+MinHP=8000
+MaxHP=8000
+MaxHIT=140
+MinHIT=70
+DEF=10
+PoderAtaque=100
+PoderEvasion=120
+LanzaSpells=5
+Sp1=9
+Sp2=10
+Sp3=39
+Sp4=5
+Sp5=36
+NROITEMS=4
+Obj1=986-1
+Obj2=37-300
+Obj3=38-300
+Obj4=361-1
+BackUp=0
+
+#############################################
+[NPC907] 'Sombreros y Cascos
+Name=Vendedor
+NpcType=0
+Desc=  Vendo cascos y sombreros.
+Head=107
+Heading=3
+Body=257
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=1
+TipoItems=1000
+NROITEMS=4
+Obj1=132-1000 'Casco de hierro.
+Obj2=1010-1000 'Sombrero pirata.
+Obj3=1002-1000 'Sombrero de lobo.
+Obj4=370-1000 'Capucha de cazador.
+BackUp=0
+#############################################
+[NPC908] 'Escudos
+Name=Vendedor de escudos.
+NpcType=0
+Desc= Herrero
+Head=107
+Heading=3
+Body=257
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=1
+TipoItems=1000
+NROITEMS=1
+Obj1=404-1000 'Escudo de tortuga.
+BackUp=0
+#############################################
+[NPC909] 'Armas
+Name=Vendedor de armas.
+NpcType=0
+Desc= Armero
+Head=107
+Heading=3
+Body=257
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=1
+TipoItems=1000
+NROITEMS=20
+Obj1=15-1000 'Daga.
+Obj2=19-1000 'Espada dos manos.
+Obj3=123-1000 'Espada vikinga.
+Obj4=124-1000 'Katana.
+Obj5=125-1000 'Sable.
+Obj6=126-1000 'Hacha larga de guerra.
+Obj7=3-1000 'Hacha.
+Obj8=9-1000 'Horquilla.
+Obj9=2-1000 'Espada larga.
+Obj10=164-1000 'Espada corta.
+Obj11=398-1000 'Garrote.
+Obj12=399-1000 'Cimitarra.
+Obj13=401-1000 'Martillo de guerra.
+Obj14=478-1000 'Arco simple.
+Obj15=480-1000 'Flecha simple.
+Obj16=1036-1000 'Guantes de lucha.
+Obj17=1009-1000 'Cuchillas.
+Obj18=990-1000 'Mazo de juicio.
+Obj19=165-1000 'Daga +1
+Obj20=619-1000 'Daga envenenada
+BackUp=0
+#############################################
+[NPC910] 'Armaduras
+Name=Herrero
+NpcType=0
+Desc= Vendo armaduras.
+Head=107
+Heading=3
+Body=257
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=1
+TipoItems=1000
+NROITEMS=4
+Obj1=30-1000 'Armadura de cuero.
+Obj2=360-1000 'Armadura de cazador.
+Obj3=529-1000 'Armadura de cuero H/E/EO/M
+Obj4=359-1000 'Cota de malla
+BackUp=0
+#############################################
+[NPC911] 'Vestimentas
+Name=Sastre
+NpcType=0
+Desc= Vendo vestimentas.
+Head=107
+Heading=3
+Body=257
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=1
+TipoItems=1000
+NROITEMS=20
+Obj1=31-1000 'Vestimentas Comun 1.
+Obj2=32-1000 'Vestimentas Comun 2.
+Obj3=35-1000 'Vestimentas Comun 3.
+Obj4=513-1000 'Vestido de bruja.
+Obj5=135-1000 'Túnica roja burda.
+Obj6=170-1000 Vestimenta de mujer (H/E/EO/M)
+Obj7=196-1000 'Túnica de mago.
+Obj8=238-1000 'Túnica azul.
+Obj9=239-1000 'Túnica roja.
+Obj10=240-1000 'Ropa de enano E/G
+Obj11=357-1000 'Túnica de monje.
+Obj12=381-1000 'Túnica antigua.
+Obj13=382-1000 'Vestido azul.
+Obj14=486-1000 'Ropa de estilo.
+Obj15=488-1000 'White Lady H/E/EO/M.
+Obj16=490-1000 'Ropa de campesino.
+Obj17=502-1000 'Ropa de campesino E/G.
+Obj18=510-1000 'Vestido Indulgente H/E/EO/M.
+Obj19=511-1000 'Vestido de novia sensual H/E/EO/M.
+Obj20=512-1000 'Vestido calipso E/GM.
+BackUp=0
+#############################################
+[NPC912] 'Comestibles
+Name=Vendedor
+NpcType=0
+Desc= Vendo comida y bebidas.
+Head=107
+Heading=3
+Body=257
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=1
+TipoItems=1000
+NROITEMS=19
+Obj1=21-1000 'Porcion de torta.
+Obj2=22-1000 'Frutas del bosque.
+Obj3=23-1000 'Pan de trigo.
+Obj4=24-1000 'Pan de maiz.
+Obj5=25-1000 'Pastel.
+Obj6=26-1000 'Pollo.
+Obj7=27-1000 'Chuleta.
+Obj8=28-1000 'Queso de cabra.
+Obj9=29-1000 'Sandia.
+Obj10=42-1000 'Vino.
+Obj11=43-1000 'Botella de agua.
+Obj12=1-1000 'Manzana roja.
+Obj13=158-1000 'banana.
+Obj14=160-1000 'Cerveza.
+Obj15=161-1000 'Jugo de frutas.
+Obj16=498-1000 'Sidra.
+Obj17=522-1000 'Hipocrás.
+Obj18=533-1000 'Odre.
+Obj19=557-1000 'Vino de canela.
+BackUp=0
+#############################################
+[NPC913] 'Hechizos
+Name=Mago
+NpcType=0
+Desc= Bienvenido!, vendo hechizos de calidad que te podrían interesar!, dame doble click o escribe /COMERCIAR.
+Head=110
+Heading=3
+Body=46
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+TipoItems=1000
+ShowName=0
+NROITEMS=19
+Obj1=199-1000 'Dardo mágico.
+Obj2=197-1000 'Flecha mágica.
+Obj3=204-1000 'Flecha eléctrica
+Obj4=205-1000 'Proyectil mágico.
+Obj5=361-1000 'Tormenta de fuego.
+Obj6=200-1000 'Antídoto mágico.
+Obj7=201-1000 'Curar heridas leves.
+Obj8=203-1000 'Curar heridas graves
+Obj9=397-1000 'Torpeza
+Obj10=202-1000 'Toxina.
+Obj11=471-1000 'Debilidad
+Obj12=206-1000 'Paralizar.
+Obj13=530-1000 'Inmovilizar
+Obj14=207-1000 'Devolver movilidad.
+Obj15=363-1000 'Ataque de hambre.
+Obj16=364-1000 'Terrible hambre de igor.
+Obj17=396-1000 'Celeridad
+Obj18=470-1000 'Fuerza
+Obj19=1097-1000 'Adrenalina
+BackUp=0
+#############################################
+[NPC914] 'Hechizos 2
+Name=Mago
+NpcType=0
+Desc= Vendo objetos mágicos é invocaciones para nuevos aventureros, dame doble click o escribe /COMERCIAR.
+Head=111
+Heading=3
+Body=46
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=0
+TipoItems=1000
+NROITEMS=12
+Obj1=658-1000 'Vara de fresno
+Obj2=659-1000 'Bastón nudoso.
+Obj3=208-1000 'Flauta magica
+Obj4=696-1000 'Laud Mágico
+Obj5=661-1000 'Sombrero de aprendiz.
+Obj6=383-1000 'Sombrero mágico.
+Obj7=662-1000 'Sombrero Mago
+Obj8=1070-1000 'Sombrero Mago gris (RM)
+Obj9=380-1000 'Invocación de ultratumba.
+Obj10=394-1000 'Llamado a la naturaleza.
+Obj11=395-1000 'Llamado nigromante.
+Obj12=1358-1000 'Llamarada Volutio
+BackUp=0
+#############################################
+[NPC915] 'Hechizos 3
+Name=Hechicero
+NpcType=0
+Desc= Vendo hechizos mágicos para aventureros experimentados, dame doble click o escribe /COMERCIAR.
+Head=112
+Heading=3
+Body=46
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=0
+TipoItems=1000
+NROITEMS=5
+Obj1=319-1000 'Resucitar.
+Obj2=318-1000 'Invisibilidad.
+Obj3=531-1000 'Descarga eléctrica.
+Obj4=532-1000 'Apocalipsis.
+Obj5=673-1000 'Mimetismo.
+BackUp=0
+#############################################
+[NPC916] 'Hechizos 4
+Name=Hechicero
+NpcType=0
+Desc= Vendo hechizos de invocación para aventureros experimentados, dame doble click o escribe /COMERCIAR.
+Head=114
+Heading=3
+Body=46
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=0
+TipoItems=1000
+NROITEMS=3
+Obj1=536-1000 'Invocar elemental de fuego.
+Obj2=537-1000 'Invocar elemental de agua.
+Obj3=538-1000 'Invocar elemental de tierra.
+BackUp=0
+#############################################
+[NPC917] 'Guía daga rusa
+Name=REGLAS
+NpcType=0
+Desc= Las reglas de la daga rusa, se deben poner sin equipos (Desnudos), y dejar que el GM a cargo del evento les pege con la daga, al que apuñala es descalificado, tiene que pegar si o si al oponente, si falla se repite hasta que pege, ganador el último en pie.
+Head=107
+Heading=3
+Body=257
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+ShowName=1
+BackUp=0
+#############################################
+[NPC918] 'Torneos
+Name=REGLAS
+NpcType=0
+Desc= Las reglas de los torneos es matar al oponente y ser el mejor de cada desafio, no se permite el hechizo invisibilidad, ocultar o elementales, el GM puede modificar las reglas.
+Head=107
+Heading=3
+Body=257
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+ShowName=1
+BackUp=0
+#############################################
+[NPC919] 'Semáforo
+Name=REGLAS
+NpcType=0
+Desc= Reglas de semáforo, las palabras clave son "Verde,Rojo y Azul", el GM indica la palabra, si el GM lo escribe mal ó ustedes se mueven al sitio equivocado según lo que dice el GM, quedan descalificados, ganador ultimo que no se equivoque.
+Head=107
+Heading=3
+Body=257
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+ShowName=1
+BackUp=0
+#############################################
+[NPC920] 'Ping Pong
+Name=REGLAS
+NpcType=0
+Desc= Las reglas del ping pong, los equipos o individuales van a un ring, por turno tienen que cambiar, al 3er enfrentamiento deben hacer "piedra, papel o tijera" por denunciar para ver que ring ganador quedan seleccionados, el ganador es el que venza al otro y no se permite inmovilizar, ocultar, invisible ni elementales.
+Head=107
+Heading=3
+Body=257
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+ShowName=1
+BackUp=0
+#############################################
+[NPC921] 'Guia inicial
+Name=Guía inicial
+NpcType=0
+Desc= ¡Bienvenido a EvolutionAo!, por consultas podes mandar /GM, el manual podes encontrarlo en el ícono del libro al costado del inventario, disfruta el juego!
+Head=107
+Heading=3
+Body=257
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+ShowName=1
+BackUp=0
+#############################################
+[NPC922] 'Artemís
+Name=Guía - Pueblo de Artemís
+NpcType=0
+Desc= Artemís
+Head=107
+Heading=3
+Body=257
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+#############################################
+[NPC923] 'Campamento real
+Name=Guía - Campamento real
+NpcType=0
+Desc= Campamento Real
+Head=107
+Heading=3
+Body=257
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+#############################################
+[NPC924]
+Name=Vordon Rose
+NpcType=0
+Desc= ¡Hoy es un hermoso día!, aprovechare a entrenar para llegar a ser un guerrero formidable como mi abuelo
+Head=11
+Heading=3
+Body=1
+Movement=2
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+[NPC925]
+Name=Mefisto Crosfat
+NpcType=0
+Desc= Para ser un verdadero comerciante necesito estudiar más, llegare más lejos que mi viejo !
+Head=28
+Heading=3
+Body=2
+Movement=2
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+[NPC926]
+Name=Joan Reñes
+NpcType=0
+Desc= El estilo es importante, pásate por mi barberia grandulon, te haré un corte digno de los dioses!!
+Head=19
+Heading=3
+Body=3
+Movement=2
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+[NPC927]
+Name=Fantasma de zona peligrosa
+NpcType=0
+Desc= Peligro, mortal !!!, no saldras vivo si dudas contra los monstruos
+Head=500
+Heading=3
+Body=8
+Movement=2
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+[NPC928]
+Name=Jon kendri
+NpcType=0
+Desc= ¿Qué tal tu dia? , estoy emprendiendo un viaje y aprendiendo de nuevas artes mágicas, un día sere recordado como el mago más poderoso de Cilicius
+Head=107
+Heading=3
+Body=56
+Movement=3
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+[NPC929]
+Name=Cisney Harne
+NpcType=0
+Desc= Encantada de conocerle, soy la encargada del hogar, pongase cómodo sr/sra en nuestra humilde morada.
+Head=72
+Heading=3
+Body=66
+Movement=2
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+[NPC930]
+Name=Ximena Fleix
+NpcType=0
+Desc= Buenos días aventurero, estoy de camino a cerrar unos negocios importantes, ahora no puedo hablar.
+Head=80
+Heading=3
+Body=67
+Movement=3
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+[NPC931]
+Name=Senky
+NpcType=12
+Desc= ¡Hola aventurero! haceme doble click para comenzar con tu aventura.
+Head=36
+Heading=3
+Body=79
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+Ciudades=10
+BackUp=0
+
+#############################################
+[NPC932]
+Name=Jaindey zlay
+NpcType=0
+Desc= ¡No me molestes!, estoy ocupada..
+Head=178
+Heading=3
+Body=97
+Movement=2
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+[NPC933]
+Name=Sofia Mishel
+NpcType=0
+Desc= A pocos días de mi casamiento, ¡estoy feliz!
+Head=89
+Heading=3
+Body=121
+Movement=2
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+[NPC934]
+Name=Raul Orzed
+NpcType=0
+Desc= En mis tiempos de herrero no permitían hacer armaduras en tan mal estado, pero ahora miren lo que llevan puesto, ¡me apena la nueva generación!
+Head=307
+Heading=3
+Body=95
+Movement=2
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+[NPC935]
+Name=Rofray Jerney
+NpcType=0
+Desc= Buen día aventurero!, éste vestido es una de mis mejores creaciones, ¿que te parece?
+Head=74
+Heading=3
+Body=122
+Movement=2
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+[NPC936]
+Name=Fiona Gorgie
+NpcType=0
+Desc= El apetito de mis clientes es muy dificil de saciar, pero mis cualidades culinarias son suficientes
+Head=482
+Heading=3
+Body=123
+Movement=2
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+[NPC937]
+Name=Kamy Jeyns
+NpcType=0
+Desc= ¡Estoy tan feliz!, pronto me voy a casar!
+Head=486
+Heading=3
+Body=235
+Movement=2
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+[NPC938]
+Name=Ramón
+NpcType=0
+Desc= Bienvenido/a aventurero, busca a Frodo para avanzar al siguiente nivel.
+Head=47
+Heading=3
+Body=100
+Movement=1
+ShowName=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+[NPC939]
+Name=Jose Gandel
+NpcType=0
+Desc= La madera ligera del árbol élfico es mi gran amor, nada se compara a esa madera echa por los dioses!
+Head=110
+Heading=3
+Body=126
+Movement=2
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+[NPC940]
+Name=Kai Daisey
+NpcType=0
+Desc= Espero que descubran nuevas tierras, para comprar ropa más bonita
+Head=183
+Heading=3
+Body=120
+Movement=2
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+[NPC941]
+Name=Jendy Cremi
+NpcType=0
+Desc= Bienvenido aventurero
+Head=74
+Heading=3
+Body=124
+Movement=2
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+[NPC942]
+Name=Sra Haimel Duqre
+NpcType=0
+Desc= Pequeño engendro, cucaracha asquerosa, más te vale que seas leal al señor demonio porque te sacaré los ojos.
+Head=281
+Heading=3
+Body=125
+Movement=2
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+[NPC943]
+Name=Fantasma errante
+NpcType=0
+Desc= Tú no sabes donde estas metido... ¡Es peligroso aquí!
+Head=501
+Heading=3
+Body=145
+Movement=2
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+[NPC944]
+Name=Aventurero Trinedo
+NpcType=0
+Desc= El camino es largo, ten cuidado aventurero, hay criminales en el sendero.
+Heading=3
+Body=188
+Movement=2
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+[NPC945]
+Name=Bella Sinfoni
+NpcType=0
+Desc= ¡Saludos aventurero!, tenemos las mejores frutas de la región
+Head=78
+Heading=3
+Body=193
+Movement=2
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+[NPC946]
+Name=Jessyca Naldia
+NpcType=0
+Desc= Bienvenido, sientase como en su hogar
+Head=77
+Heading=3
+Body=233
+Movement=2
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+[NPC947]
+Name=Parca maldita
+NpcType=0
+Desc= je je je je ..... yo que vos... me preparo para correr...
+Heading=3
+Body=217
+Movement=2
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+[NPC948]
+Name=Julio Selfrid
+NpcType=0
+Desc= Buenas tardes aventurero, éste pueblo tiene un clima duro, pero hay mucha paz por suerte!
+Head=25
+Heading=3
+Body=241
+Movement=2
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+[NPC949]
+Name=Lefould Mortis
+NpcType=0
+Desc= Los negocios de la capital estan marchando de maravilla, pronto daremos el ataque!.
+Head=104
+Heading=3
+Body=241
+Movement=2
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+[NPC950]
+Name=Sr Raimond
+NpcType=0
+Desc= En mi viejos tiempos matar dragones era cosa de todos los días, ¿Por qué la juventud es tan debil?
+Head=49
+Heading=3
+Body=257
+Movement=2
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+[NPC951]
+Name=Herni delgillo
+NpcType=0
+Desc= Buenas tardes aventurero, ¿que te trae por acá?, yo ando en busca de minerales
+Head=304
+Heading=3
+Body=246
+Movement=2
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+[NPC952]
+Name=Bagabundo Herner Klaud
+NpcType=0
+Desc= El gobierno es una miseria, no me dieron lo que era mio, ojala no te pase a vos, ¡¡¡abajo el gobernador!!!
+Heading=3
+Body=411
+Movement=2
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+[NPC953]
+Name=Aventurero Jefry Grandel
+NpcType=0
+Desc= ¿Me podes dejar descansar?, ando trabajando mucho y no tengo tiempo ni para divertirme.
+Heading=3
+Body=421
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+[NPC954]
+Name=Grandalf
+NpcType=0
+Desc= ¡Te felicito por avanzar al siguiente nivel!, ahora busca a Mefisto y cómprale una runa, para así poder avanzar al siguiente nivel.
+Head=107
+Heading=3
+Body=490
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+ShowName=1
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+
+[NPC955]
+Name=Aventurero Josef
+NpcType=0
+Desc= ¿Viste que lindo barco me eh comprado?, no puedo esperar para vivir una aventura en altamar
+Heading=3
+Body=84
+Movement=2
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+[NPC956]
+Name=Pirata Rofred
+NpcType=0
+Desc= Haciendo preparativos para zarpar altamar, los dioses no podrán detenernos!
+Heading=3
+Body=86
+Movement=2
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+[NPC957] 'Campamento caotico
+Name=Guía - Campamento caotico
+NpcType=0
+Desc= Campamento legionario
+Head=107
+Heading=3
+Body=257
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+#############################################
+[NPC958] 'Minas hierro
+Name=Guía - Minas hierro
+NpcType=0
+Desc= Minas hierro
+Head=107
+Heading=3
+Body=257
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+#############################################
+[NPC959] 'Minas hierro - plata
+Name=Guía - Minas hierro - plata
+NpcType=0
+Desc= Minas hierro/plata
+Head=107
+Heading=3
+Body=257
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+#############################################
+[NPC960] 'Dungeon Demon
+Name=Guía - Dungeon Demon (Lv 15 - 25)
+NpcType=0
+Desc= Dungeon Demon
+Head=107
+Heading=3
+Body=257
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+#############################################
+[NPC961] 'Guía Rudent
+Name=Guía
+NpcType=0
+Desc= Estimado, este sector esta destinado a los que son nivel 35 y como mucho 47.
+Head=107
+Heading=3
+Body=257
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+#############################################
+[NPC962] 'Guía Neflijur
+Name=Guía
+NpcType=0
+Desc= Estimado, este sector esta destinado a los que son nivel 25 y como mucho 35.
+Head=107
+Heading=3
+Body=257
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+#############################################
+[NPC963] 'Guía Neferson
+Name=NPC Guía
+NpcType=0
+Desc= ¡Aventurero/a, cuando seas nivel 35, ve hacia el "Pueblo de Belsa" bien equipado, sube un mapa y entra al Dungeón Veraz para llegar al nivel 47, buena suerte! ... la vas a necesitar.
+Head=107
+Heading=3
+Body=257
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+ShowName=1
+BackUp=0
+#############################################
+[NPC964] 'Minas oro
+Name=Guía - Minas oro - elfico (Niveles 25 - 47)
+NpcType=0
+Desc= Caverna de Saenix (Oro - Élfico)
+Head=107
+Heading=3
+Body=257
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=1
+#############################################
+[NPC965] 'Entrenador
+Name= Entrenador para testeadores
+Desc=¡Hola amigo! Soy el entrenador de la zona de testeo, si deseas que traiga una criatura sólo debes pedirmelo. (Escribe /ENTRENAR)
+NpcType=3
+Head=6
+Heading=3
+Body=57
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+NroCriaturas=1
+CI1=966
+CN1=Tarántula mutante (TESTERS)
+BackUp=1
+#############################################
+[NPC966]
+Name=Parca de entrenamiento
+NpcType=0
+Head=0
+Heading=3
+Body=217
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=7500000
+MinHP=350
+MaxHP=350
+MaxHIT=5
+MinHIT=1
+DEF=0
+PoderAtaque=110
+PoderEvasion=20
+BackUp=0
+NROITEMS=1
+Drop1=12-475000 'Oro
+#############################################
+[NPC967] 'Mercader Ropajes Canjes
+Name=Vestimentas
+NpcType=0
+Desc=¡¡Vendo vestimentas (CANJES)!!
+Head=102
+Heading=3
+Body=490
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=1
+TipoItems=3
+NROITEMS=20
+Obj1=1065-10000 'Chupin Rojo (Todos / Altos)
+Obj2=1066-10000 'Chupin Celeste (Todos)
+Obj3=1053-10000 'Manto alado (E/G) (Todos)
+Obj4=1054-10000 'Manto alado (Todos / Altos)
+Obj5=1055-10000 'Túnica del archimago (Magos / Altos)
+Obj6=1056-10000 'Traje de gala (Todos / Altos)
+Obj7=1057-10000 'Túnica angelical (Todos / Altos)
+Obj8=1058-10000 'Sotana imperial (Todos / Altos)
+Obj9=1059-10000 'Sotana imperial (E/G) (Todos)
+Obj10=1060-10000 'Sotana neutra (Todos / Altos)
+Obj11=1061-10000 'Sotana neutra (E/G) (Todos)
+Obj12=1062-10000 'Sotana púrpura (E/G) (Todos)
+Obj13=1063-10000 'Túnica del clero (Todos / Altos)
+Obj14=1064-10000 'Túnica del lobo (Todos / Altos)
+Obj15=1065-10000 'Chupin rojo (Todos / Altos)
+Obj16=1066-10000 'Chupin celeste (Todos / Altos)
+Obj17=1067-10000 'Traje de navidad (Todos / Altos)
+Obj18=1094-10000 'Armadura dorada
+Obj19=1095-10000 'Armadura plateada (E/G)
+Obj20=1101-10000 'Túnica del lobo (E/G)
+BackUp=1
+#############################################
+[NPC968] 'Mercader Ropajes Canjes 2
+Name=Vestimentas2
+NpcType=0
+Desc=¡¡Vendo vestimentas 2 (CANJES)!!
+Head=102
+Heading=3
+Body=490
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=1
+TipoItems=3
+NROITEMS=15
+Obj1=1102-10000 'Túnica del druida (E/G)
+Obj2=1103-10000 'Satana apocaliptica (Todos / Altos)
+Obj3=1104-10000 'Satana apocaliptica (E/G)
+Obj4=1105-10000 'Túnica de la pureza (E/G)
+Obj5=1106-10000 'Túnica de la pureza (Altos)
+Obj6=1107-10000 'Túnica oscura (Altos)
+Obj7=1108-10000 'Túnica Treawe (E/G)
+Obj8=1109-10000 'Túnica Treawe (Altos)
+Obj9=1110-10000 'Túnica del rey oscuro (E/G)
+Obj10=1111-10000 'Túnica del rey oscuro (Altos)
+Obj11=1112-10000 'Armadura del dragón negro (M) (Altos)
+Obj12=1113-10000 'Armadura del dragón negro (H) (Altos)
+Obj13=1114-10000 'Armadura del dragón negro (E/G)
+Obj14=1117-10000 'Armadura del clero (Altos)
+Obj15=1118-10000 'Armadura del clero (E/G)
+BackUp=1
+#############################################
+[NPC969] 'Mercader Equipamiento
+Name=Equipamiento
+NpcType=0
+Desc=¡¡Vendo equipamiento (CANJES)!!
+Head=102
+Heading=3
+Body=490
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=1
+TipoItems=3
+NROITEMS=20
+Obj1=1068-10000 'Corona del rey (Todos)
+Obj2=1069-10000 ' Corona sagrada (Todos)
+Obj3=1070-10000 'Sombrero archimago gris (Magos / Altos)
+Obj4=1071-10000 'Sombrero archimago naranja (Magos / Altos)
+Obj5=1072-10000 'Gorrito navideño (Todos)
+Obj6=1074-10000 'Capucha de oso polar (Druidas)
+Obj7=1075-10000 'Anillo Impio - DESIGNAR CLASES
+Obj8=1076-10000 'Escudo de león
+Obj9=1079-10000 'Espada infernal
+Obj10=1081-10000 'Espada glacial
+Obj11=1082-10000 'Espada Argentum
+Obj12=1083-10000 'Espada angelical
+Obj13=1084-10000 'Daga glacial
+Obj14=1085-10000 'Daga de jade
+Obj15=1086-10000 'Arco Glacial
+Obj16=1087-10000 'Arco demoníaco
+Obj17=1088-10000 'Vara infernal (Magos)
+Obj18=1091-10000 'Casco plegario
+Obj19=1089-10000 'Vara Imploir (Magos)
+Obj20=1090-10000 'Casco trenzado
+BackUp=1
+#############################################
+[NPC970] 'Vende canjes hechizos
+Name=Hechizero sagrado
+NpcType=0
+Desc=Vendo canjes Sacri, dame doble click o escribe /COMERCIAR.
+Head=102
+Heading=3
+Body=490
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=1
+TipoItems=3
+NROITEMS=5
+Obj1=1096-10000 '
+Obj2=1097-10000 '
+Obj3=1098-10000 '
+Obj4=1099-10000 '
+Obj5=1100-10000 '
+BackUp=1
+#############################################
+[NPC971] 'Mercader avanzado
+Name=Vendedor TOP
+NpcType=0
+Desc=¡¡Vendo objetos top del mundo oficial!!
+Head=102
+Heading=3
+Body=490
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=1
+TipoItems=1
+NROITEMS=20
+Obj1=366-10000 'Daga +3
+Obj2=367-10000 'Daga +4
+Obj3=559-10000 'Daga de Plata
+Obj4=192-10000 'Minerales de Hierro
+Obj5=193-10000 'Minerales de Plata
+Obj6=194-10000 'Minerales de Oro
+Obj7=128-10000 'Escudo de Hierro
+Obj8=130-10000 'Escudo de Plata
+Obj9=1049-10000 'Laúd Élfico
+Obj10=474-10000 'Barca
+Obj11=400-10000 'Vara de Mago
+Obj12=403-10000 'Espada de Plata
+Obj13=129-10000 'Hacha de Guerra Dos Filos
+Obj14=664-10000 'Arco Compuesto Reforzado
+Obj15=665-10000 'Arco de Cazador
+Obj16=553-10000 'Flecha +3
+Obj17=481-10000 'Armadura de Dragón
+Obj18=482-10000 'Armadura de Dragón (H/E/EO-M)
+Obj19=483-10000 'Armadura de Dragón (E/G)
+Obj20=1006-10000 'Leña Élfica
+BackUp=1
+#############################################
+[NPC972] 'Rinde 100%
+Name=Lobo
+NpcType=0
+Head=0
+Heading=3
+Body=10
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=1250
+Alineacion=2
+Comercia=0
+GiveEXP=316
+MinHP=125
+MaxHP=125
+MaxHIT=18
+MinHIT=1
+DEF=8
+PoderAtaque=80
+PoderEvasion=25
+Snd1=35
+Snd2=9
+BackUp=0
+NROITEMS=5
+Drop1=12-250  ' Oro
+Drop2=27-6 'Chuleta
+Drop3=1002-2 'Casco de Lobo
+Drop4=394-2 'Llamado a la Naturaleza.
+
+############################################
+
+[NPC973] 'Rinde 80%
+Name=Gallo Salvaje
+NpcType=0
+Head=0
+Heading=3
+Body=5
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=100
+Alineacion=2
+Comercia=0
+GiveEXP=50
+MinHP=25
+MaxHP=25
+MaxHIT=1
+MinHIT=1
+DEF=0
+PoderAtaque=5
+PoderEvasion=5
+SND3=67
+BackUp=0
+NROITEMS=5
+Drop1=12-80  ' Oro
+Drop2=12-85 'Oro
+Drop3=12-145 'Oro
+
+############################################
+
+[NPC974] 'Rinde 80%
+Name=Serpiente
+NpcType=0
+Head=0
+Heading=3
+Body=13
+Movement=3
+AguaValida=0
+Attackable=1
+Respawn=0
+Hostile=1
+Domable=400
+Alineacion=2
+Comercia=0
+GiveEXP=40
+MinHP=20
+MaxHP=20
+MaxHIT=1
+MinHIT=1
+DEF=0
+PoderAtaque=10
+PoderEvasion=0
+SND2=103
+BackUp=0
+NROITEMS=5
+Drop1=12-80  ' Oro
+Drop2=12-70  ' Oro
+Drop3=12-110  ' Oro
+Drop4=12-170 ' Oro
+Drop5=12-250 ' Oro
+
+############################################
+
+[NPC975]
+Name=Escorpión
+NpcType=0
+Head=0
+Heading=3
+Body=51
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=600
+Alineacion=2
+Comercia=0
+GiveEXP=40
+MinHP=20
+MaxHP=20
+MaxHIT=3
+MinHIT=1
+DEF=0
+DefM=3
+PoderAtaque=30
+PoderEvasion=10
+Veneno=1
+BackUp=0
+NROITEMS=5
+Drop1=12-80  ' Oro
+Drop2=12-70  ' Oro
+Drop3=12-110  ' Oro
+Drop4=12-170 ' Oro
+Drop5=12-250 ' Oro
+
+############################################
+
+[NPC976]
+Name=Murciélago 
+NpcType=0
+Head=0
+Heading=3
+Body=9
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=400
+Alineacion=2
+Comercia=0
+GiveEXP=60
+MinHP=30
+MaxHP=30
+MaxHIT=4
+MinHIT=1
+DEF=0
+DefM=3
+PoderAtaque=30
+PoderEvasion=10
+BackUp=0
+NROITEMS=5
+Drop1=12-80  ' Oro
+Drop2=12-70  ' Oro
+Drop3=12-110  ' Oro
+Drop4=12-170 ' Oro
+Drop5=12-250 ' Oro
+
+############################################
+
+[NPC977]
+Name=Viajero
+Desc=¡Saludos aventurero!, ¿dónde desea viajar esta vez?.
+NpcType=12
+Head=304
+Heading=3
+Body=246
+Ciudades=1-2-3-4-5-6-7-8
+
+#############################################
+[NPC978] 'solo testers
+Name=Safirt
+NpcType=0
+Desc= Zona de testeo (Solo para testers).
+Head=107
+Heading=3
+Body=257
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+BackUp=0
+
+#############################################
+
+[NPC979]
+Name=Elemental de Tierra (HOSTIL)
+NpcType=0
+Head=0
+Heading=3
+Body=543
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=0
+Comercia=0
+GiveEXP=376
+GiveGLD=2550
+MinHP=800
+MaxHP=800
+MaxHIT=120
+MinHIT=100
+DEF=0
+PoderAtaque=150
+PoderEvasion=100
+LanzaSpells=1
+Sp1=9
+BackUp=0
+#############################################
+
+[NPC980] 'Runas
+Name=Runas
+NpcType=0
+Desc=Bienvenido aventurero, tengo unas runas de teletransportacion que te podrian interesar, también tengo la runa de Artemís!
+Head=28
+Heading=3
+Body=243
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=0
+TipoItems=3
+NROITEMS=5
+Obj1=1367-10000 'Runa Pueblo Artemis
+Obj2=1379-10000 'Runa Sala Canjes
+Obj3=1371-10000 'Runa Zona GMS
+Obj4=1409-10000 'Arena
+Obj5=1447-10000 'Runa Comercio Seguro
+BackUp=1
+
+##############################################
+
+[NPC981] 'Vendedor de runas de teletransportación.
+Name=Runas Avanzadas
+NpcType=0
+Desc=Bienvenido aventurero, tengo unas runas avanzadas que te podrían interesar, dame doble click o escribe /COMERCIAR.
+Head=28
+Heading=3
+Body=243
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=1
+TipoItems=3
+NROITEMS=4
+Obj1=1337-10000 'Runa hacia el Dungeon Westler (Desde nivel 25)
+Obj2=1335-10000 'Runa hacia el Dungeon Klain (Desde nivel 25)
+Obj3=1338-10000 'Runa hacia el Dungeon Zilug (Desde nivel 25)
+Obj4=1336-10000 'Runa hacia el Dungeon Veraz (Desde nivel 35)
+BackUp=1
+
+##############################################
+
+[NPC982]
+Name=Gran Dragón Rojo - Categoria A
+NpcType=6
+Head=0
+Heading=3
+Body=82
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=7383
+MinHP=200000
+MaxHP=200000
+MaxHIT=10
+MinHIT=1
+DEF=0
+PoderAtaque=400
+PoderEvasion=10
+LanzaSpells=2
+Sp1=15
+Sp2=25
+SND1=30
+SND2=31
+SND3=32
+AfectaParalisis=1
+BackUp=0
+NROITEMS=5
+Drop1=12-65000 'Oro
+Drop2= 194-5000 'Minerales de Oro
+Drop3=402-1 'Espada Mata Dragones
+Drop4=532-1 'Apocalipsis
+Drop5=481-3 'Armaduras de Dragón
+
+##############################################
+
+[NPC983]
+Name=Gran Dragón Rojo - Categoria B
+NpcType=6
+Head=0
+Heading=3
+Body=82
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=135000
+MinHP=200000
+MaxHP=200000
+MaxHIT=10
+MinHIT=1
+DEF=0
+PoderAtaque=400
+PoderEvasion=10
+LanzaSpells=2
+Sp1=15
+Sp2=25
+SND1=30
+SND2=31
+SND3=32
+AfectaParalisis=1
+BackUp=0
+NROITEMS=5
+Drop1=12-65000 'Oro
+Drop2= 194-5000 'Minerales de Oro
+Drop3=402-1 'Espada Mata Dragones
+Drop4=532-1 'Apocalipsis
+Drop5=481-3 'Armaduras de Dragón
+
+##############################################
+
+[NPC984]
+Name=Gran Dragón Rojo - Categoria C
+NpcType=6
+Head=0
+Heading=3
+Body=82
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=168000
+MinHP=200000
+MaxHP=200000
+MaxHIT=10
+MinHIT=1
+DEF=0
+PoderAtaque=400
+PoderEvasion=10
+LanzaSpells=2
+Sp1=15
+Sp2=25
+SND1=30
+SND2=31
+SND3=32
+AfectaParalisis=1
+BackUp=0
+NROITEMS=5
+Drop1=12-65000 'Oro
+Drop2= 194-5000 'Minerales de Oro
+Drop3=402-1 'Espada Mata Dragones
+Drop4=532-1 'Apocalipsis
+Drop5=481-3 'Armaduras de Dragón
+
+##############################################
+
+[NPC985]
+Name=Gran Dragón Rojo - Categoria D
+NpcType=6
+Head=0
+Heading=3
+Body=82
+Movement=3
+AguaValida=0
+Attackable=1
+ReSpawn=0
+Hostile=1
+Domable=0
+Alineacion=2
+Comercia=0
+GiveEXP=5000000
+MinHP=200000
+MaxHP=200000
+MaxHIT=10
+MinHIT=1
+DEF=0
+PoderAtaque=400
+PoderEvasion=10
+LanzaSpells=2
+Sp1=15
+Sp2=25
+SND1=30
+SND2=31
+SND3=32
+AfectaParalisis=1
+BackUp=0
+NROITEMS=5
+Drop1=12-65000 'Oro
+Drop2= 194-5000 'Minerales de Oro
+Drop3=402-1 'Espada Mata Dragones
+Drop4=532-1 'Apocalipsis
+Drop5=481-3 'Armaduras de Dragón
+
+##############################################
+[NPC986] 'Canjes
+Name=
+NpcType=0
+Desc=Bienvenido!, tengo el mejor equipo para asesinos de éstas tierras, seguro te va interesar.
+Head=102
+Heading=3
+Body=490
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=1
+TipoItems=1
+NROITEMS=11
+Obj1=1094-10000 'Armadura Doltal (Altos)
+Obj2=1431-10000 'Armadura Dort (Bajos)
+Obj3=1421-10000 'Escudo sombrio
+Obj4=1092-10000 'Casco dorado
+Obj5=1435-10000 'Daga Xarth
+Obj6=1443-10000 'Anillo Sacrilet
+Obj7=1085-10000 'DONACION
+Obj8=1069-10000 'DONACION
+Obj9=1053-10000 'DONACION
+Obj10=1054-10000 'DONACION
+Obj11=1076-10000 'DONACION
+BackUp=1
+##############################################
+[NPC987] 'Canjes
+Name=
+NpcType=0
+Desc=Bienvenido!, tengo el mejor equipo para bandidos de éstas tierras, seguro te va interesar.
+Head=102
+Heading=3
+Body=490
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=1
+TipoItems=1
+NROITEMS=12
+Obj1=1418-10000 'Armadura corazada (Altos)
+Obj2=1095-10000 'Armadura plateada (Bajos)
+Obj3=1090-10000 'Casco Trenzado
+Obj4=1436-10000 'Escudo Szeent
+Obj5=1432-10000 'Espada Neblin
+Obj6=1443-10000 'Anillo Sacrilet (RM +22)
+Obj6=1443-10000 'Anillo Sacrilet (RM +22)
+Obj7=1076-10000 'DONACION
+Obj8=1082-10000 'DONACION
+Obj9=1083-10000 'DONACION
+Obj10=1053-10000 'DONACION
+Obj11=1054-10000 'DONACION
+Obj12=1069-10000 'DONACION
+BackUp=1
+##############################################
+[NPC988] 'Canjes
+Name=
+NpcType=0
+Desc=Bienvenido!, tengo el mejor equipo para bardos de éstas tierras, seguro te va interesar.
+Head=102
+Heading=3
+Body=490
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=1
+TipoItems=1
+NROITEMS=12
+Obj1=1103-10000 'Satana Satira (Altos RM +10)
+Obj2=1104-10000 'Satana Satira (Bajos RM +10)
+Obj3=1429-10000 'Daga Sinica
+Obj4=1426-10000 'Casco Kelo
+Obj5=1422-10000 'Escudo de dragon
+Obj6=1075-10000 'Anillo Impio (RM + 15)
+Obj7=1133-10000 'Laúd Ancestral
+Obj8=1085-10000 'DONACION
+Obj9=1069-10000 'DONACION
+Obj10=1076-10000 'DONACION
+Obj11=1053-10000 'DONACION
+Obj12=1054-10000 'DONACION
+BackUp=1
+##############################################
+[NPC989] 'Canjes
+Name=
+NpcType=0
+Desc=Bienvenido!, tengo el mejor equipo para clérigos de éstas tierras, seguro te va interesar.
+Head=102
+Heading=3
+Body=490
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=1
+TipoItems=1
+NROITEMS=13
+Obj1=1063-10000 'Túnica Del Clero (Altos)
+Obj2=1117-10000 'Armadura templaria (Altos)
+Obj3=1118-10000 'Armadura templaria (Bajos)
+Obj4=1427-10000 'Armadura Dortex (Bajos)
+Obj5=1091-10000 'Casco plegario
+Obj6=1433-10000 'Espada Platinum
+Obj7=1437-10000 'Escudo Sefle
+Obj8=1075-10000 'Anillo Impio (RM + 15)
+Obj9=1053-10000 'DONACION
+Obj10=1054-10000 'DONACION
+Obj11=1082-10000 'DONACION
+Obj12=1083-10000 'DONACION
+Obj13=1069-10000 'DONACION
+BackUp=1
+##############################################
+[NPC990] 'Canjes
+Name=
+NpcType=0
+Desc=Bienvenido!, tengo el mejor equipo para druidas de éstas tierras, seguro te va interesar.
+Head=102
+Heading=3
+Body=490
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=1
+TipoItems=1
+NROITEMS=7
+Obj1=1064-10000 'Túnica del lobo (Altos)
+Obj2=1101-10000 'Túnica de lobo (E/G)
+Obj3=1445-10000 'Flauta Sagrada
+Obj4=1074-10000 'Capucha de oso polar
+Obj5=1053-10000 'DONACION
+Obj6=1054-10000 'DONACION
+Obj7=1069-10000 'DONACION
+BackUp=1
+##############################################
+[NPC991] 'Canjes
+Name=
+NpcType=0
+Desc=Bienvenido!, tengo el mejor equipo para guerreros de éstas tierras, seguro te va interesar.
+Head=102
+Heading=3
+Body=490
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=1
+TipoItems=1
+NROITEMS=13
+Obj1=1113-10000 'Armadura del dragón negro (Altos)
+Obj2=1112-10000 'Armadura del dragón negro (Mujer / Altos)
+Obj3=1114-10000 'Armadura del dragón negro (Bajos)
+Obj4=1077-10000 'Escudo impío
+Obj5=1093-10000 'Casco Vikingo
+Obj6=1079-10000 'Espada infernal
+Obj7=1444-10000 'Anillo Plesc
+Obj8=1053-10000 'DONACION
+Obj9=1054-10000 'DONACION
+Obj10=1076-10000 'DONACION
+Obj11=1082-10000 'DONACION
+Obj12=1083-10000 'DONACION
+Obj13=1069-10000 'DONACION
+BackUp=1
+##############################################
+[NPC992] 'Canjes
+Name=
+NpcType=0
+Desc=Bienvenido!, tengo el mejor equipo para cazadores de éstas tierras, seguro te va interesar.
+Head=102
+Heading=3
+Body=490
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=1
+TipoItems=1
+NROITEMS=12
+Obj1=1115-10000 'Armadura del sinego (Altos)
+Obj2=1116-10000 'Armadura del sinego (Enanos)
+Obj3=1123-10000 'Capucha de cazador violeta (RM +5)
+Obj4=1122-10000 'Capucha de cazador azul (RM +5)
+Obj5=1121-10000 'Capucha de cazador verde (RM +5)
+Obj6=1120-10000 'Capucha de cazador gris (RM +5)
+Obj7=1119-10000 'Capucha de cazador marrón (RM +5)
+Obj8=1086-10000 'Arco Glacial
+Obj9=1087-10000 'Arco Demond
+Obj9=1053-10000 'DONACION
+Obj10=1054-10000 'DONACION
+Obj11=1076-10000 'DONACION
+Obj12=1069-10000 'DONACION
+BackUp=1
+##############################################
+[NPC993] 'Canjes
+Name=
+NpcType=0
+Desc=Bienvenido!, tengo el mejor equipo para ladrones de éstas tierras, seguro te va interesar.
+Head=102
+Heading=3
+Body=490
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=1
+TipoItems=1
+NROITEMS=2
+Obj1=1437-10000 'Escudo Sefle
+Obj2=1124-10000 'Casco reclit
+BackUp=1
+##############################################
+[NPC994] 'Canjes
+Name=
+NpcType=0
+Desc=Bienvenido!, tengo el mejor equipo para magos de éstas tierras, seguro te va interesar.
+Head=102
+Heading=3
+Body=490
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=1
+TipoItems=1
+NROITEMS=20
+Obj1=1055-10000 'Túnica de archimago (Altos)
+Obj2=1057-10000 'Túnica Wythr (Altos)
+Obj3=1107-10000 'Túnica oscura (Altos RM +10)
+Obj4=1109-10000 'Túnica Treawe (Altos RM +10)
+Obj5=1108-10000 'Túnica Treawe (Bajos RM +10)
+Obj6=1060-10000 'Sotana neutra (Altos)
+Obj7=1061-10000 'Sotana neutra (Bajos)
+Obj8=1058-10000 'Sotana imperial (Altos)
+Obj9=1059-10000 'Sotana imperial (Bajos)
+Obj10=1062-10000 'Sotana púrpura (Bajos)
+Obj11=1102-10000 'Túnica Clausted (Bajos)
+Obj12=1105-10000 'Túnica de la pureza (Bajos)
+Obj13=1106-10000 'Túnica de la pureza (Bajos)
+'Obj14=1424-10000 'Sombrero Ciniz
+Obj14=1423-10000 'Sombrero Dorith
+Obj15=1088-10000 'Vara infernal
+Obj16=1053-10000 'DONACION
+Obj17=1054-10000 'DONACION
+Obj18=1089-10000 'DONACION
+Obj19=1069-10000 'DONACION
+Obj20=1071-10000 'DONACION
+BackUp=1
+##############################################
+[NPC995] 'Canjes
+Name=
+NpcType=0
+Desc=Bienvenido!, tengo el mejor equipo para piratas de éstas tierras, seguro te va interesar.
+Head=102
+Heading=3
+Body=490
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=1
+TipoItems=1
+NROITEMS=0
+BackUp=1
+##############################################
+[NPC996] 'Canjes
+Name=
+NpcType=0
+Desc=Bienvenido!, tengo el mejor equipo para paladines de éstas tierras, seguro te va interesar.
+Head=102
+Heading=3
+Body=490
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=1
+TipoItems=1
+NROITEMS=14
+Obj1=1442-10000 'Armadura Dorada (Altos)
+Obj2=1440-10000 'Armadura Dorada (Bajos)
+Obj3=1095-10000 'Armadura plateada (Bajos)
+Obj4=1081-10000 'Espada Glacial
+Obj5=1084-10000 'Daga glacial
+Obj6=1092-10000 'Casco Dorado
+Obj7=1124-10000 'Casco reclit
+Obj8=1078-10000 'Escudo de Águila
+Obj9=1053-10000 'DONACION
+Obj10=1054-10000 'DONACION
+Obj11=1076-10000 'DONACION
+Obj12=1082-10000 'DONACION
+Obj13=1083-10000 'DONACION
+Obj14=1069-10000 'DONACION
+BackUp=1
+##############################################
+[NPC997] 
+Name=Rodek
+NpcType=0
+Desc=Bienvenido  aventurero, vendo objetos sagrados que podrían interesarte
+Head=102
+Heading=3
+Body=490
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=1
+TipoItems=1
+NROITEMS=11
+Obj1=1056-10000 'Traje de gala (Altos)
+Obj2=1067-10000 'Traje de navidad (Altos)
+Obj3=1111-10000 'Túnica del rey oscuro (Altos)
+Obj4=1110-10000 'Túnica del rey oscuro (Bajos)
+Obj5=1065-10000 'Chupin Rojo(Altos)
+Obj6=1066-10000 'Chupin Celeste (Altos)
+Obj7=1416-10000 'Chupin Rosa (Altos EO)
+Obj8=1415-10000 'Chupin Rosa (Altos EO)
+Obj9=1068-10000 'Corona del rey
+Obj10=1199-10000 'Sombrero Elegante
+Obj11=1072-10000 'Gorrito navideño
+BackUp=1
+#############################################
+[NPC998] 'NPC Guía hasta nivel 35
+Name=NPC Guía
+NpcType=0
+Desc= ¡Aventurero/a, compra un pasaje hacia Cilicius y dirígete 2 mapas arriba para matar Yetis, así podrás subir hasta el nivel 35, buena suerte!, ah ... no olvides ver el mapa.
+Head=107
+Heading=3
+Body=257
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+ShowName=1
+BackUp=0
+#############################################
+[NPC999] 'NPC Guía hasta nivel 25.
+Name=NPC Guía
+NpcType=0
+Desc=¡Aventurero/a, ve por vestimentas en la sastreria de Artemis y luego dirígete 2 mapas arriba de Artemis, encuentra Dungeon Demond y sube hasta el nivel 25, buena suerte!
+Head=107
+Heading=3
+Body=257
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=0
+ShowName=1
+BackUp=0
+#############################################
+[NPC1000] 'Vende canje HECHIZOS
+Name=
+NpcType=0
+Desc=Bienvenido!, tengo los mejores hechizos prohibidos de éstas tierras, seguro te va interesar, dame doble click o escribe /COMERCIAR.
+Head=102
+Heading=3
+Body=490
+Movement=1
+Attackable=0
+ReSpawn=0
+Hostile=0
+Domable=0
+Alineacion=0
+Comercia=1
+ShowName=0
+TipoItems=1
+NROITEMS=14
+Obj1=1096-10000 'Susurro sombrio
+Obj2=1098-10000 'Explosion Halifax
+Obj3=1099-10000 'Luna creciente
+Obj4=1100-10000 'llamarada divina
+BackUp=1

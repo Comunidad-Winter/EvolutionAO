@@ -1,0 +1,10 @@
+[INIT]
+MAX_VIAJES=1
+
+[VIAJE#1]
+Nombre=Pueblo de Artemis
+Nivel=15
+Pos=1-39-48
+Tiempo=2
+Costo=4500
+SkillReq=10

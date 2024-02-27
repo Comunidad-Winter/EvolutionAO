@@ -1,0 +1,6 @@
+E = HUMANOS
+E = GNOMO
+
+S = ELFO
+S = EO
+S = ENANO

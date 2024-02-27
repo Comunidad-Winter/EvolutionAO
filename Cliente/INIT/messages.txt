@@ -1,0 +1,10 @@
+/consulta
+/liberar
+/dest
+/ci 710
+/mod test exp 99999999
+
+/RELOADOBJ
+/RELOADNPCS
+/RELOADSINI
+/RELOADHECHIZOS
